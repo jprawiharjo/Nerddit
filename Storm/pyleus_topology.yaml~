@@ -1,0 +1,33 @@
+# This is a non-operational example demonstrating the use of a Kafka spout.
+
+name: StormTest
+
+topology:
+
+    - spout:
+        name: kafka_consumer
+        module: Streaming.Kafka_Consumer_Spout
+        parallelism_hint: 4
+
+    - bolt:
+        name: doc_processor
+        module: Streaming.Doc_Processor
+        parallelism_hint: 4
+        groupings:
+            - shuffle_grouping: kafka_consumer
+
+    - bolt:
+        name: push_to_es
+        module: Streaming.Push_to_Es_Bolt
+        tick_freq_secs: 1
+        parallelism_hint: 4
+        groupings:
+            - shuffle_grouping: doc_processor
+
+    - bolt:
+        name: push_to_cassandra
+        module: Streaming.Push_to_Cassandra_Bolt
+        tick_freq_secs: 1
+        parallelism_hint: 4
+        groupings:
+            - shuffle_grouping: doc_processor
