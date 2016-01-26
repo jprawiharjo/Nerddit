@@ -28,8 +28,11 @@ class Push_to_Cassandra(SimpleBolt):
         self.session.default_consistency_level = cassandra.ConsistencyLevel.ALL
         #self.session.encoder.mapping[tuple] = self.session.encoder.cql_encode_set_collection
 
-        queryAddNew = "INSERT INTO {} (id, title, linksto) VALUES (?, ?, ?) IF NOT EXISTS".format(tablename)
-        self.preparedAddNew = self.session.prepare(queryAddNew)
+        queryAddNew1 = "INSERT INTO {} (id, title, linksto) VALUES (?, ?, ?) IF NOT EXISTS".format(tablename)
+        self.preparedAddNew1 = self.session.prepare(queryAddNew1)
+
+        queryAddNew2 = "INSERT INTO {} (id, title, linksto, referredby) VALUES (?, ?, ?, ?) IF NOT EXISTS".format(tablename)
+        self.preparedAddNew2 = self.session.prepare(queryAddNew2)
 
         queryUpdateReferredbyTitle = "UPDATE {} SET id = ?, linksto = ? WHERE title = ? IF EXISTS".format(tablename)
         self.preparedReferredbyTitle = self.session.prepare(queryUpdateReferredbyTitle)
@@ -48,9 +51,23 @@ class Push_to_Cassandra(SimpleBolt):
         log.debug("Process Tick")
         log.debug(len(self.bulk_data))
 
+        linkage = {}
+        for row in self.bulk_data:
+            if len(row.Links) > 0:
+                log.debug('Processing Links')
+                for link in row.Links:
+                    if link in linkage.keys():
+                        linkage[link].add(row.Title)
+                    else:
+                        linkage[link] = set([row.Title])
+
         for row in self.bulk_data:
             log.debug(row.Title)
-            bound1 = self.preparedAddNew .bind((str(row.Id), str(row.Title), row.Links))
+            
+            if row.Title in linkage.keys():
+                bound1 = self.preparedAddNew2.bind((str(row.Id), str(row.Title), row.Links, linkage[row.Title]))
+            else:
+                bound1 = self.preparedAddNew1.bind((str(row.Id), str(row.Title), row.Links))
             
             res = self.session.execute(bound1)
             res = res.current_rows[0].applied
@@ -59,19 +76,17 @@ class Push_to_Cassandra(SimpleBolt):
             if not(res):
                 bound2 = self.preparedReferredbyTitle.bind((str(row.Id), row.Links, str(row.Title)))
                 self.session.execute_async(bound2)
-            
-            #Continue loop if nothing in row
-            if len(row.Links) ==0 :
-                log.debug("Nothing in links")
-                continue
-            
-            for link in row.Links:
-                bound3 = self.preparedReferredbyOnly.bind(([str(row.Title)], link))
-                res = self.session.execute(bound3)
-                res = res.current_rows[0].applied
-                if not(res):
-                    bound4 = self.preparedAddNewReferredBy.bind((link, [str(row.Title)]))
-                    res = self.session.execute_async(bound4)
+                
+        #Inserting into database
+        for k,v in linkage.iteritems():
+            log.debug(k)
+            log.debug(v)
+            bound3 = self.preparedReferredbyOnly.bind((v, k))
+            res = self.session.execute(bound3)
+            res = res.current_rows[0].applied
+            if not(res):
+                bound4 = self.preparedAddNewReferredBy.bind((k, v))
+                res = self.session.execute_async(bound4)
 
         self.bulk_data = []
         

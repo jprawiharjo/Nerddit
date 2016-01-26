@@ -12,12 +12,26 @@ import re
 
 log = logging.getLogger('doc_processor')
 
-WordsFilter = ["template:"]
+ReLinks = re.compile('\[\[.*?\]\]') # Regex to trap hashtags
 
-DataFrame = namedtuple("WikiPage", "Id, Title, Text, Links")
+WordsFilter = ["template:","file:"]
+
+DataFrame = namedtuple("WikiPage", "Id, Title, Text, Links, RefBy")
 
 def ExtractLinks(text):
-    return ["a"]
+    m = ReLinks.finditer(text)
+    links = []
+    for k in m:
+        link = k.group(0).rstrip(']').lstrip('[')
+        if '|' in link:
+            splitlink = link.split('|')
+            link = splitlink[0]
+        if ":" in link:
+            splitlink = link.split(':')
+            if any([x in splitlink[0].lower() for x in WordsFilter]):
+                continue
+        links.append(link)
+    return links
 
 class DocProcessor(SimpleBolt):
     OUTPUT_FIELDS = DataFrame
@@ -31,12 +45,11 @@ class DocProcessor(SimpleBolt):
 
         title = ""
         text = ""
-        txtid = ""
         foundtitle = False
         foundtext = False
         for action, elem in context:
             if action =="end" and "title" in elem.tag:
-                title = elem.text
+                title = elem.text.lower()
                 foundtitle = True
             if action =="end" and "text" in elem.tag:
                 text = elem.text
@@ -45,7 +58,7 @@ class DocProcessor(SimpleBolt):
                 break
         log.debug("Title = " + title)
         if not any([x in title.lower() for x in WordsFilter]):
-            result = DataFrame(uuid.uuid4().hex, title, text, ExtractLinks(text))
+            result = DataFrame(uuid.uuid4().hex, title, text, ExtractLinks(text), [])
             self.emit(result)
 
 if __name__ == '__main__':
