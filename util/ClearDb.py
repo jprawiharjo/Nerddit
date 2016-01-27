@@ -13,7 +13,9 @@ import datetime
 
 # Cassandra 
 cluster = Cluster(["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
-                   "ec2-52-34-178-13.us-west-2.compute.amazonaws.com"])
+                    "ec2-52-34-178-13.us-west-2.compute.amazonaws.com",
+                    "ec2-52-35-186-215.us-west-2.compute.amazonaws.com",
+                    'ec2-52-10-19-240.us-west-2.compute.amazonaws.com'])
 
 es = Elasticsearch(hosts = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
                             "ec2-52-34-178-13.us-west-2.compute.amazonaws.com",
@@ -21,7 +23,8 @@ es = Elasticsearch(hosts = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
                             'ec2-52-10-19-240.us-west-2.compute.amazonaws.com'])
 
 keyspace = 'reddit'
-tablename = "NgramsTable1"
+tablename1 = "NgramsTable1"
+tablename2 = "NgramsTable2"
 
 # cluster arrangement
 request_body = {
@@ -49,7 +52,9 @@ if __name__=="__main__":
     #session.encoder.mapping[tuple] = session.encoder.cql_encode_set_collection
 
     print "Dropping Cassandra Table"
-    res = session.execute("DROP TABLE IF EXISTS %s" %(tablename,))
+    res = session.execute("DROP TABLE IF EXISTS %s" %(tablename1,))
+    res = session.execute("DROP TABLE IF EXISTS %s" %(tablename2,))
+    
     print "Recreating Cassandra Table"
     res = session.execute("""CREATE TABLE %s (
                     date timestamp,
@@ -59,7 +64,17 @@ if __name__=="__main__":
                     count bigint,
                     percentage double,
                     PRIMARY KEY (date, subreddit, Ngram)
-                    )""" %(tablename,))
+                    )""" %(tablename1,))
+
+    print "Creating second table"
+    res = session.execute("""CREATE TABLE %s (
+                    subreddit text,
+                    Ngram text,
+                    N int,
+                    count bigint,
+                    percentage double,
+                    PRIMARY KEY (subreddit, Ngram)
+                    )""" %(tablename2,))
 
     #Testing insert, update and query
     #query1 = "INSERT INTO %s (date, subreddit, Ngram, N, count, percentage) VALUES (?, ?, ?, ?, ? ,?) IF NOT EXISTS" %(tablename,)
@@ -127,7 +142,7 @@ if __name__=="__main__":
 #                    referredby set<text>
 #                    )""" %(tablename,))
 #    print "Shutting down connection to Cassandra"
-#    cluster.shutdown()
+    cluster.shutdown()
 #    
 #    print "==========================================="    
 #    print "Recreating ES index"

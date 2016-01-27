@@ -14,7 +14,11 @@ import json
 import datetime
 import time
 
+#dateformat for year and week
 dateformat = '%Y-%W'
+
+#pruning the data
+threshold = 10
 
 nodes = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
         "ec2-52-34-178-13.us-west-2.compute.amazonaws.com",
@@ -48,7 +52,7 @@ def combineData(tokenizer, tupdata, ngram):
     rtnval =  ["{0}::{1}::{2}".format(y, utctime, subreddit) for y in tokens]
     return rtnval
     
-def pushToCassandra(tbname, ngramcount, rdditer):
+def pushToCassandra(tbname, ngramcount, rdditer, async = True):
     # this needs to be here for distribution to workers    
     from cassandra.cluster import Cluster
     
@@ -72,9 +76,12 @@ def pushToCassandra(tbname, ngramcount, rdditer):
         percentage = float(count) / total
         
         bound = prepared.bind((createdtime, subreddit, ngram, ngramcount, count, percentage))
-        #session.execute_async(bound)
-        session.execute(bound)
-        time.sleep(0.001)
+        if async:        
+            session.execute_async(bound)
+            time.sleep(0.0005)
+        else:
+            session.execute(bound)
+
     session.shutdown()
 
 if __name__ == "__main__":
@@ -89,20 +96,29 @@ if __name__ == "__main__":
     for line in fw:
         frlist.append(line.rstrip())
     
-    data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
-    jsonformat = data_rdd.filter(lambda x: len(x)>0)\
+    data_rdd = sc.textFile("s3n://reddit-comments/2007/*")
+#    data_rdd = sc.wholeTextFiles("s3n://reddit-comments/2007/*")\
+#                    .flatMap(lambda x: x[1].split("\r\n"))
+    jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
                     .map(lambda x: json.loads(x.encode('utf8')))\
                     .filter(lambda x: not(x['subreddit'] in frlist))
     jsonformat.persist(StorageLevel.MEMORY_AND_DISK_SER)
     
-    ngram = 1
-    etlData = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])\
-                    .flatMap(lambda x: combineData(myTokenizer, x,ngram))\
-                    .map(lambda x: (x, 1))\
-                    .reduceByKey(add)\
-                    .map(lambda x: splitByDate(x))
-
-    etlDataSum = etlData.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
-    combinedEtl = etlData.leftOuterJoin(etlDataSum)
-
-    combinedEtl.foreachPartition(lambda x: pushToCassandra(tablename, ngram, x))
+    for ngram in range(1,4):
+        etlData = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])\
+                        .flatMap(lambda x: combineData(myTokenizer, x,ngram))\
+                        .map(lambda x: (x, 1))\
+                        .reduceByKey(add)\
+                        .persist(StorageLevel.MEMORY_AND_DISK_SER)
+        
+        etlData1 = etlData.map(lambda x: splitByDate(x))
+    
+        etlDataSum = etlData.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
+        
+        #pruning
+        combinedEtl = etlData.filter(lambda x: x[1][0][2] > threshold)\
+                            .join(etlDataSum)
+        
+        combinedEtl.foreachPartition(lambda x: pushToCassandra(tablename, ngram, x))
+        
+        #etlData2 - etlData.map(lambda x:)
