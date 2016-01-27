@@ -9,6 +9,7 @@ import nltk
 from nltk import RegexpTokenizer
 import string
 import re
+import getpass
 
 ReUrl = re.compile('(http?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?')
 ReShortUrl = re.compile('(http://(bit\.ly|t\.co|lnkd\.in|tcrn\.ch)\S*)\b')
@@ -54,7 +55,7 @@ class SentenceTokenizer():
     def __init__(self):
         self.tokenizer = ModifiedWPTokenizer()
         training_tok = ModifiedTrainingTokenizer()
-        training_path = "/home/ubuntu/nltk_data/corpora/treebank/raw/"
+        training_path = "/home/%s/nltk_data/corpora/treebank/raw/" %(getpass.getuser(),)
         
         training_sents = nltk.corpus.treebank_raw.sents()
         tokens = []
