@@ -14,6 +14,8 @@ import json
 import datetime
 import time
 
+dateformat = '%Y-%m-%W'
+
 nodes = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
         "ec2-52-34-178-13.us-west-2.compute.amazonaws.com",
         "ec2-52-35-186-215.us-west-2.compute.amazonaws.com",
@@ -27,10 +29,10 @@ tablename = "NgramsTable1"
 #fn = "hdfs://ec2-52-88-193-39.us-west-2.compute.amazonaws.com:9000/user/jerry/retweet.txt"
 
 def ConvertToYearDate(x):
-    return time.strftime('%Y-%m-%d', time.gmtime(int(x)))
+    return time.strftime(dateformat, time.gmtime(int(x)))
     
 def ConvertToDatetime(x):
-    return datetime.datetime.fromtimestamp(time.mktime(time.strptime(x,'%Y-%m-%d')))
+    return datetime.datetime.fromtimestamp(time.mktime(time.strptime(x,dateformat)))
 
 def pushToCassandra(tbname, ngramcount, rdditer):
     # this needs to be here for distribution to workers    
@@ -45,18 +47,25 @@ def pushToCassandra(tbname, ngramcount, rdditer):
     prepared = session.prepare(query)
 
     for datatuple in rdditer:
+    #retruned value = ( "Ngram::time", ((subreddit, count), total))
         line = datatuple[0].split("::")
         
         ngram = line[0]
         createdtime = ConvertToDatetime(line[1])
-        subreddit = line[2]
+
+        subreddit = datatuple[1][0][0]
+        count = datatuple[1][0][1]
+        percentage = float(count) /datatuple[1][1]
         
-        count = datatuple[1]
-        
-        bound = prepared.bind((createdtime, subreddit, ngram, ngramcount, count, 0.0))
+        bound = prepared.bind((createdtime, subreddit, ngram, ngramcount, count, percentage))
         session.execute_async(bound)
     session.shutdown()
 
+def splitByDate(x):
+    #x = ( "Ngram::time::subreddit", count)
+    y = x[0].split("::")
+    #retruned value = ( "Ngram::time", (subreddit, count))
+    return ("{0}::{1}".format(y[0],y[1]), (y[2], x[1]))
 
 if __name__ == "__main__":
     conf = SparkConf().setAppName("reddit")
@@ -94,7 +103,10 @@ if __name__ == "__main__":
     etlData = jsonformat.map(lambda x: (x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']))\
                     .flatMap(lambda x: ["{0}::{1}::{2}".format(y,x[1],x[2]) for y in myTokenizer.Ngrams(x[0].encode('utf-8'), ngram)])\
                     .map(lambda x: (x, 1))\
-                    .reduceByKey(add)
+                    .reduceByKey(add)\
+                    .map(lambda x: splitByDate(x))
     
-    etlData.foreachPartition(lambda x: pushToCassandra(tablename, ngram, x))
-    sc.stop()
+    etlDataSum = etlData.map(lambda x: (x[0], x[1][1])).reduceByKey(add)
+    combinedEtl = etlData.leftOuterJoin(etlDataSum)
+    
+    combinedEtl.foreachPartition(lambda x: pushToCassandra(tablename, ngram, x))
