@@ -58,14 +58,14 @@ if __name__=="__main__":
                     N int,
                     count bigint,
                     percentage double,
-                    PRIMARY KEY (date, subreddit)
+                    PRIMARY KEY (date, subreddit, Ngram)
                     )""" %(tablename,))
 
     #Testing insert, update and query
-    query1 = "INSERT INTO %s (date, subreddit, Ngram, N, count, percentage) VALUES (?, ?, ?, ?, ? ,?) IF NOT EXISTS" %(tablename,)
-    prepared1 = session.prepare(query1)
-    bound = prepared1.bind((datetime.datetime.now(), "test", "test32", 1, 2, 0.3))
-    session.execute_async(bound)
+    #query1 = "INSERT INTO %s (date, subreddit, Ngram, N, count, percentage) VALUES (?, ?, ?, ?, ? ,?) IF NOT EXISTS" %(tablename,)
+    #prepared1 = session.prepare(query1)
+    #bound = prepared1.bind((datetime.datetime.now(), "test", "test32", 1, 2, 0.3))
+    #session.execute_async(bound)
     
 #    query2 = "UPDATE %s SET referredby = referredby + ? WHERE title = ? IF EXISTS" %(tablename,)
 #    prepared2 = session.prepare(query2)
