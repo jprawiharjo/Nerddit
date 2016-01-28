@@ -43,6 +43,12 @@ def splitByDate(tupdata):
     splitline = tupdata[0].split("::")
     #returned value = ( "time", (Ngram, subreddit, count))
     return (splitline[1], (splitline[0], splitline[2], tupdata[1]))
+
+def splitBySubreddit(tupdata):
+    #x = ( "Ngram::time::subreddit", count)
+    splitline = tupdata[0].split("::")
+    #returned value = ( "subreddit::Ngram", count)
+    return ("{0}::{1}".format(splitline[2],splitline[0]), tupdata[1])
     
 def combineData(tokenizer, tupdata, ngram):
     body = tupdata[0]
@@ -52,7 +58,8 @@ def combineData(tokenizer, tupdata, ngram):
     rtnval =  ["{0}::{1}::{2}".format(y, utctime, subreddit) for y in tokens]
     return rtnval
     
-def pushToCassandra(tbname, ngramcount, rdditer, async = True):
+def pushToCassandraTable1(ngramcount, rdditer, async = True):
+    tbname = "ngramstable1"
     # this needs to be here for distribution to workers    
     from cassandra.cluster import Cluster
     
@@ -84,6 +91,37 @@ def pushToCassandra(tbname, ngramcount, rdditer, async = True):
 
     session.shutdown()
 
+def pushToCassandraTable2(ngramcount, rdditer, async = True):
+    tbname = "ngramstable2"
+    # this needs to be here for distribution to workers    
+    from cassandra.cluster import Cluster
+    
+    CassandraCluster = Cluster(nodes)
+    session = CassandraCluster.connect(keyspace)
+    #session.default_consistency_level = cassandra.ConsistencyLevel.ALL
+    #self.session.encoder.mapping[tuple] = self.session.encoder.cql_encode_set_collection
+
+    query = "INSERT INTO %s (subreddit, Ngram, N, count, percentage) VALUES (?, ?, ?, ? ,?)" %(tbname,)
+    prepared = session.prepare(query)
+
+    for datatuple in rdditer:
+        #combine everything ("subreddit::Ngram", count, total)
+
+        splitline = datatuple[0].split(" ")
+        ngram = splitline[1]
+        subreddit = splitline[0]
+        count = datatuple[1]
+        total = float(datatuple[2])
+        percentage = float(count) / total
+        
+        bound = prepared.bind((subreddit, ngram, ngramcount, count, percentage))
+        if async:        
+            session.execute_async(bound)
+            time.sleep(0.0005)
+        else:
+            session.execute(bound)
+
+    session.shutdown()
 if __name__ == "__main__":
     conf = SparkConf().setAppName("reddit")
     sc = SparkContext(conf=conf, pyFiles=['word_parser.py'])
@@ -96,9 +134,8 @@ if __name__ == "__main__":
     for line in fw:
         frlist.append(line.rstrip())
     
-    data_rdd = sc.textFile("s3n://reddit-comments/2007/*")
-#    data_rdd = sc.wholeTextFiles("s3n://reddit-comments/2007/*")\
-#                    .flatMap(lambda x: x[1].split("\r\n"))
+    data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
+
     jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
                     .map(lambda x: json.loads(x.encode('utf8')))\
                     .filter(lambda x: not(x['subreddit'] in frlist))
@@ -110,15 +147,29 @@ if __name__ == "__main__":
                         .map(lambda x: (x, 1))\
                         .reduceByKey(add)\
                         .persist(StorageLevel.MEMORY_AND_DISK_SER)
-        
+        #we should end up with ( "Ngram::time::subreddit", count)
+    
+        #now we're going to transform ( "time", (Ngram, subreddit, count))
         etlData1 = etlData.map(lambda x: splitByDate(x))
     
-        etlDataSum = etlData.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
+        #For summation, we need ( "time", count) for time based summation
+        etlDataSum = etlData1.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
         
-        #pruning
-        combinedEtl = etlData.filter(lambda x: x[1][0][2] > threshold)\
+        #pruning (filter)
+        #we now join to get  ( "time", ((Ngram, subreddit, count), total))
+        combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
                             .join(etlDataSum)
         
-        combinedEtl.foreachPartition(lambda x: pushToCassandra(tablename, ngram, x))
+        combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
         
-        #etlData2 - etlData.map(lambda x:)
+        #we also want to split by subreddit :  ("subreddit::Ngram", count)
+        #and sum it
+        etlData2 = etlData.map(lambda x: splitBySubreddit(x))\
+                        .reduceByKey(add)
+                        
+        #For summation, we will sum everything
+        totalSum = etlData2.map(lambda x: ("key", x[1])).reduceByKey(add).first()
+        
+        #combine everything ("subreddit::Ngram", count, total)
+        combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
+                            .map(lambda x: (x[0], x[1], totalSum))
