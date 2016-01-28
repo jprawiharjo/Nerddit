@@ -161,21 +161,28 @@ if __name__ == "__main__":
         frlist.append(line.rstrip())
     
     #data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
-    data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
-    #data_rdd = sc.textFile("s3n://reddit-comments/*/*")
+    #data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
+    data_rdd = sc.textFile("s3n://reddit-comments/*/*")
 
-    jsonformat = data_rdd.filter(lambda x: len(x) > 0)\ #filters empty lines
-                    .map(lambda x: json.loads(x.encode('utf8')))\ #convert to json
-                    .filter(lambda x: not(x['subreddit'] in frlist)) #filters foreign subreddit
+    #filters empty lines
+    #convert to json
+    #filters foreign subreddit
+    jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
+                    .map(lambda x: json.loads(x.encode('utf8')))\
+                    .filter(lambda x: not(x['subreddit'] in frlist))
     jsonformat.persist(StorageLevel.MEMORY_AND_DISK_SER)
     
     for ngram in range(1,4):
         print "Ngram = ", ngram
+        #prepare for word count
+        #make key from token, date and subreddit
+        #word count
+        #persist for future use
         etlData = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])\
-                        .flatMap(lambda x: combineData(myTokenizer, x,ngram))\ #make key from token, date and subreddit
-                        .map(lambda x: (x, 1))\ #prepare for word count
-                        .reduceByKey(add)\ #word count
-                        .persist(StorageLevel.MEMORY_AND_DISK_SER) #persist for future use
+                        .flatMap(lambda x: combineData(myTokenizer, x,ngram))\
+                        .map(lambda x: (x, 1))\
+                        .reduceByKey(add)\
+                        .persist(StorageLevel.MEMORY_AND_DISK_SER)
         print "EtlData partitions = ", etlData.partitions().size()
         #we should end up with ( "Ngram::time::subreddit", count)
     
