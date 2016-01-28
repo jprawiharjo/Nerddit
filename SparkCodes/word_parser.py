@@ -120,7 +120,7 @@ class SentenceTokenizer():
         full_text = ReTagsQuote.sub("IMGsub", full_text)
         full_text = ReTagsTilde.sub("~", full_text)
         full_text = ReTagsDash.sub("-", full_text)
-        full_text = ReTagsHtml.sub("Html", full_text)
+        full_text = ReTagsHtml.sub("HTMLTags", full_text)
 
         full_text = ReImage.sub("IMGsub", full_text)
         #print full_text
@@ -188,7 +188,7 @@ class SentenceTokenizer():
         #print parsedtext
         words = []
         for sentence in parsedtext:
-            coll = filter(lambda x: not(x in '.,?![]:;\/\\()"{}'), sentence)
+            coll = filter(lambda x: not(x in '.,?![]:;\/\\()"{}-$%^&*'), sentence)
             for k in range(0,len(coll)-(N-1)):
                 #print coll[k]
                 words.append(" ".join(coll[k:k+N]))

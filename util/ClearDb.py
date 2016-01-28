@@ -48,7 +48,7 @@ def log_error(exc):
 
 if __name__=="__main__":
     session = cluster.connect(keyspace)
-    session.default_consistency_level = cassandra.ConsistencyLevel.QUORUM
+    #session.default_consistency_level = cassandra.ConsistencyLevel.QUORUM
     #session.encoder.mapping[tuple] = session.encoder.cql_encode_set_collection
 
     print "Dropping Cassandra Table"
@@ -61,7 +61,7 @@ if __name__=="__main__":
                     subreddit text,
                     Ngram text,
                     N int,
-                    count bigint,
+                    wcount bigint,
                     percentage double,
                     PRIMARY KEY (date, subreddit, Ngram)
                     )""" %(tablename1,))
@@ -71,9 +71,9 @@ if __name__=="__main__":
                     subreddit text,
                     Ngram text,
                     N int,
-                    count bigint,
-                    percentage double,
-                    PRIMARY KEY (subreddit, Ngram)
+                    wcount counter,
+                    total counter,
+                    PRIMARY KEY (subreddit, N, Ngram)
                     )""" %(tablename2,))
 
     #Testing insert, update and query
