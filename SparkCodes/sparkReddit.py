@@ -19,7 +19,7 @@ import time
 dateformat = '%Y-%W'
 
 #pruning the data
-threshold = 10
+CassandraWait = 5
 
 nodes = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
         "ec2-52-34-178-13.us-west-2.compute.amazonaws.com",
@@ -76,7 +76,7 @@ def pushToCassandraTable1(ngramcount, rdditer, async = True):
             success = True
         except:
             success = False
-            time.sleep(1)
+            time.sleep(CassandraWait)
         
     #session.default_consistency_level = cassandra.ConsistencyLevel.ALL
     #self.session.encoder.mapping[tuple] = self.session.encoder.cql_encode_set_collection
@@ -122,7 +122,7 @@ def pushToCassandraTable2(ngramcount, rdditer):
             success = True
         except:
             success = False
-            time.sleep(1)
+            time.sleep(CassandraWait)
 
     #session.default_consistency_level = cassandra.ConsistencyLevel.ALL
     #self.session.encoder.mapping[tuple] = self.session.encoder.cql_encode_set_collection
@@ -161,7 +161,8 @@ if __name__ == "__main__":
         frlist.append(line.rstrip())
     
     #data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
-    data_rdd = sc.textFile("s3n://reddit-comments/2009/*")
+    data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
+    #data_rdd = sc.textFile("s3n://reddit-comments/*/*")
 
     jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
                     .map(lambda x: json.loads(x.encode('utf8')))\
@@ -175,16 +176,18 @@ if __name__ == "__main__":
                         .map(lambda x: (x, 1))\
                         .reduceByKey(add)\
                         .persist(StorageLevel.MEMORY_AND_DISK_SER)
+        print "EtlData partitions = ", etlData.partitions().size()
         #we should end up with ( "Ngram::time::subreddit", count)
     
         #now we're going to transform ( "time", (Ngram, subreddit, count))
         etlData1 = etlData.map(lambda x: splitByDate(x))
-    
+        print "EtlData1 partitions = ", etlData1.partitions().size()
+        
         #For summation, we need ( "time", count) for time based summation
         etlDataSum = etlData1.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
         
         if ngram > 1:
-            threshold = 2
+            threshold = 1
         else:
             threshold = 5
         
@@ -192,6 +195,7 @@ if __name__ == "__main__":
         #we now join to get  ( "time", ((Ngram, subreddit, count), total))
         combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
                             .leftOuterJoin(etlDataSum)
+        print "EtlData1 partitions = ", combinedEtl.partitions().size()
         
         combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
 
@@ -213,6 +217,7 @@ if __name__ == "__main__":
         subredditEtl = etlData2.filter(lambda x: x[1] > threshold)\
                             .map(lambda x: (x[0], (x[1], totalSum)))
                             
+        print "EtlData1 partitions = ", subredditEtl.partitions().size()
         subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
         
         print "end of program"
