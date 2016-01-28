@@ -53,7 +53,9 @@ if __name__=="__main__":
 
     print "Dropping Cassandra Table"
     res = session.execute("DROP TABLE IF EXISTS %s" %(tablename1,))
+    print res.current_rows
     res = session.execute("DROP TABLE IF EXISTS %s" %(tablename2,))
+    print res.current_rows
     
     print "Recreating Cassandra Table"
     res = session.execute("""CREATE TABLE %s (
@@ -65,6 +67,7 @@ if __name__=="__main__":
                     percentage double,
                     PRIMARY KEY (date, subreddit, Ngram)
                     )""" %(tablename1,))
+    print res.current_rows
 
     print "Creating second table"
     res = session.execute("""CREATE TABLE %s (
@@ -75,6 +78,7 @@ if __name__=="__main__":
                     total counter,
                     PRIMARY KEY (subreddit, N, Ngram)
                     )""" %(tablename2,))
+    print res.current_rows
 
     #Testing insert, update and query
     #query1 = "INSERT INTO %s (date, subreddit, Ngram, N, count, percentage) VALUES (?, ?, ?, ?, ? ,?) IF NOT EXISTS" %(tablename,)

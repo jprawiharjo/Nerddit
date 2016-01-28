@@ -14,6 +14,7 @@ from word_parser import SentenceTokenizer
 import json
 import datetime
 import time
+import argparse
 
 #dateformat for year and week
 dateformat = '%Y-%W'
@@ -149,6 +150,10 @@ def pushToCassandraTable2(ngramcount, rdditer):
     session.shutdown()
     
 if __name__ == "__main__":
+    #parser = argparse.ArgumentParser()
+    #parser.add_argument('year', type=int, help='select year', action = 'store_true')
+    #args = parser.parse_args()
+    
     conf = SparkConf().setAppName("reddit")
     sc = SparkContext(conf=conf, pyFiles=['word_parser.py'])
     sqlContext = SQLContext(sc)
@@ -162,69 +167,74 @@ if __name__ == "__main__":
     
     #data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
     #data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
-    data_rdd = sc.textFile("s3n://reddit-comments/*/*")
-
-    #filters empty lines
-    #convert to json
-    #filters foreign subreddit
-    jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
-                    .map(lambda x: json.loads(x.encode('utf8')))\
-                    .filter(lambda x: not(x['subreddit'] in frlist))
-    jsonformat.persist(StorageLevel.MEMORY_AND_DISK_SER)
     
-    for ngram in range(1,4):
-        print "Ngram = ", ngram
-        #prepare for word count
-        #make key from token, date and subreddit
-        #word count
-        #persist for future use
-        etlData = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])\
-                        .flatMap(lambda x: combineData(myTokenizer, x,ngram))\
-                        .map(lambda x: (x, 1))\
-                        .reduceByKey(add)\
-                        .persist(StorageLevel.MEMORY_AND_DISK_SER)
-        print "EtlData partitions = ", etlData.partitions().size()
-        #we should end up with ( "Ngram::time::subreddit", count)
-    
-        #now we're going to transform ( "time", (Ngram, subreddit, count))
-        etlData1 = etlData.map(lambda x: splitByDate(x)) #split key into dates for summation
-        print "EtlData1 partitions = ", etlData1.partitions().size()
-        
-        #For summation, we need ( "time", count) for time based summation
-        etlDataSum = etlData1.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
-        
-        if ngram > 1:
-            threshold = 1
-        else:
-            threshold = 5
-        
-        #pruning (filter)
-        #we now join to get  ( "time", ((Ngram, subreddit, count), total))
-        combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
-                            .leftOuterJoin(etlDataSum)
-        print "EtlData1 partitions = ", combinedEtl.partitions().size()
-        
-        combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
+    fns = ['20' + str(x).zfill(2) for x in range(7,16)]
+    fns = ['2007', '2008']
 
-        print "second batch query"
-        ##############################################################
-        # Second batch query
-        ##############################################################
+    for fn in fns:    
+        data_rdd = sc.textFile("s3n://reddit-comments/{0}/*".format(fn))
         
-        #we also want to split by subreddit :  ("subreddit::Ngram", count)
-        #and sum it
-        #etldata2 ( "subreddit::Ngram", count)
-        etlData2 = etlData.map(lambda x: splitBySubreddit(x))\
-                        .reduceByKey(add)
-                        
-        #For summation, we will sum everything
-        totalSum = etlData2.map(lambda x: x[1]).sum()
+        #filters empty lines
+        #convert to json
+        #filters foreign subreddit
+        jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
+                        .map(lambda x: json.loads(x.encode('utf8')))\
+                        .filter(lambda x: not(x['subreddit'] in frlist))
         
-        #remember that totalSum = ["key", total]!!!
-        subredditEtl = etlData2.filter(lambda x: x[1] > threshold)\
-                            .map(lambda x: (x[0], (x[1], totalSum)))
+        #make key from token, date and subreddit, and persist
+        etlDataMain = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])
+        etlDataMain.persist(StorageLevel.MEMORY_AND_DISK_SER)
+        
+        for ngram in range(1,4):
+            print "Ngram = ", ngram
+            #prepare for word count
+            #word count
+            #persist for future use
+            print "first batch query"
+            etlData = etlDataMain.flatMap(lambda x: combineData(myTokenizer, x,ngram))\
+                            .map(lambda x: (x, 1))\
+                            .reduceByKey(add)\
+                            .persist(StorageLevel.MEMORY_AND_DISK_SER)
+            #we should end up with ( "Ngram::time::subreddit", count)
+        
+            #now we're going to transform ( "time", (Ngram, subreddit, count))
+            etlData1 = etlData.map(lambda x: splitByDate(x)) #split key into dates for summation
+            
+            #For summation, we need ( "time", count) for time based summation
+            etlDataSum = etlData1.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
+            
+            if ngram > 1:
+                threshold = 1
+            else:
+                threshold = 5
+            
+            #pruning (filter)
+            #we now join to get  ( "time", ((Ngram, subreddit, count), total))
+            combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
+                                .leftOuterJoin(etlDataSum)
+            
+            combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
+    
+            print "second batch query"
+            ##############################################################
+            # Second batch query
+            ##############################################################
+            
+            #we also want to split by subreddit :  ("subreddit::Ngram", count)
+            #and sum it
+            #etldata2 ( "subreddit::Ngram", count)
+            etlData2 = etlData.map(lambda x: splitBySubreddit(x))\
+                            .reduceByKey(add)
                             
-        print "EtlData1 partitions = ", subredditEtl.partitions().size()
-        subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
-        
+            #For summation, we will sum everything
+            totalSum = etlData2.map(lambda x: x[1]).sum()
+            
+            #remember that totalSum = ["key", total]!!!
+            subredditEtl = etlData2.filter(lambda x: x[1] > threshold)\
+                                .map(lambda x: (x[0], (x[1], totalSum)))
+                                
+            subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
+            etlData.unpersist() ##DONT forget to unpersist!!
+            
         print "end of program"
+        etlDataMain.unpersist() ##DONT forget to unpersist!!
