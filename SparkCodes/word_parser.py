@@ -11,19 +11,27 @@ import string
 import re
 import getpass
 
-ReUrl = re.compile('[\(\[]?(http?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?[\)\]]?')
+ReUrl = re.compile('(href=)?[\(\[]?(http?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?[\)\]]?')
 ReShortUrl = re.compile('[\(\[]?(http://(bit\.ly|t\.co|lnkd\.in|tcrn\.ch)\S*)\b[\)\]]?')
 ReNumber = re.compile('^[0-9]+([,.][0-9]+)?$')
+ReImage = re.compile('<img([^>]*[^/])>')
+ReTagsLt = re.compile('&gt;?')
+ReTagsGt = re.compile('&gt;?')
+ReTagsAmps = re.compile('&amp;?')
+ReTagsQuote = re.compile('&quot;?')
+ReTagsTilde = re.compile('&tilde;?')
+ReTagsDash = re.compile('&mdash;?')
+ReTagsHtml = re.compile('&\w;')
 # Tokenize text into words, punctuation, and whitespace tokens
 
 
 class ModifiedTrainingTokenizer(RegexpTokenizer):
     def __init__(self):
-        RegexpTokenizer.__init__(self, r'\w+\[.,]+|[\[\]\(\)"\-\<\>\=]+|[^\w\s]')
+        RegexpTokenizer.__init__(self, r'\w+\[.,]+|[\[\]\(\)\{\}"\-\<\>\=]+|[^\w\s]')
 
 class ModifiedWPTokenizer(RegexpTokenizer):
     def __init__(self):
-        RegexpTokenizer.__init__(self, r'\w+|\s+|\[,.]+|\,+|[\-\<\>\=]+|(?!\')[^\w\s]')
+        RegexpTokenizer.__init__(self, r'\w+|\s+|\[,.]+|\,+|[\{\}\-\<\>\=]+|(?!\')[^\w\s]')
 
 
 # Based on O'Reilly, pp234 but also uses whitespace information
@@ -86,7 +94,7 @@ class SentenceTokenizer():
         sents = []
         for i, word in enumerate(words):
             #print word, self.classifier.classify(self.punct_features2(words,i))
-            if word[0] in ',.?!"()[]' and self.classifier.classify(self.punct_features2(words,i)) == True:
+            if word[0] in ',.?!"()[]{}' and self.classifier.classify(self.punct_features2(words,i)) == True:
                 sents.append(words[start:i+1])
                 start = i+1
         if start < len(words):
@@ -105,6 +113,16 @@ class SentenceTokenizer():
         full_text = ReUrl.sub("URLsub", full_text)
         full_text = ReShortUrl.sub("shortURLsub", full_text)
         full_text = ReNumber.sub("NUMBERsub", full_text)
+
+        full_text = ReTagsLt.sub("<", full_text)
+        full_text = ReTagsGt.sub(">", full_text)
+        full_text = ReTagsAmps.sub("&", full_text) 
+        full_text = ReTagsQuote.sub("IMGsub", full_text)
+        full_text = ReTagsTilde.sub("~", full_text)
+        full_text = ReTagsDash.sub("-", full_text)
+        full_text = ReTagsHtml.sub("Html", full_text)
+
+        full_text = ReImage.sub("IMGsub", full_text)
         #print full_text
         text_words_sp = self.tokenizer.tokenize(full_text)
         
@@ -170,7 +188,7 @@ class SentenceTokenizer():
         #print parsedtext
         words = []
         for sentence in parsedtext:
-            coll = filter(lambda x: not(x in '.,?![]:;\/\\()"'), sentence)
+            coll = filter(lambda x: not(x in '.,?![]:;\/\\()"{}'), sentence)
             for k in range(0,len(coll)-(N-1)):
                 #print coll[k]
                 words.append(" ".join(coll[k:k+N]))
@@ -181,8 +199,8 @@ class SentenceTokenizer():
 if __name__ == "__main__":
      # Read the text as one big string
     print "Reading text..."
-    text = u"""A pirate walks (into a bar) http://sadfsad.com/asdfsd with a steering wheel attached to his crotch. 
-    The bartender looks at the steering wheel and asks, "Doesn\'t that bother you?"  
+    text = u"""A pirate walks {into a bar} http://sadfsad.com/asdfsd with a steering wheel attached to his crotch. 
+    The bartender looks at the steering wheel &mdash; and asks, "Doesn\'t that bother you?"  
     The pirate responds, "Yar it\'s driving me nuts." """
     
     # Unix/Linux path to some sample plain text

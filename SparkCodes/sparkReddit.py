@@ -36,7 +36,10 @@ def ConvertToYearDate(x):
     return time.strftime(dateformat, time.gmtime(int(x)))
     
 def ConvertToDatetime(x):
-    return datetime.datetime.fromtimestamp(time.mktime(time.strptime(x,dateformat)))
+    if dateformat == '%Y-%W':
+        return datetime.datetime.strptime(x + '-0', "%Y-%W-%w")
+    else:
+        return datetime.datetime.strptime(x, dateformat)
 
 def splitByDate(tupdata):
     #x = ( "Ngram::time::subreddit", count)
