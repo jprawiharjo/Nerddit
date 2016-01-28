@@ -107,9 +107,11 @@ def pushToCassandraTable2(ngramcount, rdditer, async = True):
     for datatuple in rdditer:
         #combine everything ("subreddit::Ngram", count, total)
 
-        splitline = datatuple[0].split(" ")
-        ngram = splitline[1]
+        splitline = datatuple[0].split("::")
+
         subreddit = splitline[0]
+        ngram = splitline[1]
+        
         count = datatuple[1]
         total = float(datatuple[2])
         percentage = float(count) / total
@@ -122,6 +124,9 @@ def pushToCassandraTable2(ngramcount, rdditer, async = True):
             session.execute(bound)
 
     session.shutdown()
+    
+    
+    
 if __name__ == "__main__":
     conf = SparkConf().setAppName("reddit")
     sc = SparkContext(conf=conf, pyFiles=['word_parser.py'])
@@ -171,5 +176,6 @@ if __name__ == "__main__":
         totalSum = etlData2.map(lambda x: ("key", x[1])).reduceByKey(add).first()
         
         #combine everything ("subreddit::Ngram", count, total)
-        combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
+        subredditEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
                             .map(lambda x: (x[0], x[1], totalSum))
+        subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
