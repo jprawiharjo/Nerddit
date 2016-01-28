@@ -44,6 +44,7 @@ def splitByDate(tupdata):
     #returned value = ( "time", (Ngram, subreddit, count))
     return (splitline[1], (splitline[0], splitline[2], tupdata[1]))
 
+#splitting tuple key by subreddit
 def splitBySubreddit(tupdata):
     #x = ( "Ngram::time::subreddit", count)
     splitline = tupdata[0].split("::")
@@ -105,15 +106,15 @@ def pushToCassandraTable2(ngramcount, rdditer, async = True):
     prepared = session.prepare(query)
 
     for datatuple in rdditer:
-        #combine everything ("subreddit::Ngram", count, total)
-
+        #etldata2 ( "subreddit::Ngram", (count, total))
+ 
         splitline = datatuple[0].split("::")
 
         subreddit = splitline[0]
         ngram = splitline[1]
         
-        count = datatuple[1]
-        total = float(datatuple[2])
+        count = datatuple[1][0]
+        total = float(datatuple[1][1])
         percentage = float(count) / total
         
         bound = prepared.bind((subreddit, ngram, ngramcount, count, percentage))
@@ -165,17 +166,23 @@ if __name__ == "__main__":
         combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
                             .join(etlDataSum)
         
-        combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
+#        combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
+
+        ##############################################################
+        # Second batch query
+        ##############################################################
         
         #we also want to split by subreddit :  ("subreddit::Ngram", count)
         #and sum it
+        #etldata2 ( "subreddit::Ngram", count)
         etlData2 = etlData.map(lambda x: splitBySubreddit(x))\
                         .reduceByKey(add)
                         
         #For summation, we will sum everything
         totalSum = etlData2.map(lambda x: ("key", x[1])).reduceByKey(add).first()
         
-        #combine everything ("subreddit::Ngram", count, total)
-        subredditEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
-                            .map(lambda x: (x[0], x[1], totalSum))
+        #remember that totalSum = ["key", total]!!!
+        subredditEtl = etlData2.filter(lambda x: x[1] > threshold)\
+                            .map(lambda x: (x[0], (x[1], totalsum[1])))
+                            
         subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
