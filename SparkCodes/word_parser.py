@@ -19,7 +19,7 @@ ReNumber = re.compile('^[0-9]+([,.][0-9]+)?$')
 
 class ModifiedTrainingTokenizer(RegexpTokenizer):
     def __init__(self):
-        RegexpTokenizer.__init__(self, r'\w+\[.,]+|["\-\<\>\=]+|[^\w\s]')
+        RegexpTokenizer.__init__(self, r'\w+\[.,]+|[\[\]\(\)"\-\<\>\=]+|[^\w\s]')
 
 class ModifiedWPTokenizer(RegexpTokenizer):
     def __init__(self):
@@ -86,7 +86,7 @@ class SentenceTokenizer():
         sents = []
         for i, word in enumerate(words):
             #print word, self.classifier.classify(self.punct_features2(words,i))
-            if word[0] in ',.?!"' and self.classifier.classify(self.punct_features2(words,i)) == True:
+            if word[0] in ',.?!"()[]' and self.classifier.classify(self.punct_features2(words,i)) == True:
                 sents.append(words[start:i+1])
                 start = i+1
         if start < len(words):
@@ -167,11 +167,11 @@ class SentenceTokenizer():
 
     def Ngrams(self,text, N = 1):
         parsedtext = self.segment_text(text)
-        
+        #print parsedtext
         words = []
         for sentence in parsedtext:
-            coll = filter(lambda x: not(x in '.,?![]:;\/\\"'), sentence)
-            for k in range(0,len(coll)-(N + 1)):
+            coll = filter(lambda x: not(x in '.,?![]:;\/\\()"'), sentence)
+            for k in range(0,len(coll)-(N-1)):
                 #print coll[k]
                 words.append(" ".join(coll[k:k+N]))
         if N == 1:
@@ -181,7 +181,7 @@ class SentenceTokenizer():
 if __name__ == "__main__":
      # Read the text as one big string
     print "Reading text..."
-    text = u"""A pirate walks into a bar http://sadfsad.com/asdfsd with a steering wheel attached to his crotch. 
+    text = u"""A pirate walks (into a bar) http://sadfsad.com/asdfsd with a steering wheel attached to his crotch. 
     The bartender looks at the steering wheel and asks, "Doesn\'t that bother you?"  
     The pirate responds, "Yar it\'s driving me nuts." """
     
@@ -202,7 +202,7 @@ if __name__ == "__main__":
      
     print "Segmenting text into words and sentences..."
     #sentences = myTokenizer.segment_text(text.encode('utf-8'))
-    sentences = myTokenizer.Ngrams(text.encode('utf-8'), 1)
+    sentences = myTokenizer.Ngrams(text.encode('utf-8'), 2)
     print sentences
     #
 #    print "Segmented sentences:"

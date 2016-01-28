@@ -166,7 +166,7 @@ if __name__ == "__main__":
         combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
                             .join(etlDataSum)
         
-#        combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
+        combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
 
         ##############################################################
         # Second batch query
@@ -183,6 +183,6 @@ if __name__ == "__main__":
         
         #remember that totalSum = ["key", total]!!!
         subredditEtl = etlData2.filter(lambda x: x[1] > threshold)\
-                            .map(lambda x: (x[0], (x[1], totalsum[1])))
+                            .map(lambda x: (x[0], (x[1], totalSum[1])))
                             
         subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
