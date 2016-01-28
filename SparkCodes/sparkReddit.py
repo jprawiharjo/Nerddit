@@ -164,7 +164,7 @@ if __name__ == "__main__":
         #pruning (filter)
         #we now join to get  ( "time", ((Ngram, subreddit, count), total))
         combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
-                            .join(etlDataSum)
+                            .leftOuterJoin(etlDataSum)
         
         combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
 

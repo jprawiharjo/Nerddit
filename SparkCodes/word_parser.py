@@ -11,8 +11,8 @@ import string
 import re
 import getpass
 
-ReUrl = re.compile('(http?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?')
-ReShortUrl = re.compile('(http://(bit\.ly|t\.co|lnkd\.in|tcrn\.ch)\S*)\b')
+ReUrl = re.compile('[\(\[]?(http?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?[\)\]]?')
+ReShortUrl = re.compile('[\(\[]?(http://(bit\.ly|t\.co|lnkd\.in|tcrn\.ch)\S*)\b[\)\]]?')
 ReNumber = re.compile('^[0-9]+([,.][0-9]+)?$')
 # Tokenize text into words, punctuation, and whitespace tokens
 
