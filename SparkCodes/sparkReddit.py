@@ -164,23 +164,23 @@ if __name__ == "__main__":
     data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
     #data_rdd = sc.textFile("s3n://reddit-comments/*/*")
 
-    jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
-                    .map(lambda x: json.loads(x.encode('utf8')))\
-                    .filter(lambda x: not(x['subreddit'] in frlist))
+    jsonformat = data_rdd.filter(lambda x: len(x) > 0)\ #filters empty lines
+                    .map(lambda x: json.loads(x.encode('utf8')))\ #convert to json
+                    .filter(lambda x: not(x['subreddit'] in frlist)) #filters foreign subreddit
     jsonformat.persist(StorageLevel.MEMORY_AND_DISK_SER)
     
     for ngram in range(1,4):
         print "Ngram = ", ngram
         etlData = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])\
-                        .flatMap(lambda x: combineData(myTokenizer, x,ngram))\
-                        .map(lambda x: (x, 1))\
-                        .reduceByKey(add)\
-                        .persist(StorageLevel.MEMORY_AND_DISK_SER)
+                        .flatMap(lambda x: combineData(myTokenizer, x,ngram))\ #make key from token, date and subreddit
+                        .map(lambda x: (x, 1))\ #prepare for word count
+                        .reduceByKey(add)\ #word count
+                        .persist(StorageLevel.MEMORY_AND_DISK_SER) #persist for future use
         print "EtlData partitions = ", etlData.partitions().size()
         #we should end up with ( "Ngram::time::subreddit", count)
     
         #now we're going to transform ( "time", (Ngram, subreddit, count))
-        etlData1 = etlData.map(lambda x: splitByDate(x))
+        etlData1 = etlData.map(lambda x: splitByDate(x)) #split key into dates for summation
         print "EtlData1 partitions = ", etlData1.partitions().size()
         
         #For summation, we need ( "time", count) for time based summation
