@@ -7,6 +7,7 @@ Created on Tue Jan 26 12:55:53 2016
 
 from pyspark import SparkContext, SparkConf, StorageLevel
 from pyspark.sql.types import *
+from pyspark.sql import SQLContext, Row
 from cassandra.cluster import Cluster
 from pyspark.sql import SQLContext
 from operator import add
@@ -15,18 +16,24 @@ import json
 import datetime
 import time
 import argparse
+import os
+
+from boto.s3.connection import S3Connection
 
 #dateformat for year and week
 dateformat = '%Y-%W'
 
 #pruning the data
 CassandraWait = 5
+queryWait = 0.001
+Npart = 100
+table1 = 'ngramstable1'
+table2 = 'ngramstable2'
 
 nodes = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
         "ec2-52-34-178-13.us-west-2.compute.amazonaws.com",
         "ec2-52-35-186-215.us-west-2.compute.amazonaws.com",
         'ec2-52-10-19-240.us-west-2.compute.amazonaws.com']
-
 
 keyspace = "reddit"
 
@@ -64,7 +71,7 @@ def combineData(tokenizer, tupdata, ngram):
     return rtnval
     
 def pushToCassandraTable1(ngramcount, rdditer, async = True):
-    tbname = "ngramstable1"
+    tbname = table1
     # this needs to be here for distribution to workers    
     from cassandra.cluster import Cluster
     CassandraCluster = Cluster(nodes)
@@ -74,6 +81,7 @@ def pushToCassandraTable1(ngramcount, rdditer, async = True):
     while not success:
         try:
             session = CassandraCluster.connect(keyspace)
+            session.default_timeout = 60
             success = True
         except:
             success = False
@@ -102,7 +110,7 @@ def pushToCassandraTable1(ngramcount, rdditer, async = True):
         bound = prepared.bind((createdtime, subreddit, ngram, ngramcount, count, percentage))
         if async:        
             session.execute_async(bound)
-            time.sleep(0.001) #slow it down, as it's done over a lot of partitions
+            time.sleep(queryWait) #slow it down, as it's done over a lot of partitions
             counter += 1
         else:
             session.execute(bound)
@@ -110,7 +118,7 @@ def pushToCassandraTable1(ngramcount, rdditer, async = True):
     session.shutdown()
 
 def pushToCassandraTable2(ngramcount, rdditer):
-    tbname = "ngramstable2"
+    tbname = table2
     # this needs to be here for distribution to workers    
     from cassandra.cluster import Cluster
     CassandraCluster = Cluster(nodes)
@@ -120,6 +128,7 @@ def pushToCassandraTable2(ngramcount, rdditer):
     while not success:
         try:
             session = CassandraCluster.connect(keyspace)
+            session.default_timeout = 60
             success = True
         except:
             success = False
@@ -145,10 +154,21 @@ def pushToCassandraTable2(ngramcount, rdditer):
         
         bound = preparedupdate.bind((count, total, subreddit, ngram, ngramcount))
         session.execute_async(bound)
-        time.sleep(0.002) #slow it down, as it's done over a lot of partitions
+        time.sleep(queryWait) #slow it down, as it's done over a lot of partitions
         
     session.shutdown()
-    
+
+def map_func(key):
+    try:
+    # Use the key to read in the file contents, split on line endings
+        for line in key.get_contents_as_string().splitlines():
+            # parse one line of json
+            if len(line) > 0:        
+                j = json.loads(line.encode('utf-8'))
+                yield j
+    except:
+        raise StopIteration
+
 if __name__ == "__main__":
     #parser = argparse.ArgumentParser()
     #parser.add_argument('year', type=int, help='select year', action = 'store_true')
@@ -161,30 +181,53 @@ if __name__ == "__main__":
     myTokenizer = SentenceTokenizer()
 
     fw = open("foreignsubredditlist.txt",'r')
-    frlist = []
+    blacklist = []
     for line in fw:
-        frlist.append(line.rstrip())
+        blacklist.append(line.rstrip())
+    fw.close()
+    
+    fw = open("redditwhitelist.txt",'r')
+    whitelist = []
+    for line in fw:
+        whitelist.append(line.rstrip())
+    fw.close()
     
     #data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
     #data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
     
-    fns = ['20' + str(x).zfill(2) for x in range(7,16)]
-    fns = ['2007', '2008']
+    #fns = ['20' + str(x).zfill(2) for x in range(9,16)]
+    #fns = ['2007', '2008']
 
-    for fn in fns:    
-        data_rdd = sc.textFile("s3n://reddit-comments/{0}/*".format(fn))
+    conn = S3Connection(os.environ['AWS_ACCESS_KEY_ID'], os.environ['AWS_SECRET_ACCESS_KEY'])
+    bucket = conn.get_bucket('reddit-comments')
+    keys = list(bucket.list())
+    keys = [keys[-1]]
+
+    # Call the map step to handle reading in the file contents
+    #jsonformat = pkeys.flatMap(lambda x: map_func(x)).filter(lambda x: not(x['subreddit'] in frlist))
+
+    for fn in keys:
+        print fn.key
+        if fn.key[-1] == "/":
+            continue
         
-        #filters empty lines
-        #convert to json
-        #filters foreign subreddit
+        data_rdd = sc.textFile("s3n://reddit-comments/{0}".format(fn.key))
+        
         jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
-                        .map(lambda x: json.loads(x.encode('utf8')))\
-                        .filter(lambda x: not(x['subreddit'] in frlist))
-        
+                                .map(lambda x: json.loads(x.encode('utf8')))\
+                                .filter(lambda x: not(x['subreddit'] in blacklist))\
+                                .filter(lambda x: x in whitelist)
+                                
         #make key from token, date and subreddit, and persist
         etlDataMain = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])
         etlDataMain.persist(StorageLevel.MEMORY_AND_DISK_SER)
-        
+
+        #make key from token, date and subreddit, and persist
+        etlDataMain = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])
+        etlDataMain.repartition(Npart)
+        etlDataMain.persist(StorageLevel.MEMORY_AND_DISK_SER)
+        print "etlDataMain Number of partitions= ", etlDataMain.getNumPartitions()
+    
         for ngram in range(1,4):
             print "Ngram = ", ngram
             #prepare for word count
@@ -193,15 +236,16 @@ if __name__ == "__main__":
             print "first batch query"
             etlData = etlDataMain.flatMap(lambda x: combineData(myTokenizer, x,ngram))\
                             .map(lambda x: (x, 1))\
-                            .reduceByKey(add)\
-                            .persist(StorageLevel.MEMORY_AND_DISK_SER)
+                            .reduceByKey(add, Npart)#\
+                            #.persist(StorageLevel.MEMORY_AND_DISK_SER)
             #we should end up with ( "Ngram::time::subreddit", count)
         
             #now we're going to transform ( "time", (Ngram, subreddit, count))
             etlData1 = etlData.map(lambda x: splitByDate(x)) #split key into dates for summation
             
             #For summation, we need ( "time", count) for time based summation
-            etlDataSum = etlData1.map(lambda x: (x[0], x[1][2])).reduceByKey(add)
+            etlDataSum = etlData1.map(lambda x: (x[0], x[1][2])).reduceByKey(add, Npart)
+            print "etlDataSum Number of partitions= ", etlDataSum.getNumPartitions()
             
             if ngram > 1:
                 threshold = 1
@@ -212,6 +256,9 @@ if __name__ == "__main__":
             #we now join to get  ( "time", ((Ngram, subreddit, count), total))
             combinedEtl = etlData1.filter(lambda x: x[1][2] > threshold)\
                                 .leftOuterJoin(etlDataSum)
+    
+            print "combinedEtl Number of partitions= ", combinedEtl.getNumPartitions()
+            #print "Data example = ", combinedEtl.take(1)
             
             combinedEtl.foreachPartition(lambda x: pushToCassandraTable1(ngram, x))
     
@@ -224,7 +271,7 @@ if __name__ == "__main__":
             #and sum it
             #etldata2 ( "subreddit::Ngram", count)
             etlData2 = etlData.map(lambda x: splitBySubreddit(x))\
-                            .reduceByKey(add)
+                            .reduceByKey(add, Npart)
                             
             #For summation, we will sum everything
             totalSum = etlData2.map(lambda x: x[1]).sum()

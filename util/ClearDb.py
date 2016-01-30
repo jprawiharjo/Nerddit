@@ -48,6 +48,7 @@ def log_error(exc):
 
 if __name__=="__main__":
     session = cluster.connect(keyspace)
+    session.default_timeout = 600
     #session.default_consistency_level = cassandra.ConsistencyLevel.QUORUM
     #session.encoder.mapping[tuple] = session.encoder.cql_encode_set_collection
 
@@ -65,7 +66,7 @@ if __name__=="__main__":
                     N int,
                     wcount bigint,
                     percentage double,
-                    PRIMARY KEY (date, subreddit, Ngram)
+                    PRIMARY KEY (Ngram, subreddit, date)
                     )""" %(tablename1,))
     print res.current_rows
 
@@ -76,7 +77,7 @@ if __name__=="__main__":
                     N int,
                     wcount counter,
                     total counter,
-                    PRIMARY KEY (subreddit, N, Ngram)
+                    PRIMARY KEY ((Ngram, N), subreddit)
                     )""" %(tablename2,))
     print res.current_rows
 
