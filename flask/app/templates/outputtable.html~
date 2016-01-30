@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block outputtable %}
+
+<body> <p> </p> </body>
+<div class="container">
+      <div class="starter-template">
+        <div class="row" style="height:100vh;margin-top:10vh;">
+                <div class="col-md-10 col-md-offset-1">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>ngram</th>
+                          <th>subreddit</th>
+                          <th>date</th>
+                          <th>percentage</th>
+                        </tr>	
+                      </thead>
+                      <tbody>
+                        {% for val in output %}
+                        <tr>
+                          <td>{{val.ngram}}</td>
+                          <td>{{val.subreddit}}</td>
+                          <td>{{val.date}}</td>
+                          <td>{{val.percentage}}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

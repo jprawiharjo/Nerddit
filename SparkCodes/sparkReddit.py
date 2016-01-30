@@ -21,7 +21,7 @@ import os
 from boto.s3.connection import S3Connection
 
 #dateformat for year and week
-dateformat = '%Y-%W'
+dateformat = '%Y-%m'
 
 #pruning the data
 CassandraWait = 5
@@ -190,11 +190,10 @@ if __name__ == "__main__":
     fw = open("redditwhitelist.txt",'r')
     whitelist = []
     for line in fw:
-        subreddit = line.split(" ")[0]
-        whitelist.append(subreddit.lower())
+        whitelist.append(line.rstrip().lower())
     fw.close()
-    whitelist = whitelist[:3001]
-    print whitelist[0] 
+    whitelist = whitelist[:1001]
+    print whitelist[1]
     #data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
     #data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
     
@@ -204,8 +203,9 @@ if __name__ == "__main__":
     conn = S3Connection(os.environ['AWS_ACCESS_KEY_ID'], os.environ['AWS_SECRET_ACCESS_KEY'])
     bucket = conn.get_bucket('reddit-comments')
     keys = list(bucket.list())
-    keys = [keys[-2]]
-    print keys
+    keys = keys[::-1]
+    keys = keys[1:45]
+    #print keys
     # Call the map step to handle reading in the file contents
     #jsonformat = pkeys.flatMap(lambda x: map_func(x)).filter(lambda x: not(x['subreddit'] in frlist))
 
@@ -253,9 +253,9 @@ if __name__ == "__main__":
             print "etlDataSum Number of partitions= ", etlDataSum.getNumPartitions()
             
             if ngram > 1:
-                threshold = 2
+                threshold = 3
             else:
-                threshold = 5
+                threshold = 20
             
             #pruning (filter)
             #we now join to get  ( "time", ((Ngram, subreddit, count), total))
@@ -288,5 +288,6 @@ if __name__ == "__main__":
             subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
             etlData.unpersist() ##DONT forget to unpersist!!
             etlData2.unpersist()
+            
         print "end of program"
         etlDataMain.unpersist() ##DONT forget to unpersist!!

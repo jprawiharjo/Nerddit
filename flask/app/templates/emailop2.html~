@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block email %}
+
+<body> <p> </p> </body>
+<div class="container">
+	<div id="chart"></div>
+</div>
+
+{% endblock %}

@@ -24,7 +24,7 @@ ReTagsDash = re.compile('&mdash;?')
 ReTagsHtml = re.compile('&\w;')
 # Tokenize text into words, punctuation, and whitespace tokens
 
-fopen = open('english_stopwords.txt')
+fopen = open("/home/%s/nltk_data/corpora/stopwords/english" %(getpass.getuser(),))
 stopwords = fopen.readlines()
 stopwords = set([x.strip() for x in stopwords]).union((list(string.lowercase)))
 
@@ -226,7 +226,7 @@ if __name__ == "__main__":
      
     print "Segmenting text into words and sentences..."
     #sentences = myTokenizer.segment_text(text.encode('utf-8'))
-    sentences = myTokenizer.Ngrams(text.encode('utf-8'), 1)
+    sentences = myTokenizer.Ngrams(text.encode('utf-8'), 2)
     print sentences
     #
 #    print "Segmented sentences:"

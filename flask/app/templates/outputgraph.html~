@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block outputgraph %}
+
+<body> <p> </p> </body>
+<div class="container">
+      <div class="starter-template">
+        <div class="row" style="height:100vh;margin-top:10vh;">
+	    <div id="chart"></div>
+	</div>
+      </div>
+</div>
+
+{% endblock %}
