@@ -183,15 +183,18 @@ if __name__ == "__main__":
     fw = open("foreignsubredditlist.txt",'r')
     blacklist = []
     for line in fw:
-        blacklist.append(line.rstrip())
+        blacklist.append(line.rstrip().lower())
     fw.close()
+    print blacklist[0]
     
     fw = open("redditwhitelist.txt",'r')
     whitelist = []
     for line in fw:
-        whitelist.append(line.rstrip())
+        subreddit = line.split(" ")[0]
+        whitelist.append(subreddit.lower())
     fw.close()
-    
+    whitelist = whitelist[:3001]
+    print whitelist[0] 
     #data_rdd = sc.textFile("s3n://reddit-comments/2007/RC_2007-10")
     #data_rdd = sc.textFile("s3n://reddit-comments/2015/*")
     
@@ -201,8 +204,8 @@ if __name__ == "__main__":
     conn = S3Connection(os.environ['AWS_ACCESS_KEY_ID'], os.environ['AWS_SECRET_ACCESS_KEY'])
     bucket = conn.get_bucket('reddit-comments')
     keys = list(bucket.list())
-    keys = [keys[-1]]
-
+    keys = [keys[-2]]
+    print keys
     # Call the map step to handle reading in the file contents
     #jsonformat = pkeys.flatMap(lambda x: map_func(x)).filter(lambda x: not(x['subreddit'] in frlist))
 
@@ -215,12 +218,14 @@ if __name__ == "__main__":
         
         jsonformat = data_rdd.filter(lambda x: len(x) > 0)\
                                 .map(lambda x: json.loads(x.encode('utf8')))\
-                                .filter(lambda x: not(x['subreddit'] in blacklist))\
-                                .filter(lambda x: x in whitelist)
-                                
+                                .filter(lambda x: not(x['subreddit'].lower() in blacklist))\
+                                .filter(lambda x: x['subreddit'].lower() in whitelist)
+        
+        #print jsonformat.count()
         #make key from token, date and subreddit, and persist
         etlDataMain = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])
         etlDataMain.persist(StorageLevel.MEMORY_AND_DISK_SER)
+        #print etlDataMain.count()
 
         #make key from token, date and subreddit, and persist
         etlDataMain = jsonformat.map(lambda x: [x['body'], ConvertToYearDate(x['created_utc']), x['subreddit']])
@@ -248,7 +253,7 @@ if __name__ == "__main__":
             print "etlDataSum Number of partitions= ", etlDataSum.getNumPartitions()
             
             if ngram > 1:
-                threshold = 1
+                threshold = 2
             else:
                 threshold = 5
             
@@ -282,6 +287,6 @@ if __name__ == "__main__":
                                 
             subredditEtl.foreachPartition(lambda x: pushToCassandraTable2(ngram, x))
             etlData.unpersist() ##DONT forget to unpersist!!
-            
+            etlData2.unpersist()
         print "end of program"
         etlDataMain.unpersist() ##DONT forget to unpersist!!

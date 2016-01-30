@@ -24,6 +24,9 @@ ReTagsDash = re.compile('&mdash;?')
 ReTagsHtml = re.compile('&\w;')
 # Tokenize text into words, punctuation, and whitespace tokens
 
+fopen = open('english_stopwords.txt')
+stopwords = fopen.readlines()
+stopwords = set([x.strip() for x in stopwords]).union((list(string.lowercase)))
 
 class ModifiedTrainingTokenizer(RegexpTokenizer):
     def __init__(self):
@@ -191,6 +194,9 @@ class SentenceTokenizer():
             coll = filter(lambda x: not(x in '.,?![]:;\/\\()"{}-$%^&*'), sentence)
             for k in range(0,len(coll)-(N-1)):
                 #print coll[k]
+                b = set(coll[k:k+N])
+                if len(b.intersection(stopwords)) > 0:
+                    continue
                 words.append(" ".join(coll[k:k+N]))
         if N == 1:
             words = filter(lambda x: len(x)> 1, words)
@@ -220,7 +226,7 @@ if __name__ == "__main__":
      
     print "Segmenting text into words and sentences..."
     #sentences = myTokenizer.segment_text(text.encode('utf-8'))
-    sentences = myTokenizer.Ngrams(text.encode('utf-8'), 2)
+    sentences = myTokenizer.Ngrams(text.encode('utf-8'), 1)
     print sentences
     #
 #    print "Segmented sentences:"

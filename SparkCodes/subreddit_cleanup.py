@@ -12,6 +12,8 @@ whitelist=[]
 for k in f:
     s = k.split(" ")
     if len(s) == 2:
+        if 'politics' in s[0]:
+            print s[0], s[1]
         num =  int(s[1].replace(',', ''))
         whitelist.append("{0} {1}".format(s[0],num))
 
