@@ -1,0 +1,33 @@
+{
+  "name": "y",
+  "authors": [
+    "Jerry Prawiharjo <j.prawiharjo@gmail.com>"
+  ],
+  "description": "sample_flask",
+  "main": "bower.json",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "sample"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "d3": "^3.5.14"
+  }
+}

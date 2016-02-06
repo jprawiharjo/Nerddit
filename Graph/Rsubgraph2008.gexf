@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static">
+    <nodes>
+      <node id="apple" label="apple" />
+      <node id="videos" label="videos" />
+      <node id="programming" label="programming" />
+      <node id="energy" label="energy" />
+      <node id="sex" label="sex" />
+      <node id="gadgets" label="gadgets" />
+      <node id="offbeat" label="offbeat" />
+      <node id="Anarchism" label="Anarchism" />
+      <node id="Music" label="Music" />
+      <node id="linux" label="linux" />
+      <node id="politics" label="politics" />
+      <node id="technology" label="technology" />
+      <node id="canada" label="canada" />
+      <node id="funny" label="funny" />
+      <node id="Israel" label="Israel" />
+      <node id="entertainment" label="entertainment" />
+      <node id="self" label="self" />
+      <node id="Economics" label="Economics" />
+      <node id="sports" label="sports" />
+      <node id="environment" label="environment" />
+      <node id="scifi" label="scifi" />
+      <node id="WTF" label="WTF" />
+      <node id="worldnews" label="worldnews" />
+      <node id="guns" label="guns" />
+      <node id="math" label="math" />
+      <node id="MensRights" label="MensRights" />
+      <node id="gaming" label="gaming" />
+      <node id="australia" label="australia" />
+      <node id="business" label="business" />
+      <node id="philosophy" label="philosophy" />
+      <node id="netsec" label="netsec" />
+      <node id="geek" label="geek" />
+      <node id="lgbt" label="lgbt" />
+      <node id="news" label="news" />
+      <node id="obama" label="obama" />
+      <node id="Health" label="Health" />
+      <node id="science" label="science" />
+      <node id="Bacon" label="Bacon" />
+      <node id="Marijuana" label="Marijuana" />
+      <node id="pics" label="pics" />
+      <node id="atheism" label="atheism" />
+      <node id="bestof" label="bestof" />
+      <node id="Libertarian" label="Libertarian" />
+      <node id="nsfw" label="nsfw" />
+    </nodes>
+    <edges>
+      <edge id="0" source="apple" target="politics" weight="6" />
+      <edge id="1" source="apple" target="technology" weight="6" />
+      <edge id="2" source="apple" target="programming" weight="7" />
+      <edge id="3" source="apple" target="science" weight="6" />
+      <edge id="4" source="videos" target="gadgets" weight="6" />
+      <edge id="5" source="videos" target="worldnews" weight="48" />
+      <edge id="6" source="videos" target="WTF" weight="54" />
+      <edge id="7" source="Bacon" target="funny" weight="10" />
+      <edge id="8" source="Bacon" target="entertainment" weight="6" />
+      <edge id="9" source="Bacon" target="science" weight="11" />
+      <edge id="10" source="Bacon" target="pics" weight="18" />
+      <edge id="11" source="Bacon" target="WTF" weight="14" />
+      <edge id="12" source="Bacon" target="worldnews" weight="6" />
+      <edge id="13" source="Bacon" target="politics" weight="13" />
+      <edge id="14" source="Bacon" target="technology" weight="6" />
+      <edge id="15" source="energy" target="science" weight="6" />
+      <edge id="16" source="sex" target="worldnews" weight="9" />
+      <edge id="17" source="gadgets" target="gaming" weight="12" />
+      <edge id="18" source="gadgets" target="science" weight="25" />
+      <edge id="19" source="gadgets" target="programming" weight="22" />
+      <edge id="20" source="gadgets" target="pics" weight="22" />
+      <edge id="21" source="gadgets" target="offbeat" weight="16" />
+      <edge id="22" source="gadgets" target="nsfw" weight="7" />
+      <edge id="23" source="gadgets" target="WTF" weight="20" />
+      <edge id="24" source="gadgets" target="linux" weight="6" />
+      <edge id="25" source="gadgets" target="worldnews" weight="21" />
+      <edge id="26" source="gadgets" target="politics" weight="20" />
+      <edge id="27" source="gadgets" target="technology" weight="28" />
+      <edge id="28" source="australia" target="worldnews" weight="6" />
+      <edge id="29" source="australia" target="science" weight="6" />
+      <edge id="30" source="australia" target="technology" weight="6" />
+      <edge id="31" source="australia" target="WTF" weight="6" />
+      <edge id="32" source="australia" target="pics" weight="6" />
+      <edge id="33" source="Music" target="science" weight="21" />
+      <edge id="34" source="Music" target="programming" weight="12" />
+      <edge id="35" source="Music" target="pics" weight="27" />
+      <edge id="36" source="Music" target="offbeat" weight="10" />
+      <edge id="37" source="Music" target="WTF" weight="22" />
+      <edge id="38" source="Music" target="worldnews" weight="19" />
+      <edge id="39" source="Music" target="politics" weight="31" />
+      <edge id="40" source="Music" target="technology" weight="16" />
+      <edge id="41" source="Music" target="obama" weight="7" />
+      <edge id="42" source="linux" target="science" weight="32" />
+      <edge id="43" source="linux" target="programming" weight="58" />
+      <edge id="44" source="linux" target="pics" weight="29" />
+      <edge id="45" source="linux" target="WTF" weight="20" />
+      <edge id="46" source="linux" target="worldnews" weight="28" />
+      <edge id="47" source="linux" target="politics" weight="33" />
+      <edge id="48" source="linux" target="technology" weight="40" />
+      <edge id="49" source="politics" target="bestof" weight="6" />
+      <edge id="50" source="politics" target="technology" weight="380" />
+      <edge id="51" source="politics" target="canada" weight="25" />
+      <edge id="52" source="politics" target="funny" weight="458" />
+      <edge id="53" source="politics" target="Israel" weight="7" />
+      <edge id="54" source="politics" target="atheism" weight="229" />
+      <edge id="55" source="politics" target="entertainment" weight="364" />
+      <edge id="56" source="politics" target="environment" weight="84" />
+      <edge id="57" source="politics" target="WTF" weight="507" />
+      <edge id="58" source="politics" target="worldnews" weight="729" />
+      <edge id="59" source="politics" target="guns" weight="12" />
+      <edge id="60" source="politics" target="math" weight="7" />
+      <edge id="61" source="politics" target="MensRights" weight="14" />
+      <edge id="62" source="politics" target="Anarchism" weight="9" />
+      <edge id="63" source="politics" target="Economics" weight="183" />
+      <edge id="64" source="politics" target="geek" weight="13" />
+      <edge id="65" source="politics" target="lgbt" weight="10" />
+      <edge id="66" source="politics" target="news" weight="10" />
+      <edge id="67" source="politics" target="obama" weight="70" />
+      <edge id="68" source="politics" target="science" weight="704" />
+      <edge id="69" source="politics" target="programming" weight="223" />
+      <edge id="70" source="politics" target="Marijuana" weight="31" />
+      <edge id="71" source="politics" target="nsfw" weight="72" />
+      <edge id="72" source="politics" target="pics" weight="402" />
+      <edge id="73" source="politics" target="offbeat" weight="152" />
+      <edge id="74" source="politics" target="Libertarian" weight="33" />
+      <edge id="75" source="politics" target="Health" weight="9" />
+      <edge id="76" source="technology" target="bestof" weight="7" />
+      <edge id="77" source="technology" target="canada" weight="17" />
+      <edge id="78" source="technology" target="funny" weight="262" />
+      <edge id="79" source="technology" target="netsec" weight="7" />
+      <edge id="80" source="technology" target="atheism" weight="87" />
+      <edge id="81" source="technology" target="entertainment" weight="214" />
+      <edge id="82" source="technology" target="sports" weight="12" />
+      <edge id="83" source="technology" target="environment" weight="55" />
+      <edge id="84" source="technology" target="scifi" weight="12" />
+      <edge id="85" source="technology" target="WTF" weight="241" />
+      <edge id="86" source="technology" target="worldnews" weight="304" />
+      <edge id="87" source="technology" target="guns" weight="6" />
+      <edge id="88" source="technology" target="Economics" weight="67" />
+      <edge id="89" source="technology" target="geek" weight="17" />
+      <edge id="90" source="technology" target="news" weight="8" />
+      <edge id="91" source="technology" target="obama" weight="31" />
+      <edge id="92" source="technology" target="science" weight="368" />
+      <edge id="93" source="technology" target="programming" weight="285" />
+      <edge id="94" source="technology" target="Marijuana" weight="15" />
+      <edge id="95" source="technology" target="offbeat" weight="110" />
+      <edge id="96" source="technology" target="Libertarian" weight="12" />
+      <edge id="97" source="technology" target="nsfw" weight="40" />
+      <edge id="98" source="philosophy" target="worldnews" weight="7" />
+      <edge id="99" source="philosophy" target="science" weight="13" />
+      <edge id="100" source="philosophy" target="programming" weight="6" />
+      <edge id="101" source="canada" target="funny" weight="14" />
+      <edge id="102" source="canada" target="entertainment" weight="14" />
+      <edge id="103" source="canada" target="science" weight="23" />
+      <edge id="104" source="canada" target="Economics" weight="6" />
+      <edge id="105" source="canada" target="programming" weight="12" />
+      <edge id="106" source="canada" target="pics" weight="20" />
+      <edge id="107" source="canada" target="offbeat" weight="9" />
+      <edge id="108" source="canada" target="gaming" weight="8" />
+      <edge id="109" source="canada" target="WTF" weight="17" />
+      <edge id="110" source="canada" target="worldnews" weight="29" />
+      <edge id="111" source="canada" target="environment" weight="7" />
+      <edge id="112" source="funny" target="environment" weight="46" />
+      <edge id="113" source="funny" target="bestof" weight="7" />
+      <edge id="114" source="funny" target="atheism" weight="97" />
+      <edge id="115" source="funny" target="entertainment" weight="295" />
+      <edge id="116" source="funny" target="science" weight="389" />
+      <edge id="117" source="funny" target="Economics" weight="50" />
+      <edge id="118" source="funny" target="programming" weight="203" />
+      <edge id="119" source="funny" target="pics" weight="523" />
+      <edge id="120" source="funny" target="offbeat" weight="145" />
+      <edge id="121" source="funny" target="gaming" weight="131" />
+      <edge id="122" source="funny" target="WTF" weight="355" />
+      <edge id="123" source="funny" target="worldnews" weight="313" />
+      <edge id="124" source="Israel" target="worldnews" weight="6" />
+      <edge id="125" source="atheism" target="business" weight="56" />
+      <edge id="126" source="atheism" target="entertainment" weight="84" />
+      <edge id="127" source="atheism" target="science" weight="155" />
+      <edge id="128" source="atheism" target="programming" weight="81" />
+      <edge id="129" source="atheism" target="pics" weight="142" />
+      <edge id="130" source="atheism" target="offbeat" weight="51" />
+      <edge id="131" source="atheism" target="gaming" weight="53" />
+      <edge id="132" source="atheism" target="WTF" weight="119" />
+      <edge id="133" source="atheism" target="worldnews" weight="132" />
+      <edge id="134" source="entertainment" target="bestof" weight="6" />
+      <edge id="135" source="entertainment" target="environment" weight="27" />
+      <edge id="136" source="entertainment" target="science" weight="304" />
+      <edge id="137" source="entertainment" target="programming" weight="151" />
+      <edge id="138" source="entertainment" target="pics" weight="362" />
+      <edge id="139" source="entertainment" target="offbeat" weight="117" />
+      <edge id="140" source="entertainment" target="gaming" weight="129" />
+      <edge id="141" source="entertainment" target="WTF" weight="247" />
+      <edge id="142" source="entertainment" target="worldnews" weight="265" />
+      <edge id="143" source="self" target="worldnews" weight="7" />
+      <edge id="144" source="self" target="WTF" weight="9" />
+      <edge id="145" source="sports" target="worldnews" weight="11" />
+      <edge id="146" source="sports" target="science" weight="7" />
+      <edge id="147" source="sports" target="WTF" weight="14" />
+      <edge id="148" source="environment" target="science" weight="80" />
+      <edge id="149" source="environment" target="programming" weight="38" />
+      <edge id="150" source="environment" target="pics" weight="61" />
+      <edge id="151" source="environment" target="offbeat" weight="31" />
+      <edge id="152" source="environment" target="gaming" weight="17" />
+      <edge id="153" source="environment" target="WTF" weight="48" />
+      <edge id="154" source="environment" target="worldnews" weight="72" />
+      <edge id="155" source="scifi" target="worldnews" weight="14" />
+      <edge id="156" source="scifi" target="science" weight="10" />
+      <edge id="157" source="WTF" target="bestof" weight="6" />
+      <edge id="158" source="WTF" target="Health" weight="9" />
+      <edge id="159" source="WTF" target="worldnews" weight="159" />
+      <edge id="160" source="WTF" target="guns" weight="6" />
+      <edge id="161" source="WTF" target="Economics" weight="55" />
+      <edge id="162" source="WTF" target="geek" weight="14" />
+      <edge id="163" source="WTF" target="news" weight="8" />
+      <edge id="164" source="WTF" target="obama" weight="32" />
+      <edge id="165" source="WTF" target="science" weight="348" />
+      <edge id="166" source="WTF" target="programming" weight="168" />
+      <edge id="167" source="WTF" target="Marijuana" weight="20" />
+      <edge id="168" source="WTF" target="nsfw" weight="57" />
+      <edge id="169" source="WTF" target="offbeat" weight="156" />
+      <edge id="170" source="worldnews" target="MensRights" weight="9" />
+      <edge id="171" source="worldnews" target="Anarchism" weight="6" />
+      <edge id="172" source="worldnews" target="Economics" weight="117" />
+      <edge id="173" source="worldnews" target="netsec" weight="6" />
+      <edge id="174" source="worldnews" target="geek" weight="16" />
+      <edge id="175" source="worldnews" target="lgbt" weight="6" />
+      <edge id="176" source="worldnews" target="news" weight="7" />
+      <edge id="177" source="worldnews" target="obama" weight="39" />
+      <edge id="178" source="worldnews" target="science" weight="481" />
+      <edge id="179" source="worldnews" target="programming" weight="257" />
+      <edge id="180" source="worldnews" target="Marijuana" weight="19" />
+      <edge id="181" source="worldnews" target="nsfw" weight="50" />
+      <edge id="182" source="worldnews" target="offbeat" weight="127" />
+      <edge id="183" source="worldnews" target="Libertarian" weight="19" />
+      <edge id="184" source="worldnews" target="Health" weight="7" />
+      <edge id="185" source="guns" target="pics" weight="8" />
+      <edge id="186" source="guns" target="science" weight="8" />
+      <edge id="187" source="math" target="programming" weight="11" />
+      <edge id="188" source="math" target="science" weight="8" />
+      <edge id="189" source="MensRights" target="pics" weight="9" />
+      <edge id="190" source="MensRights" target="science" weight="8" />
+      <edge id="191" source="gaming" target="geek" weight="7" />
+      <edge id="192" source="Anarchism" target="Economics" weight="7" />
+      <edge id="193" source="Economics" target="science" weight="102" />
+      <edge id="194" source="Economics" target="programming" weight="63" />
+      <edge id="195" source="Economics" target="pics" weight="72" />
+      <edge id="196" source="netsec" target="programming" weight="7" />
+      <edge id="197" source="netsec" target="science" weight="6" />
+      <edge id="198" source="geek" target="science" weight="18" />
+      <edge id="199" source="geek" target="programming" weight="16" />
+      <edge id="200" source="geek" target="pics" weight="16" />
+      <edge id="201" source="geek" target="offbeat" weight="13" />
+      <edge id="202" source="lgbt" target="pics" weight="6" />
+      <edge id="203" source="lgbt" target="science" weight="7" />
+      <edge id="204" source="news" target="science" weight="8" />
+      <edge id="205" source="news" target="programming" weight="6" />
+      <edge id="206" source="news" target="pics" weight="9" />
+      <edge id="207" source="news" target="offbeat" weight="6" />
+      <edge id="208" source="obama" target="science" weight="35" />
+      <edge id="209" source="obama" target="programming" weight="20" />
+      <edge id="210" source="obama" target="pics" weight="42" />
+      <edge id="211" source="science" target="bestof" weight="6" />
+      <edge id="212" source="science" target="programming" weight="362" />
+      <edge id="213" source="science" target="Marijuana" weight="22" />
+      <edge id="214" source="science" target="nsfw" weight="59" />
+      <edge id="215" source="science" target="offbeat" weight="148" />
+      <edge id="216" source="science" target="Libertarian" weight="15" />
+      <edge id="217" source="science" target="Health" weight="9" />
+      <edge id="218" source="programming" target="Marijuana" weight="7" />
+      <edge id="219" source="programming" target="pics" weight="138" />
+      <edge id="220" source="programming" target="offbeat" weight="76" />
+      <edge id="221" source="programming" target="Libertarian" weight="12" />
+      <edge id="222" source="programming" target="nsfw" weight="29" />
+      <edge id="223" source="Marijuana" target="pics" weight="24" />
+      <edge id="224" source="nsfw" target="pics" weight="84" />
+      <edge id="225" source="nsfw" target="offbeat" weight="34" />
+      <edge id="226" source="pics" target="bestof" weight="8" />
+      <edge id="227" source="pics" target="Health" weight="6" />
+      <edge id="228" source="pics" target="offbeat" weight="168" />
+      <edge id="229" source="pics" target="Libertarian" weight="11" />
+      <edge id="230" source="offbeat" target="bestof" weight="6" />
+    </edges>
+  </graph>
+</gexf>

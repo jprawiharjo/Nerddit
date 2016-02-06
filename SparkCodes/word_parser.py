@@ -22,6 +22,8 @@ ReTagsQuote = re.compile('&quot;?')
 ReTagsTilde = re.compile('&tilde;?')
 ReTagsDash = re.compile('&mdash;?')
 ReTagsHtml = re.compile('&\w;')
+ReUnicode = re.compile('\\\\u[0-9a-f]{4}') #regex to trap unicodes
+
 # Tokenize text into words, punctuation, and whitespace tokens
 
 fopen = open("/home/%s/nltk_data/corpora/stopwords/english" %(getpass.getuser(),))
@@ -124,6 +126,7 @@ class SentenceTokenizer():
         full_text = ReTagsTilde.sub("~", full_text)
         full_text = ReTagsDash.sub("-", full_text)
         full_text = ReTagsHtml.sub("HTMLTags", full_text)
+        full_text = ReUnicode.sub("", full_text)
 
         full_text = ReImage.sub("IMGsub", full_text)
         #print full_text

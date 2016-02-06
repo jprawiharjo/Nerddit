@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
 
     <title>Reddit N-gram Viewer</title>
 
@@ -19,8 +20,9 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!---
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
+--->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,6 +32,7 @@
     <link href={{ url_for('static', filename='main.css') }} rel="stylesheet" media="screen">
 
 	{% block outputbokehtags %}{% endblock %}
+	{% block highcharthead %}{% endblock %}
 
   </head>
 
@@ -44,25 +47,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">N-gram viewer</a>
+          <a class="navbar-brand" href="index">Home</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="ngram">Ngram</a></li>
-            <li class="active"><a href="index">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="ngram">Ngram viewer</a></li>
+            <li><a href="stat">Statistics</a></li>
+            <li class="active"><a href="graph">Subreddits Graph</a></li>
+            <li><a href="https://github.com/jprawiharjo/Nerddit">Repo</a></li>
+            <li class="active"><a href="https://www.linkedin.com/in/jerryprawiharjo">My Profile</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
+   <script src={{ url_for('static', filename='./highcharts.js') }}></script>
+   <script src={{ url_for('static', filename='./modules/exporting.js') }}></script>
 
 	{% block inputform %}{% endblock %}
 	{% block outputtable %}{% endblock %}
 	{% block outputgraph %}{% endblock %}
 	{% block outputbokeh %}{% endblock %}
 	{% block index %}{% endblock %}
-
+	{% block graph %}{% endblock %}
+	{% block highchartbody %}{% endblock %}
+	{% block highchartstat %}{% endblock %}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -71,11 +80,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../static/js/bootstrap.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> 
+    <!---
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	--- >
     <script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
     <script src={{ url_for('static', filename='./bower_components/bootstrap/dist/js/bootstrap.min.js') }}></script>
     <script src={{ url_for('static', filename='./bower_components/d3/d3.min.js') }}></script>
-    <script src={{ url_for('static', filename='main.js') }}></script>
-
+    <!---<script src={{ url_for('static', filename='./main.js') }}></script>
+	--->
   </body>
 </html>
