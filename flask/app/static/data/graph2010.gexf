@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
-  <meta lastmodifieddate="2016-02-05">
+  <meta lastmodifieddate="2016-02-06">
     <creator>Gephi 0.9</creator>
     <description></description>
   </meta>
@@ -11,36 +11,1244 @@
       </attribute>
     </attributes>
     <nodes>
-      <node id="climateskeptics" label="climateskeptics">
+      <node id="IAmA" label="IAmA">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="3.0"></viz:size>
+        <viz:position x="-149.75514" y="140.91188"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="gaming" label="gaming">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="2.5604396"></viz:size>
+        <viz:position x="-294.35904" y="100.07498"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="funny" label="funny">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="2.5164835"></viz:size>
+        <viz:position x="-220.1577" y="-28.951649"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="todayilearned" label="todayilearned">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
-        <viz:size value="1.0"></viz:size>
-        <viz:position x="270.92126" y="253.60318"></viz:position>
+        <viz:size value="1.9670329"></viz:size>
+        <viz:position x="183.93307" y="-47.598248"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="videos" label="videos">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.9670329"></viz:size>
+        <viz:position x="381.11215" y="-162.93561"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="programming" label="programming">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.945055"></viz:size>
+        <viz:position x="-212.25664" y="-245.67534"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="TwoXChromosomes" label="TwoXChromosomes">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.5274725"></viz:size>
+        <viz:position x="495.22318" y="271.7336"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="offbeat" label="offbeat">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="128.85396" y="-275.95526"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="fffffffuuuuuuuuuuuu" label="fffffffuuuuuuuuuuuu">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.3956044"></viz:size>
+        <viz:position x="-197.17491" y="57.690655"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="sex" label="sex">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.3956044"></viz:size>
+        <viz:position x="460.01666" y="334.4391"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="scifi" label="scifi">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3736264"></viz:size>
+        <viz:position x="230.73628" y="-388.6497"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="self" label="self">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.3516483"></viz:size>
+        <viz:position x="363.86197" y="171.78244"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="trees" label="trees">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3296703"></viz:size>
+        <viz:position x="432.66583" y="105.21557"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="bestof" label="bestof">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3296703"></viz:size>
+        <viz:position x="-13.901284" y="-316.74844"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Economics" label="Economics">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="-341.46127" y="-156.38423"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="geek" label="geek">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2857143"></viz:size>
+        <viz:position x="28.99993" y="-189.65024"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="cogsci" label="cogsci">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2857143"></viz:size>
+        <viz:position x="30.319458" y="-573.37994"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Music" label="Music">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2857143"></viz:size>
+        <viz:position x="161.81702" y="237.45216"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Frugal" label="Frugal">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.2857143"></viz:size>
+        <viz:position x="54.83323" y="34.76235"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="DoesAnybodyElse" label="DoesAnybodyElse">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-137.37111" y="44.18849"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="environment" label="environment">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-181.0964" y="-338.9462"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="entertainment" label="entertainment">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="115.297134" y="-163.75291"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="energy" label="energy">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2417582"></viz:size>
+        <viz:position x="-173.67764" y="-459.21826"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Health" label="Health">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2417582"></viz:size>
+        <viz:position x="206.93024" y="-208.28148"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="sports" label="sports">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.2417582"></viz:size>
+        <viz:position x="223.2364" y="368.90796"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="relationship_advice" label="relationship_advice">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.2417582"></viz:size>
+        <viz:position x="568.1313" y="313.22656"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="economy" label="economy">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2417582"></viz:size>
+        <viz:position x="-308.89377" y="-559.61334"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="gadgets" label="gadgets">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2417582"></viz:size>
+        <viz:position x="119.19685" y="-455.1679"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="feminisms" label="feminisms">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="339.84802" y="333.72528"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="comics" label="comics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-73.14524" y="-66.58226"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="ColbertRally" label="ColbertRally">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1978022"></viz:size>
+        <viz:position x="185.54391" y="132.9063"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="news" label="news">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1978022"></viz:size>
+        <viz:position x="-64.41864" y="-498.69342"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="history" label="history">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1978022"></viz:size>
+        <viz:position x="163.51328" y="-520.3986"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="drunk" label="drunk">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="-0.6758467" y="413.79086"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="blog" label="blog">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="-441.9982" y="348.45428"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="food" label="food">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="-22.123482" y="129.04413"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Libertarian" label="Libertarian">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="-394.98654" y="-207.26636"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="answers" label="answers">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="-98.42495" y="-166.1452"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="movies" label="movies">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="268.88873" y="-279.94522"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="starcraft" label="starcraft">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="667.3731" y="-28.340063"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="bicycling" label="bicycling">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="-143.62999" y="257.36304"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="aww" label="aww">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="78.127495" y="671.57385"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="askscience" label="askscience">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.1538461"></viz:size>
+        <viz:position x="-448.51947" y="-152.43451"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="soccer" label="soccer">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="527.00024" y="8.00889"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="PS3" label="PS3">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="254.3041" y="220.93246"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Equality" label="Equality">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="287.52466" y="406.65887"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="circlejerk" label="circlejerk">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-83.048386" y="43.97032"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="linux" label="linux">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="18.861137" y="-456.75943"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="conspiracy" label="conspiracy">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-424.49973" y="-56.54953"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Anarchism" label="Anarchism">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-599.0141" y="-285.42145"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="DIY" label="DIY">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-68.2433" y="-626.17523"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="CFB" label="CFB">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="304.21167" y="540.40643"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Pets" label="Pets">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="594.3328" y="186.49112"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="codbo" label="codbo">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-277.2182" y="278.33392"></viz:position>
+        <viz:color r="83" g="119" b="200"></viz:color>
+      </node>
+      <node id="dubstep" label="dubstep">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-74.36691" y="354.99664"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="psychology" label="psychology">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="371.0286" y="-464.8221"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="announcements" label="announcements">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-480.30646" y="608.0745"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="baseball" label="baseball">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="10.858827" y="328.1266"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="doctorwho" label="doctorwho">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-40.47516" y="-102.76673"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Drugs" label="Drugs">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="1.2284471" y="65.9678"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Guitar" label="Guitar">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="133.408" y="325.54834"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Autos" label="Autos">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-349.6293" y="273.6555"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="beer" label="beer">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-239.61267" y="241.77464"></viz:position>
+        <viz:color r="177" g="92" b="48"></viz:color>
+      </node>
+      <node id="collapse" label="collapse">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-470.08896" y="-467.85147"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Eve" label="Eve">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-179.27127" y="326.9429"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="boston" label="boston">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-514.24854" y="182.66483"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Cooking" label="Cooking">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-55.6523" y="87.68466"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="ideasfortheadmins" label="ideasfortheadmins">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-235.7802" y="614.9906"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="Design" label="Design">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="1.1098901"></viz:size>
+        <viz:position x="-318.28433" y="-314.49155"></viz:position>
+        <viz:color r="221" g="57" b="125"></viz:color>
+      </node>
+      <node id="MensRights" label="MensRights">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="505.77994" y="372.10233"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="fantasyfootball" label="fantasyfootball">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="98.57383" y="421.06778"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="dwarffortress" label="dwarffortress">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-387.69843" y="141.51312"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="electronics" label="electronics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-389.94604" y="-311.83206"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="DebateAChristian" label="DebateAChristian">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-517.35785" y="-116.28849"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="anime" label="anime">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-391.14243" y="81.515465"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="apple" label="apple">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-264.2886" y="39.062866"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Christianity" label="Christianity">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-337.6854" y="21.741322"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="hardware" label="hardware">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-176.30531" y="-134.44476"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="netsec" label="netsec">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="603.08246" y="-232.97223"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="needadvice" label="needadvice">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="752.4213" y="337.50064"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="relationships" label="relationships">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="536.3875" y="340.59778"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="redditoroftheday" label="redditoroftheday">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="450.05313" y="214.53185"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="badcompany2" label="badcompany2">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-245.5902" y="61.476894"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="photography" label="photography">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="337.5698" y="-25.195004"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="nfl" label="nfl">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="196.50372" y="436.45218"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Marijuana" label="Marijuana">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="250.45255" y="-147.99615"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="worldpolitics" label="worldpolitics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-128.42564" y="-769.7094"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Android" label="Android">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-241.38606" y="25.482006"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="humor" label="humor">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="74.72492" y="-336.78278"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="chicago" label="chicago">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-189.7266" y="271.49423"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="guns" label="guns">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-250.20607" y="158.59818"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Favors" label="Favors">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-107.11945" y="20.81226"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="creepy" label="creepy">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="42.572968" y="104.630455"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="itookapicture" label="itookapicture">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="250.22052" y="64.27193"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="americanpirateparty" label="americanpirateparty">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-496.85684" y="56.991314"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="buildapc" label="buildapc">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-308.25983" y="-27.69219"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Bad_Cop_No_Donut" label="Bad_Cop_No_Donut">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-38.772655" y="-220.81024"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="iphone" label="iphone">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-393.3647" y="12.115617"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="shittyadvice" label="shittyadvice">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="118.95552" y="139.4397"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="gonewild" label="gonewild">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="27.492525" y="239.52226"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="evedreddit" label="evedreddit">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-294.43472" y="522.29865"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="philosophy" label="philosophy">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-115.568695" y="-565.2814"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="atheism" label="atheism">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-309.7506" y="11.57941"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Dexter" label="Dexter">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="-869.11475" y="293.3108"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="secretsanta" label="secretsanta">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="475.55634" y="56.033176"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Portland" label="Portland">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0659341"></viz:size>
+        <viz:position x="841.89307" y="156.20111"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Dallas" label="Dallas">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-389.95868" y="223.64865"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="startrek" label="startrek">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="364.8991" y="-253.99942"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="hockey" label="hockey">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="59.408688" y="266.65558"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Atlanta" label="Atlanta">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-440.7121" y="191.57988"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="australia" label="australia">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-224.09479" y="97.0561"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="BDSMcommunity" label="BDSMcommunity">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="365.1709" y="412.21985"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Fitness" label="Fitness">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-219.32173" y="162.56148"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Military" label="Military">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-173.81339" y="-633.71295"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Art" label="Art">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-432.47888" y="34.15932"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="unitedkingdom" label="unitedkingdom">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="558.02716" y="-159.98428"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="canada" label="canada">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-223.60442" y="78.089455"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="wow" label="wow">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="737.7953" y="-30.671705"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="Seattle" label="Seattle">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="573.5449" y="77.65925"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="lgbt" label="lgbt">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="571.9506" y="450.12842"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Buddhism" label="Buddhism">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-378.60593" y="371.0634"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="tf2" label="tf2">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="604.888" y="-95.304565"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="ECE" label="ECE">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-74.14985" y="-294.57175"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Austin" label="Austin">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-339.09586" y="192.65793"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="civ" label="civ">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-436.887" y="120.55051"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="exmormon" label="exmormon">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-332.94348" y="232.3038"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="OneY" label="OneY">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="768.45514" y="484.89575"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="depression" label="depression">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-487.22458" y="327.9369"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="comicbooks" label="comicbooks">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="278.45834" y="-874.07837"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Physics" label="Physics">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-554.0848" y="-462.94717"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="Minecraft" label="Minecraft">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-599.4814" y="260.73706"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="space" label="space">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="317.6347" y="-234.62254"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="houston" label="houston">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-100.197105" y="-216.298"></viz:position>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="49.104218" y="201.90022"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
       </node>
-      <node id="DoesAnybodyElse" label="DoesAnybodyElse">
+      <node id="japan" label="japan">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="258.1267" y="-232.72357"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="islam" label="islam">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-109.12467" y="-343.58618"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="leagueoflegends" label="leagueoflegends">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="755.7782" y="-45.728924"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="electronicmusic" label="electronicmusic">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
-        <viz:size value="1.5274725"></viz:size>
-        <viz:position x="45.129356" y="-92.035225"></viz:position>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="43.536842" y="303.51724"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="techsupport" label="techsupport">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="459.15134" y="-114.95758"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="PHP" label="PHP">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-344.7453" y="-394.7426"></viz:position>
+        <viz:color r="221" g="57" b="125"></viz:color>
+      </node>
+      <node id="SuicideWatch" label="SuicideWatch">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-525.0294" y="526.72"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="math" label="math">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-851.8432" y="-286.14038"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="ukpolitics" label="ukpolitics">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="552.1248" y="-187.4143"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Homebrewing" label="Homebrewing">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-227.97234" y="271.8788"></viz:position>
+        <viz:color r="177" g="92" b="48"></viz:color>
+      </node>
+      <node id="ffxiv" label="ffxiv">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-374.381" y="193.12225"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="seduction" label="seduction">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="690.6545" y="578.3214"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="linux4noobs" label="linux4noobs">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="291.5586" y="-551.9631"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="GT5" label="GT5">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-212.97319" y="427.58734"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Ubuntu" label="Ubuntu">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="431.50864" y="-411.6835"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="web_design" label="web_design">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-382.53143" y="-412.2691"></viz:position>
+        <viz:color r="221" g="57" b="125"></viz:color>
+      </node>
+      <node id="newzealand" label="newzealand">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="935.9457" y="-161.71658"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="MMA" label="MMA">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="524.018" y="-268.68243"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="formula1" label="formula1">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="-291.84106" y="238.53392"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="listentothis" label="listentothis">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.021978"></viz:size>
+        <viz:position x="365.5374" y="597.94366"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="climateskeptics" label="climateskeptics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-227.66771" y="-421.9233"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="brisbane" label="brisbane">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="287.21558" y="-279.88193"></viz:position>
+        <viz:position x="-133.95851" y="324.85794"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
       </node>
       <node id="photocritique" label="photocritique">
@@ -48,199 +1256,23 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-589.39795" y="-177.87524"></viz:position>
+        <viz:position x="437.7052" y="-28.84422"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="fffffffuuuuuuuuuuuu" label="fffffffuuuuuuuuuuuu">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.7912087"></viz:size>
-        <viz:position x="75.9948" y="-131.12244"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
       </node>
       <node id="nsfw" label="nsfw">
         <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-329.30746" y="-443.40985"></viz:position>
+        <viz:position x="33.89025" y="268.81995"></viz:position>
         <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="Pets" label="Pets">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-289.29724" y="9.946192"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="japan" label="japan">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-232.55635" y="168.60503"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="islam" label="islam">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="150.38795" y="167.07854"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="relationships" label="relationships">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-344.82587" y="28.127619"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="redditoroftheday" label="redditoroftheday">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-304.3653" y="41.770668"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="badcompany2" label="badcompany2">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="173.22408" y="-161.08777"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="Dallas" label="Dallas">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="217.84909" y="-176.25844"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="startrek" label="startrek">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-221.59842" y="130.37674"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="blog" label="blog">
-        <attvalues>
-          <attvalue for="modularity_class" value="4"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="213.71037" y="-32.67869"></viz:position>
-        <viz:color r="110" g="134" b="0"></viz:color>
-      </node>
-      <node id="hockey" label="hockey">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-41.592667" y="-306.43994"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="Atlanta" label="Atlanta">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="174.4146" y="-215.53761"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="soccer" label="soccer">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="-365.71994" y="-188.41084"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="leagueoflegends" label="leagueoflegends">
-        <attvalues>
-          <attvalue for="modularity_class" value="3"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-463.87234" y="-505.1626"></viz:position>
-        <viz:color r="0" g="146" b="131"></viz:color>
-      </node>
-      <node id="MensRights" label="MensRights">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="-255.89009" y="34.46626"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="australia" label="australia">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="217.14786" y="-149.1187"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="electronicmusic" label="electronicmusic">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="45.10549" y="-316.21222"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="food" label="food">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="-27.830816" y="-90.28473"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="photography" label="photography">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-353.71518" y="-123.85365"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="BDSMcommunity" label="BDSMcommunity">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-163.2969" y="-88.53042"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="trees" label="trees">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.6593406"></viz:size>
-        <viz:position x="-241.96819" y="-178.29361"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="geek" label="geek">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.5714285"></viz:size>
-        <viz:position x="-41.71225" y="46.664482"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="DebateAnAtheist" label="DebateAnAtheist">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="519.1026" y="125.62645"></viz:position>
+        <viz:position x="-623.23944" y="-141.08127"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
       </node>
       <node id="Stargate" label="Stargate">
@@ -248,39 +1280,7 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-124.16371" y="429.82983"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Fitness" label="Fitness">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="129.8271" y="-228.95265"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="feminisms" label="feminisms">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.4395604"></viz:size>
-        <viz:position x="-101.47005" y="20.86986"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="Military" label="Military">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="37.625" y="301.89487"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="cogsci" label="cogsci">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.5714285"></viz:size>
-        <viz:position x="-20.039244" y="64.4442"></viz:position>
+        <viz:position x="292.09488" y="-484.595"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="halo" label="halo">
@@ -288,47 +1288,15 @@
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="249.81122" y="-312.70837"></viz:position>
+        <viz:position x="-170.69667" y="367.815"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="Art" label="Art">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="257.9742" y="-88.7653"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="lost" label="lost">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-381.10516" y="422.7505"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="codbo" label="codbo">
-        <attvalues>
-          <attvalue for="modularity_class" value="2"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="84.01359" y="-262.78815"></viz:position>
-        <viz:color r="83" g="119" b="200"></viz:color>
-      </node>
-      <node id="nfl" label="nfl">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-46.660217" y="-378.98566"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="Marijuana" label="Marijuana">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-182.65486" y="-56.76247"></viz:position>
+        <viz:position x="290.4491" y="-303.96307"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="WeAreTheMusicMakers" label="WeAreTheMusicMakers">
@@ -336,191 +1304,39 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-220.42834" y="-385.78992"></viz:position>
+        <viz:position x="142.66554" y="357.9857"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="worldpolitics" label="worldpolitics">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="1.2603031" y="362.74725"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="techsupport" label="techsupport">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-344.40756" y="-38.19817"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Libertarian" label="Libertarian">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="174.82259" y="113.55127"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="Music" label="Music">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.5714285"></viz:size>
-        <viz:position x="-87.84954" y="-180.85713"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="PHP" label="PHP">
-        <attvalues>
-          <attvalue for="modularity_class" value="8"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="129.60234" y="344.89285"></viz:position>
-        <viz:color r="221" g="57" b="125"></viz:color>
       </node>
       <node id="tf2items" label="tf2items">
         <attvalues>
           <attvalue for="modularity_class" value="3"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-656.9301" y="-338.15387"></viz:position>
+        <viz:position x="647.237" y="-110.42088"></viz:position>
         <viz:color r="0" g="146" b="131"></viz:color>
-      </node>
-      <node id="unitedkingdom" label="unitedkingdom">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-440.25537" y="-105.9345"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="energy" label="energy">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.4835165"></viz:size>
-        <viz:position x="15.722462" y="72.07732"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="sex" label="sex">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.7912087"></viz:size>
-        <viz:position x="-231.54077" y="-9.116952"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="dubstep" label="dubstep">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-13.702373" y="-190.20435"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="ColbertRally" label="ColbertRally">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.3956044"></viz:size>
-        <viz:position x="-57.270763" y="-67.47371"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="TwoXChromosomes" label="TwoXChromosomes">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="2.054945"></viz:size>
-        <viz:position x="-214.81947" y="39.83689"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="PS3" label="PS3">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="-130.5659" y="-197.01915"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Android" label="Android">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="194.12349" y="0.84727955"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="HeroesofNewerth" label="HeroesofNewerth">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="319.63068" y="-241.04646"></viz:position>
+        <viz:position x="-215.7781" y="336.1734"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="fantasyfootball" label="fantasyfootball">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="18.202883" y="-251.59523"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="canada" label="canada">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="196.17505" y="-191.5732"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="humor" label="humor">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-78.892746" y="36.8426"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="psychology" label="psychology">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-144.8888" y="124.933945"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="chicago" label="chicago">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="66.41736" y="-206.95367"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="skeptic" label="skeptic">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-398.18655" y="-4.022726"></viz:position>
+        <viz:position x="282.15588" y="-45.66527"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="wow" label="wow">
-        <attvalues>
-          <attvalue for="modularity_class" value="3"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-497.24164" y="-563.46375"></viz:position>
-        <viz:color r="0" g="146" b="131"></viz:color>
       </node>
       <node id="wikipedia" label="wikipedia">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-196.85248" y="365.02878"></viz:position>
+        <viz:position x="194.43997" y="-600.8843"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="malefashionadvice" label="malefashionadvice">
@@ -528,23 +1344,15 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-460.87772" y="26.134417"></viz:position>
+        <viz:position x="500.39017" y="-236.35204"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="dwarffortress" label="dwarffortress">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="259.43805" y="-4.687905"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="gamedev" label="gamedev">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="231.55797" y="284.14853"></viz:position>
+        <viz:position x="-287.1644" y="-371.495"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="GuessTheMovie" label="GuessTheMovie">
@@ -552,295 +1360,39 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-348.27936" y="449.01233"></viz:position>
+        <viz:position x="340.4168" y="-351.58383"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="SuicideWatch" label="SuicideWatch">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-158.24245" y="253.78047"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="announcements" label="announcements">
-        <attvalues>
-          <attvalue for="modularity_class" value="4"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="157.59085" y="-19.752426"></viz:position>
-        <viz:color r="110" g="134" b="0"></viz:color>
-      </node>
-      <node id="electronics" label="electronics">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="96.341" y="80.41116"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="guns" label="guns">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="267.8057" y="-34.64803"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="math" label="math">
-        <attvalues>
-          <attvalue for="modularity_class" value="4"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="433.67575" y="287.4821"></viz:position>
-        <viz:color r="110" g="134" b="0"></viz:color>
-      </node>
-      <node id="bestof" label="bestof">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.6593406"></viz:size>
-        <viz:position x="-22.350422" y="-24.093668"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Equality" label="Equality">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="-103.01868" y="-39.914303"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="Favors" label="Favors">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="30.620766" y="-152.21494"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="Economics" label="Economics">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.6153846"></viz:size>
-        <viz:position x="116.3" y="30.801014"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="circlejerk" label="circlejerk">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="-7.0304565" y="-146.99933"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="answers" label="answers">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="27.285347" y="-33.744434"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="DebateAChristian" label="DebateAChristian">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="269.47272" y="66.484634"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="Frugal" label="Frugal">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.5714285"></viz:size>
-        <viz:position x="-50.7281" y="-6.285352"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="baseball" label="baseball">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="22.672783" y="-231.96463"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="news" label="news">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.3956044"></viz:size>
-        <viz:position x="-21.929651" y="138.91565"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="doctorwho" label="doctorwho">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-17.706146" y="93.64803"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="MW2" label="MW2">
         <attvalues>
           <attvalue for="modularity_class" value="2"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="176.8474" y="-501.46277"></viz:position>
+        <viz:position x="-311.59625" y="350.69678"></viz:position>
         <viz:color r="83" g="119" b="200"></viz:color>
-      </node>
-      <node id="Seattle" label="Seattle">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-352.00522" y="-81.91976"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="lgbt" label="lgbt">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-302.91382" y="108.52972"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="programming" label="programming">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="2.89011"></viz:size>
-        <viz:position x="55.484722" y="82.579094"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="creepy" label="creepy">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-32.486847" y="-121.16316"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="prop19" label="prop19">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-429.33423" y="-337.92722"></viz:position>
+        <viz:position x="948.5962" y="178.0269"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="scifi" label="scifi">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.7472527"></viz:size>
-        <viz:position x="-95.422676" y="170.99289"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="itookapicture" label="itookapicture">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-173.4464" y="-144.02457"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="anime" label="anime">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="158.86156" y="-61.105392"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="ukpolitics" label="ukpolitics">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-462.43936" y="-46.049477"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="americanpirateparty" label="americanpirateparty">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="228.7343" y="-61.382053"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="buildapc" label="buildapc">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="176.32562" y="37.593716"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="apple" label="apple">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="163.4438" y="8.9684105"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="drunk" label="drunk">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.3516483"></viz:size>
-        <viz:position x="-67.54293" y="-89.615295"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="todayilearned" label="todayilearned">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="2.9340658"></viz:size>
-        <viz:position x="-128.3683" y="-14.380401"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Homebrewing" label="Homebrewing">
-        <attvalues>
-          <attvalue for="modularity_class" value="5"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="190.35658" y="-307.65427"></viz:position>
-        <viz:color r="177" g="92" b="48"></viz:color>
       </node>
       <node id="bjj" label="bjj">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-763.5985" y="54.504864"></viz:position>
+        <viz:position x="607.27893" y="-329.61243"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Buddhism" label="Buddhism">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="210.894" y="50.288548"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
       </node>
       <node id="haskell" label="haskell">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="203.9975" y="308.16846"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Health" label="Health">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.4835165"></viz:size>
-        <viz:position x="-66.03497" y="72.969025"></viz:position>
+        <viz:position x="-528.1185" y="-665.21936"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="rpg" label="rpg">
@@ -848,15 +1400,7 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-172.03749" y="418.712"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="linux" label="linux">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="-61.256874" y="204.49487"></viz:position>
+        <viz:position x="273.7988" y="-452.73434"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="Gunners" label="Gunners">
@@ -864,455 +1408,87 @@
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-593.3018" y="-264.85934"></viz:position>
+        <viz:position x="719.7787" y="-70.61641"></viz:position>
         <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="ffxiv" label="ffxiv">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="235.01297" y="-224.69966"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="tf2" label="tf2">
-        <attvalues>
-          <attvalue for="modularity_class" value="3"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-443.90552" y="-234.13069"></viz:position>
-        <viz:color r="0" g="146" b="131"></viz:color>
       </node>
       <node id="mcpublic" label="mcpublic">
         <attvalues>
           <attvalue for="modularity_class" value="9"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="705.81964" y="-27.052233"></viz:position>
+        <viz:position x="-699.8744" y="308.38126"></viz:position>
         <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="environment" label="environment">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.5274725"></viz:size>
-        <viz:position x="71.167244" y="74.21544"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="ECE" label="ECE">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-44.273018" y="114.68964"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Drugs" label="Drugs">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-62.921715" y="-150.01315"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Bad_Cop_No_Donut" label="Bad_Cop_No_Donut">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-26.893312" y="15.532094"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="seduction" label="seduction">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-398.75256" y="94.9708"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="linux4noobs" label="linux4noobs">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-258.70157" y="350.96762"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="sports" label="sports">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.4835165"></viz:size>
-        <viz:position x="-163.6407" y="-282.29623"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="Guitar" label="Guitar">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-113.08228" y="-153.04974"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Autos" label="Autos">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="176.57027" y="-118.47472"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="beer" label="beer">
-        <attvalues>
-          <attvalue for="modularity_class" value="5"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="120.08086" y="-189.15707"></viz:position>
-        <viz:color r="177" g="92" b="48"></viz:color>
-      </node>
-      <node id="GT5" label="GT5">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="8.156906" y="-313.50986"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="ireland" label="ireland">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-310.00006" y="469.28046"></viz:position>
+        <viz:position x="375.1117" y="-381.40863"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Ubuntu" label="Ubuntu">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-343.62323" y="223.48216"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="web_design" label="web_design">
-        <attvalues>
-          <attvalue for="modularity_class" value="8"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="79.4935" y="391.23508"></viz:position>
-        <viz:color r="221" g="57" b="125"></viz:color>
-      </node>
-      <node id="iphone" label="iphone">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="75.67534" y="18.012543"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="collapse" label="collapse">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="148.58195" y="115.22498"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="shittyadvice" label="shittyadvice">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-172.38892" y="-183.27885"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Eve" label="Eve">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="-30.57885" y="-169.04634"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="Christianity" label="Christianity">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="201.71135" y="-68.999626"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="Austin" label="Austin">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="231.25757" y="-116.119675"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="gameswap" label="gameswap">
         <attvalues>
           <attvalue for="modularity_class" value="9"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="363.2913" y="-183.51608"></viz:position>
+        <viz:position x="-478.7572" y="142.94026"></viz:position>
         <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="gonewild" label="gonewild">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-195.42819" y="-239.37517"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
       </node>
       <node id="NarFFL" label="NarFFL">
         <attvalues>
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-210.64096" y="-527.7449"></viz:position>
+        <viz:position x="252.89435" y="499.46982"></viz:position>
         <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="comics" label="comics">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.4395604"></viz:size>
-        <viz:position x="-15.424472" y="-35.722713"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="entertainment" label="entertainment">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.5274725"></viz:size>
-        <viz:position x="-60.49398" y="22.705624"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="newzealand" label="newzealand">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-127.103714" y="222.15845"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="offbeat" label="offbeat">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.9670329"></viz:size>
-        <viz:position x="-92.60127" y="53.436226"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="movies" label="movies">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="-212.86148" y="241.48386"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="conspiracy" label="conspiracy">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="118.70356" y="57.780163"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="civ" label="civ">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="259.2941" y="-117.536354"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="redditguild" label="redditguild">
         <attvalues>
           <attvalue for="modularity_class" value="3"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-629.11383" y="-723.58624"></viz:position>
+        <viz:position x="804.4846" y="-37.571117"></viz:position>
         <viz:color r="0" g="146" b="131"></viz:color>
-      </node>
-      <node id="MMA" label="MMA">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-539.527" y="24.566502"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="history" label="history">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.3956044"></viz:size>
-        <viz:position x="-105.30708" y="126.86639"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="HealthProject" label="HealthProject">
         <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-448.21463" y="170.0817"></viz:position>
+        <viz:position x="883.48236" y="598.22485"></viz:position>
         <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="formula1" label="formula1">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="278.78528" y="-173.7232"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
       </node>
       <node id="metanarchism" label="metanarchism">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="472.4969" y="128.98027"></viz:position>
+        <viz:position x="-633.6704" y="-302.67847"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="videos" label="videos">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="2.9340658"></viz:size>
-        <viz:position x="-197.13686" y="-19.098951"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="boston" label="boston">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="12.796835" y="11.47213"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="Cooking" label="Cooking">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="6.8099804" y="-107.4666"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="hardware" label="hardware">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="39.353077" y="111.457535"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="engineering" label="engineering">
         <attvalues>
           <attvalue for="modularity_class" value="9"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="374.6155" y="-92.31975"></viz:position>
+        <viz:position x="-398.84134" y="-105.25487"></viz:position>
         <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="exmormon" label="exmormon">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="244.92097" y="-145.35541"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="relationship_advice" label="relationship_advice">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.4835165"></viz:size>
-        <viz:position x="-270.54285" y="-25.117302"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="OneY" label="OneY">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-386.5088" y="48.199303"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
       </node>
       <node id="nba" label="nba">
         <attvalues>
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-256.68866" y="-512.34576"></viz:position>
+        <viz:position x="330.9769" y="709.74274"></viz:position>
         <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="starcraft" label="starcraft">
-        <attvalues>
-          <attvalue for="modularity_class" value="3"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="-300.37924" y="-327.60846"></viz:position>
-        <viz:color r="0" g="146" b="131"></viz:color>
-      </node>
-      <node id="funny" label="funny">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="4.032967"></viz:size>
-        <viz:position x="89.90054" y="-57.50924"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="netsec" label="netsec">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="-158.11877" y="84.67372"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="ideasfortheadmins" label="ideasfortheadmins">
-        <attvalues>
-          <attvalue for="modularity_class" value="4"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="44.64221" y="-7.632645"></viz:position>
-        <viz:color r="110" g="134" b="0"></viz:color>
-      </node>
-      <node id="bicycling" label="bicycling">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="15.87535" y="-77.85197"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="self" label="self">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.7032967"></viz:size>
-        <viz:position x="-169.68018" y="-21.396856"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="IAmA" label="IAmA">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="5.0"></viz:size>
-        <viz:position x="78.18416" y="-79.88001"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
       </node>
       <node id="cheatatmathhomework" label="cheatatmathhomework">
         <attvalues>
           <attvalue for="modularity_class" value="4"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="613.6495" y="413.7554"></viz:position>
+        <viz:position x="-930.40656" y="-312.20718"></viz:position>
         <viz:color r="110" g="134" b="0"></viz:color>
       </node>
       <node id="LosAngeles" label="LosAngeles">
@@ -1320,103 +1496,31 @@
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-122.82142" y="-439.45367"></viz:position>
+        <viz:position x="287.8622" y="796.74164"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="depression" label="depression">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="30.696312" y="152.20541"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="Design" label="Design">
-        <attvalues>
-          <attvalue for="modularity_class" value="8"></attvalue>
-        </attvalues>
-        <viz:size value="1.2197802"></viz:size>
-        <viz:position x="8.669658" y="133.88905"></viz:position>
-        <viz:color r="221" g="57" b="125"></viz:color>
       </node>
       <node id="911truth" label="911truth">
         <attvalues>
           <attvalue for="modularity_class" value="7"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="342.01172" y="200.10527"></viz:position>
+        <viz:position x="-697.17786" y="-87.97203"></viz:position>
         <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="evedreddit" label="evedreddit">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="101.25666" y="-211.1933"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="economy" label="economy">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.4835165"></viz:size>
-        <viz:position x="68.66956" y="118.4493"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="gaming" label="gaming">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="4.120879"></viz:size>
-        <viz:position x="95.320625" y="-76.83898"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
       </node>
       <node id="poker" label="poker">
         <attvalues>
           <attvalue for="modularity_class" value="3"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-416.94162" y="-530.5555"></viz:position>
+        <viz:position x="944.28033" y="-66.50447"></viz:position>
         <viz:color r="0" g="146" b="131"></viz:color>
-      </node>
-      <node id="Anarchism" label="Anarchism">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="238.17938" y="45.262077"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="aww" label="aww">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="-62.18729" y="-40.93153"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="askscience" label="askscience">
-        <attvalues>
-          <attvalue for="modularity_class" value="4"></attvalue>
-        </attvalues>
-        <viz:size value="1.3076923"></viz:size>
-        <viz:position x="163.90439" y="90.73958"></viz:position>
-        <viz:color r="110" g="134" b="0"></viz:color>
-      </node>
-      <node id="philosophy" label="philosophy">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="54.93563" y="188.80492"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="Israel" label="Israel">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="25.64305" y="598.5988"></viz:position>
+        <viz:position x="-132.7336" y="-803.6259"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
       <node id="MLS" label="MLS">
@@ -1424,119 +1528,15 @@
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="-570.5218" y="-310.23096"></viz:position>
+        <viz:position x="618.9368" y="10.660409"></viz:position>
         <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="comicbooks" label="comicbooks">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="103.53281" y="127.42923"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="Physics" label="Physics">
-        <attvalues>
-          <attvalue for="modularity_class" value="4"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="79.69166" y="251.01733"></viz:position>
-        <viz:color r="110" g="134" b="0"></viz:color>
-      </node>
-      <node id="Minecraft" label="Minecraft">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="479.60123" y="-21.984549"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="DIY" label="DIY">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="25.678822" y="41.965553"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="space" label="space">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.0879121"></viz:size>
-        <viz:position x="-251.32101" y="131.28073"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="CFB" label="CFB">
-        <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="1.2637362"></viz:size>
-        <viz:position x="-51.432972" y="-242.72165"></viz:position>
-        <viz:color r="255" g="41" b="49"></viz:color>
-      </node>
-      <node id="atheism" label="atheism">
-        <attvalues>
-          <attvalue for="modularity_class" value="9"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="232.89857" y="-11.130518"></viz:position>
-        <viz:color r="197" g="107" b="0"></viz:color>
-      </node>
-      <node id="gadgets" label="gadgets">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.4835165"></viz:size>
-        <viz:position x="-64.711136" y="91.06598"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Dexter" label="Dexter">
-        <attvalues>
-          <attvalue for="modularity_class" value="7"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="156.68358" y="-186.9663"></viz:position>
-        <viz:color r="199" g="84" b="211"></viz:color>
-      </node>
-      <node id="secretsanta" label="secretsanta">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-300.78668" y="-18.429525"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
-      </node>
-      <node id="listentothis" label="listentothis">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.043956"></viz:size>
-        <viz:position x="-276.95142" y="-213.9563"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="Portland" label="Portland">
-        <attvalues>
-          <attvalue for="modularity_class" value="6"></attvalue>
-        </attvalues>
-        <viz:size value="1.1318681"></viz:size>
-        <viz:position x="-290.93234" y="-81.024765"></viz:position>
-        <viz:color r="0" g="152" b="46"></viz:color>
-      </node>
-      <node id="needadvice" label="needadvice">
-        <attvalues>
-          <attvalue for="modularity_class" value="1"></attvalue>
-        </attvalues>
-        <viz:size value="1.1758242"></viz:size>
-        <viz:position x="-276.46338" y="70.502754"></viz:position>
-        <viz:color r="0" g="152" b="215"></viz:color>
       </node>
       <node id="learnprogramming" label="learnprogramming">
         <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
         <viz:size value="1.0"></viz:size>
-        <viz:position x="171.96309" y="324.9201"></viz:position>
+        <viz:position x="-602.7032" y="-788.8117"></viz:position>
         <viz:color r="0" g="152" b="46"></viz:color>
       </node>
     </nodes>

@@ -121,11 +121,7 @@ def graph():
     query = getitem(args, 'year', 2015)
     
     fn = "../static/data/graph{}.gexf".format(query)    
-    return render_template('graph.html', fn = fn)
-
-   
-
-
+    return render_template('graph.html', fn = fn, section = "graph")
 
 ##################################################
 # Plotting area
@@ -198,6 +194,11 @@ def hctest():
 def hcstat():
     return render_template('HCstat.html')
     
+    
+    
+###############################################################3
+# Section for usin bokeh, deprecated
+############################################################### 
 def ngramgraph():
     pwidth = 550
     pheight = 400

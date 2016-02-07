@@ -1,57 +1,35 @@
 {% extends "base.html" %}
-
-
 {% block highchartbody %}
 
-
 <div class="container">
-      <div class="starter-template">
-        <div class="row" style="height:25vh;margin-top:2vh;">
+	<div class="starter-template">
+		<div class="row" style="height:20vh;margin-top:1vh;">
 
-          <div class="col-md-10 col-md-offset-1">
+			<div class="col-md-10 col-md-offset-1">
+				<form name = "ngramquery" method="GET">
+					<div class="form-group text-center">
+						<label style="font-weight:300; font-size:36px;">
+						Type in N-grams separated by comma
+						</label>
+						<br />
+						<input type="text" class="form-control" id="input" name="input" placeholder="{{ text }}">
+						<br />
 
-    <form name = "ngramquery" method="GET">
-       <div class="form-group text-center">
-	<label style="font-weight:300; font-size:36px;">
-	Type in N-grams separated by comma test
-	</label>
-	<br /><br />
-	<input type="text" class="form-control" id="input" name="input" placeholder="{{ text }}">
-	<br />
-	
+						Examples: 
+						<a href="ngram?input=obama&input-container=Send">obama</a>;
+						<a href="ngram?input=black+friday%2C+superbowl&input-container=Send">superbowl, black friday</a>;
+						<a href="ngram?input=stock+market+crash&input-container=Send">stock market crash</a>
+						<br /> <br />
 
-	<!---
-	<select class="form-control" name="subreddit">
-		{% for o in option_list %}
-                <option value="{{ o }}" SELECTED>{{ o }}</option>
-		{% endfor %}
-        </select>
+						<button type="submit" value="Send" name="input-container" class="btn btn-default id-submit">
+						Submit
+						</button>
+					</div>
+				</form>
+			</div>
 
-	<br /><br /> --->
-	Examples: 
-	<a href="ngram?input=obama&input-container=Send">obama</a>;
-	<a href="ngram?input=black+friday%2C+superbowl&input-container=Send">superbowl, black friday</a>;
-	<a href="ngram?input=stock+market+crash&input-container=Send">stock market crash</a>
-	<br /><br />
-
-	<button type="submit" value="Send" name="input-container" class="btn btn-default id-submit">
-		Submit
-	</button>
-
+		</div>
 	</div>
-    </form>
-
-	
-</div>
-
-</div>
-</div>
-
-<!---
-<script src={{ url_for('static', filename='./highcharts.js') }}></script>
-<script src={{ url_for('static', filename='./modules/exporting.js') }}></script>
---->
-
 
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <div class="spacer"></div>
@@ -61,24 +39,25 @@
 var fs = '16px'
 var series = {{ series|safe }}
 var series2 = {{ series2|safe }}
-var xAxis = {"title": {"text": 'Time', style: {"fontSize":fs}}, 'type': 'datetime', labels: {style: {"fontSize":fs}}}
+var xAxis = {"title": {"text": 'Time', style: {"fontSize":fs}}, 'type': 'datetime', labels: {style: {"fontSize":fs}}, gridLineColor: '#C0C0C0', gridLineWidth: 1}
 var yAxis = {"title": {"text": 'Word Count', style: {"fontSize":fs}} , min: 0, labels: {style: {"fontSize":fs}}, gridLineColor: '#C0C0C0'}
 var opt = {
-                series: {
-                    fillColor: "none",
-                    marker: {
-                        enabled:false
-                    },
-                    lineWidth: 2,
-                    states: {
-                        hover: {
-                            lineWidth: 2
-                        }
-                    },
-                    threshold: null,
-		    enableMouseTracking: false
-                }
-            }
+          series: {
+              fillColor: "none",
+              marker: {
+                  enabled:true,
+						radius: 1.5
+              },
+              lineWidth: 2,
+              states: {
+                  hover: {
+                      lineWidth: 2
+                  }
+              },
+              threshold: null,
+ 				  enableMouseTracking: true
+          }
+      }
 
 $(function () {
     $('#container').highcharts({
@@ -106,12 +85,17 @@ $(function () {
 
 </script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73417322-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 
 
-</div>
-
-</div>
-</div>
-</div>
 {% endblock %}
