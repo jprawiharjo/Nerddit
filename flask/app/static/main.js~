@@ -1,0 +1,14 @@
+// custom javascript
+
+
+$(function() {
+  console.log('jquery is working!')
+  createGraph2();
+});
+
+function createGraph() {
+
+sigma.parsers.gexf('data/subreddits.gexf', {
+  container: 'graph-container'
+});
+};

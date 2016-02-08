@@ -37,7 +37,7 @@
 				<br></br>
 				Try it: 
 				<a href="#" onclick="onSearch('programming')"><label style="cursor:pointer">programming</label></a>,
-				<a href="#" onclick="onSearch('hockey')"><label style="cursor:pointer">hockey</label></a>
+				<a href="#" onclick="onSearch('unitedkingdom')"><label style="cursor:pointer">unitedkingdom</label></a>
 				<br />
 				Hint: double-click a node to select, whitespace to deselect 
 				<br></br>

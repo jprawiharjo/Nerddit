@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block graph %}
+
+
+<script src={{ url_for('static', filename='./js/sigma.min.js') }}></script>
+<script src={{ url_for('static', filename='./plugins/sigma.plugins.dragNodes.min.js') }}></script>
+<script src={{ url_for('static', filename='./plugins/sigma.plugins.filter.min.js') }}></script>
+<script src={{ url_for('static', filename='./plugins/sigma.plugins.neighborhoods.min.js') }}></script>
+<script src={{ url_for('static', filename='./plugins/sigma.renderers.customShapes.min.js') }}></script>
+<script src={{ url_for('static', filename='./plugins/sigma.parsers.gexf.min.js') }}></script>
+
+<div class="container">
+
+<div class="row" style="height:20vh;margin-top:0vh;">
+               <div class="col-md-4 col-md-offset-4" style="margin-top:2vh;">
+                       <form name = "graphquery" method="GET">
+                               <div class="form-group text-center">
+
+                                       <label style="font-weight:300; font-size:36px;">Select Year</label>
+                                       <br /><br />
+                                       <select class="form-control" name="year">
+                                               <option>2015</option>
+                                               <option>2014</option>
+                                               <option>2013</option>
+                                               <option>2012</option>
+                                               <option>2011</option>
+                                               <option>2010</option>
+                                               <option>2009</option>
+                                       </select>
+                                       <br /><br />
+                                       <button type="submit" value="Send" name="graphyear-container" class="btn btn-default id-submit">Submit</button>
+                               </div>
+                       </form>
+               </div>
+       </div>
+
+        <div class="row" style="height:100vh;margin-top:15vh;">
+
+<div id="graph-container" style="min-width: 310px; height: 600px; margin: 0 auto">
+
+</div>
+</div>
+</div>
+
+
+  
+<script>
+
+
+var fn = '{{ fn |safe }}';
+//console.log(fn);
+
+sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k,
+        neighbors = {},
+        index = this.allNeighborsIndex[nodeId] || {};
+
+    for (k in index)
+      neighbors[k] = this.nodesIndex[k];
+
+    return neighbors;
+  });
+
+var sig = new sigma({
+            renderer: {
+              container: document.getElementById('graph-container'),
+              type: 'canvas'
+            },
+            settings: {
+    doubleClickEnabled: false,
+    minEdgeSize: 0.5,
+    maxEdgeSize: 1.5,
+    minNodeSize: 1,
+    maxNodeSize: 6,
+    labelThreshold: 9,
+    enableEdgeHovering: true,
+    edgeHoverColor: 'edge',
+    defaultEdgeHoverColor: '#000',
+    edgeHoverSizeRatio: 1,
+    edgeHoverExtremities: true,
+    defaultLabelSize: 14
+  }
+          });
+
+cam = sig.addCamera();
+
+//{{ url_for('static', filename='./data/subreddit.gexf') }}
+
+sigma.parsers.gexf(
+  fn,
+  sig,
+  function(s) {
+
+
+   s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+      s.graph.edges().forEach(function(e) {
+        e.originalColor = e.color;
+	  e.type = 'curve';
+      });
+	s.refresh();
+
+   s.bind('clickNode', function(e) {
+        var nodeId = e.data.node.id,
+            toKeep = s.graph.neighbors(nodeId);
+        toKeep[nodeId] = e.data.node;
+
+        s.graph.nodes().forEach(function(n) {
+          if (toKeep[n.id])
+            n.color = n.originalColor;
+          else
+            n.color = '#eee';
+        });
+
+        s.graph.edges().forEach(function(e) {
+          if (toKeep[e.source] && toKeep[e.target])
+            e.color = e.originalColor;
+          else
+            e.color = '#eee';
+        });
+	s.refresh();
+	});
+
+  // When the stage is clicked, we just color each
+      // node and edge with its original color.
+      s.bind('clickStage', function(e) {
+        s.graph.nodes().forEach(function(n) {
+          n.color = n.originalColor;
+        });
+
+        s.graph.edges().forEach(function(e) {
+          e.color = e.originalColor;
+        });
+
+        // Same as in the previous event:
+        s.refresh();
+      }); 
+
+});
+
+
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73417322-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{% endblock %}
+

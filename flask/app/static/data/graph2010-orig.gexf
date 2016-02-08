@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2016-02-05">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="climateskeptics" label="climateskeptics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="270.92126" y="253.60318"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="houston" label="houston">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-100.197105" y="-216.298"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="DoesAnybodyElse" label="DoesAnybodyElse">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.5274725"></viz:size>
+        <viz:position x="45.129356" y="-92.035225"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="brisbane" label="brisbane">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="287.21558" y="-279.88193"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="photocritique" label="photocritique">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-589.39795" y="-177.87524"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="fffffffuuuuuuuuuuuu" label="fffffffuuuuuuuuuuuu">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.7912087"></viz:size>
+        <viz:position x="75.9948" y="-131.12244"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="nsfw" label="nsfw">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-329.30746" y="-443.40985"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Pets" label="Pets">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-289.29724" y="9.946192"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="japan" label="japan">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-232.55635" y="168.60503"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="islam" label="islam">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="150.38795" y="167.07854"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="relationships" label="relationships">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-344.82587" y="28.127619"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="redditoroftheday" label="redditoroftheday">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-304.3653" y="41.770668"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="badcompany2" label="badcompany2">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="173.22408" y="-161.08777"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Dallas" label="Dallas">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="217.84909" y="-176.25844"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="startrek" label="startrek">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-221.59842" y="130.37674"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="blog" label="blog">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="213.71037" y="-32.67869"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="hockey" label="hockey">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-41.592667" y="-306.43994"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Atlanta" label="Atlanta">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="174.4146" y="-215.53761"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="soccer" label="soccer">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-365.71994" y="-188.41084"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="leagueoflegends" label="leagueoflegends">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-463.87234" y="-505.1626"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="MensRights" label="MensRights">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="-255.89009" y="34.46626"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="australia" label="australia">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="217.14786" y="-149.1187"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="electronicmusic" label="electronicmusic">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="45.10549" y="-316.21222"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="food" label="food">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="-27.830816" y="-90.28473"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="photography" label="photography">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-353.71518" y="-123.85365"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="BDSMcommunity" label="BDSMcommunity">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-163.2969" y="-88.53042"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="trees" label="trees">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.6593406"></viz:size>
+        <viz:position x="-241.96819" y="-178.29361"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="geek" label="geek">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.5714285"></viz:size>
+        <viz:position x="-41.71225" y="46.664482"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="DebateAnAtheist" label="DebateAnAtheist">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="519.1026" y="125.62645"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Stargate" label="Stargate">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-124.16371" y="429.82983"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Fitness" label="Fitness">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="129.8271" y="-228.95265"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="feminisms" label="feminisms">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.4395604"></viz:size>
+        <viz:position x="-101.47005" y="20.86986"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Military" label="Military">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="37.625" y="301.89487"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="cogsci" label="cogsci">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.5714285"></viz:size>
+        <viz:position x="-20.039244" y="64.4442"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="halo" label="halo">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="249.81122" y="-312.70837"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Art" label="Art">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="257.9742" y="-88.7653"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="lost" label="lost">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-381.10516" y="422.7505"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="codbo" label="codbo">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="84.01359" y="-262.78815"></viz:position>
+        <viz:color r="83" g="119" b="200"></viz:color>
+      </node>
+      <node id="nfl" label="nfl">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-46.660217" y="-378.98566"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Marijuana" label="Marijuana">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-182.65486" y="-56.76247"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="WeAreTheMusicMakers" label="WeAreTheMusicMakers">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-220.42834" y="-385.78992"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="worldpolitics" label="worldpolitics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="1.2603031" y="362.74725"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="techsupport" label="techsupport">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-344.40756" y="-38.19817"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Libertarian" label="Libertarian">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="174.82259" y="113.55127"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Music" label="Music">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.5714285"></viz:size>
+        <viz:position x="-87.84954" y="-180.85713"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="PHP" label="PHP">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="129.60234" y="344.89285"></viz:position>
+        <viz:color r="221" g="57" b="125"></viz:color>
+      </node>
+      <node id="tf2items" label="tf2items">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-656.9301" y="-338.15387"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="unitedkingdom" label="unitedkingdom">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-440.25537" y="-105.9345"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="energy" label="energy">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="15.722462" y="72.07732"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="sex" label="sex">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.7912087"></viz:size>
+        <viz:position x="-231.54077" y="-9.116952"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="dubstep" label="dubstep">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-13.702373" y="-190.20435"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="ColbertRally" label="ColbertRally">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3956044"></viz:size>
+        <viz:position x="-57.270763" y="-67.47371"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="TwoXChromosomes" label="TwoXChromosomes">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="2.054945"></viz:size>
+        <viz:position x="-214.81947" y="39.83689"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="PS3" label="PS3">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-130.5659" y="-197.01915"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Android" label="Android">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="194.12349" y="0.84727955"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="HeroesofNewerth" label="HeroesofNewerth">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="319.63068" y="-241.04646"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="fantasyfootball" label="fantasyfootball">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="18.202883" y="-251.59523"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="canada" label="canada">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="196.17505" y="-191.5732"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="humor" label="humor">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-78.892746" y="36.8426"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="psychology" label="psychology">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-144.8888" y="124.933945"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="chicago" label="chicago">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="66.41736" y="-206.95367"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="skeptic" label="skeptic">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-398.18655" y="-4.022726"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="wow" label="wow">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-497.24164" y="-563.46375"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="wikipedia" label="wikipedia">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-196.85248" y="365.02878"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="malefashionadvice" label="malefashionadvice">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-460.87772" y="26.134417"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="dwarffortress" label="dwarffortress">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="259.43805" y="-4.687905"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="gamedev" label="gamedev">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="231.55797" y="284.14853"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="GuessTheMovie" label="GuessTheMovie">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-348.27936" y="449.01233"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="SuicideWatch" label="SuicideWatch">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-158.24245" y="253.78047"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="announcements" label="announcements">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="157.59085" y="-19.752426"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="electronics" label="electronics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="96.341" y="80.41116"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="guns" label="guns">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="267.8057" y="-34.64803"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="math" label="math">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="433.67575" y="287.4821"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="bestof" label="bestof">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.6593406"></viz:size>
+        <viz:position x="-22.350422" y="-24.093668"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Equality" label="Equality">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-103.01868" y="-39.914303"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Favors" label="Favors">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="30.620766" y="-152.21494"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Economics" label="Economics">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.6153846"></viz:size>
+        <viz:position x="116.3" y="30.801014"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="circlejerk" label="circlejerk">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-7.0304565" y="-146.99933"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="answers" label="answers">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="27.285347" y="-33.744434"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="DebateAChristian" label="DebateAChristian">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="269.47272" y="66.484634"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Frugal" label="Frugal">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.5714285"></viz:size>
+        <viz:position x="-50.7281" y="-6.285352"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="baseball" label="baseball">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="22.672783" y="-231.96463"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="news" label="news">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3956044"></viz:size>
+        <viz:position x="-21.929651" y="138.91565"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="doctorwho" label="doctorwho">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-17.706146" y="93.64803"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="MW2" label="MW2">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="176.8474" y="-501.46277"></viz:position>
+        <viz:color r="83" g="119" b="200"></viz:color>
+      </node>
+      <node id="Seattle" label="Seattle">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-352.00522" y="-81.91976"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="lgbt" label="lgbt">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-302.91382" y="108.52972"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="programming" label="programming">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="2.89011"></viz:size>
+        <viz:position x="55.484722" y="82.579094"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="creepy" label="creepy">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-32.486847" y="-121.16316"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="prop19" label="prop19">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-429.33423" y="-337.92722"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="scifi" label="scifi">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.7472527"></viz:size>
+        <viz:position x="-95.422676" y="170.99289"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="itookapicture" label="itookapicture">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-173.4464" y="-144.02457"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="anime" label="anime">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="158.86156" y="-61.105392"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="ukpolitics" label="ukpolitics">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-462.43936" y="-46.049477"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="americanpirateparty" label="americanpirateparty">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="228.7343" y="-61.382053"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="buildapc" label="buildapc">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="176.32562" y="37.593716"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="apple" label="apple">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="163.4438" y="8.9684105"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="drunk" label="drunk">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.3516483"></viz:size>
+        <viz:position x="-67.54293" y="-89.615295"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="todayilearned" label="todayilearned">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="2.9340658"></viz:size>
+        <viz:position x="-128.3683" y="-14.380401"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Homebrewing" label="Homebrewing">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="190.35658" y="-307.65427"></viz:position>
+        <viz:color r="177" g="92" b="48"></viz:color>
+      </node>
+      <node id="bjj" label="bjj">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-763.5985" y="54.504864"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Buddhism" label="Buddhism">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="210.894" y="50.288548"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="haskell" label="haskell">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="203.9975" y="308.16846"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Health" label="Health">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="-66.03497" y="72.969025"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="rpg" label="rpg">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-172.03749" y="418.712"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="linux" label="linux">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-61.256874" y="204.49487"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Gunners" label="Gunners">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-593.3018" y="-264.85934"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="ffxiv" label="ffxiv">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="235.01297" y="-224.69966"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="tf2" label="tf2">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-443.90552" y="-234.13069"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="mcpublic" label="mcpublic">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="705.81964" y="-27.052233"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="environment" label="environment">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.5274725"></viz:size>
+        <viz:position x="71.167244" y="74.21544"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="ECE" label="ECE">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-44.273018" y="114.68964"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Drugs" label="Drugs">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-62.921715" y="-150.01315"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Bad_Cop_No_Donut" label="Bad_Cop_No_Donut">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-26.893312" y="15.532094"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="seduction" label="seduction">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-398.75256" y="94.9708"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="linux4noobs" label="linux4noobs">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-258.70157" y="350.96762"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="sports" label="sports">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="-163.6407" y="-282.29623"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="Guitar" label="Guitar">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-113.08228" y="-153.04974"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Autos" label="Autos">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="176.57027" y="-118.47472"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="beer" label="beer">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="120.08086" y="-189.15707"></viz:position>
+        <viz:color r="177" g="92" b="48"></viz:color>
+      </node>
+      <node id="GT5" label="GT5">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="8.156906" y="-313.50986"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="ireland" label="ireland">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-310.00006" y="469.28046"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Ubuntu" label="Ubuntu">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-343.62323" y="223.48216"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="web_design" label="web_design">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="79.4935" y="391.23508"></viz:position>
+        <viz:color r="221" g="57" b="125"></viz:color>
+      </node>
+      <node id="iphone" label="iphone">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="75.67534" y="18.012543"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="collapse" label="collapse">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="148.58195" y="115.22498"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="shittyadvice" label="shittyadvice">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-172.38892" y="-183.27885"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Eve" label="Eve">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="-30.57885" y="-169.04634"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Christianity" label="Christianity">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="201.71135" y="-68.999626"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Austin" label="Austin">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="231.25757" y="-116.119675"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="gameswap" label="gameswap">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="363.2913" y="-183.51608"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="gonewild" label="gonewild">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-195.42819" y="-239.37517"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="NarFFL" label="NarFFL">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-210.64096" y="-527.7449"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="comics" label="comics">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.4395604"></viz:size>
+        <viz:position x="-15.424472" y="-35.722713"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="entertainment" label="entertainment">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.5274725"></viz:size>
+        <viz:position x="-60.49398" y="22.705624"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="newzealand" label="newzealand">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-127.103714" y="222.15845"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="offbeat" label="offbeat">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.9670329"></viz:size>
+        <viz:position x="-92.60127" y="53.436226"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="movies" label="movies">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="-212.86148" y="241.48386"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="conspiracy" label="conspiracy">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="118.70356" y="57.780163"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="civ" label="civ">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="259.2941" y="-117.536354"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="redditguild" label="redditguild">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-629.11383" y="-723.58624"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="MMA" label="MMA">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-539.527" y="24.566502"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="history" label="history">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3956044"></viz:size>
+        <viz:position x="-105.30708" y="126.86639"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="HealthProject" label="HealthProject">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-448.21463" y="170.0817"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="formula1" label="formula1">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="278.78528" y="-173.7232"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="metanarchism" label="metanarchism">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="472.4969" y="128.98027"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="videos" label="videos">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="2.9340658"></viz:size>
+        <viz:position x="-197.13686" y="-19.098951"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="boston" label="boston">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="12.796835" y="11.47213"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="Cooking" label="Cooking">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="6.8099804" y="-107.4666"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="hardware" label="hardware">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="39.353077" y="111.457535"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="engineering" label="engineering">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="374.6155" y="-92.31975"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="exmormon" label="exmormon">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="244.92097" y="-145.35541"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="relationship_advice" label="relationship_advice">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="-270.54285" y="-25.117302"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="OneY" label="OneY">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-386.5088" y="48.199303"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="nba" label="nba">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-256.68866" y="-512.34576"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="starcraft" label="starcraft">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="-300.37924" y="-327.60846"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="funny" label="funny">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="4.032967"></viz:size>
+        <viz:position x="89.90054" y="-57.50924"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="netsec" label="netsec">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="-158.11877" y="84.67372"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="ideasfortheadmins" label="ideasfortheadmins">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="44.64221" y="-7.632645"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="bicycling" label="bicycling">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="15.87535" y="-77.85197"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="self" label="self">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.7032967"></viz:size>
+        <viz:position x="-169.68018" y="-21.396856"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="IAmA" label="IAmA">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="5.0"></viz:size>
+        <viz:position x="78.18416" y="-79.88001"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="cheatatmathhomework" label="cheatatmathhomework">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="613.6495" y="413.7554"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="LosAngeles" label="LosAngeles">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-122.82142" y="-439.45367"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="depression" label="depression">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="30.696312" y="152.20541"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="Design" label="Design">
+        <attvalues>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="1.2197802"></viz:size>
+        <viz:position x="8.669658" y="133.88905"></viz:position>
+        <viz:color r="221" g="57" b="125"></viz:color>
+      </node>
+      <node id="911truth" label="911truth">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="342.01172" y="200.10527"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="evedreddit" label="evedreddit">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="101.25666" y="-211.1933"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="economy" label="economy">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="68.66956" y="118.4493"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="gaming" label="gaming">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="4.120879"></viz:size>
+        <viz:position x="95.320625" y="-76.83898"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="poker" label="poker">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-416.94162" y="-530.5555"></viz:position>
+        <viz:color r="0" g="146" b="131"></viz:color>
+      </node>
+      <node id="Anarchism" label="Anarchism">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="238.17938" y="45.262077"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="aww" label="aww">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="-62.18729" y="-40.93153"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="askscience" label="askscience">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.3076923"></viz:size>
+        <viz:position x="163.90439" y="90.73958"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="philosophy" label="philosophy">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="54.93563" y="188.80492"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Israel" label="Israel">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="25.64305" y="598.5988"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="MLS" label="MLS">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="-570.5218" y="-310.23096"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="comicbooks" label="comicbooks">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="103.53281" y="127.42923"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="Physics" label="Physics">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="79.69166" y="251.01733"></viz:position>
+        <viz:color r="110" g="134" b="0"></viz:color>
+      </node>
+      <node id="Minecraft" label="Minecraft">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="479.60123" y="-21.984549"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="DIY" label="DIY">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="25.678822" y="41.965553"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="space" label="space">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0879121"></viz:size>
+        <viz:position x="-251.32101" y="131.28073"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="CFB" label="CFB">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="1.2637362"></viz:size>
+        <viz:position x="-51.432972" y="-242.72165"></viz:position>
+        <viz:color r="255" g="41" b="49"></viz:color>
+      </node>
+      <node id="atheism" label="atheism">
+        <attvalues>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="232.89857" y="-11.130518"></viz:position>
+        <viz:color r="197" g="107" b="0"></viz:color>
+      </node>
+      <node id="gadgets" label="gadgets">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.4835165"></viz:size>
+        <viz:position x="-64.711136" y="91.06598"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Dexter" label="Dexter">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="156.68358" y="-186.9663"></viz:position>
+        <viz:color r="199" g="84" b="211"></viz:color>
+      </node>
+      <node id="secretsanta" label="secretsanta">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-300.78668" y="-18.429525"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="listentothis" label="listentothis">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.043956"></viz:size>
+        <viz:position x="-276.95142" y="-213.9563"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="Portland" label="Portland">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.1318681"></viz:size>
+        <viz:position x="-290.93234" y="-81.024765"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+      <node id="needadvice" label="needadvice">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="1.1758242"></viz:size>
+        <viz:position x="-276.46338" y="70.502754"></viz:position>
+        <viz:color r="0" g="152" b="215"></viz:color>
+      </node>
+      <node id="learnprogramming" label="learnprogramming">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="1.0"></viz:size>
+        <viz:position x="171.96309" y="324.9201"></viz:position>
+        <viz:color r="0" g="152" b="46"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="climateskeptics" target="environment" weight="10.0"></edge>
+      <edge id="1" source="houston" target="self" weight="7.0"></edge>
+      <edge id="2" source="houston" target="IAmA" weight="17.0"></edge>
+      <edge id="3" source="DoesAnybodyElse" target="funny" weight="374.0"></edge>
+      <edge id="4" source="DoesAnybodyElse" target="bestof" weight="7.0"></edge>
+      <edge id="5" source="DoesAnybodyElse" target="bicycling" weight="24.0"></edge>
+      <edge id="6" source="DoesAnybodyElse" target="todayilearned" weight="172.0"></edge>
+      <edge id="7" source="DoesAnybodyElse" target="IAmA" weight="573.0"></edge>
+      <edge id="8" source="DoesAnybodyElse" target="circlejerk" weight="37.0"></edge>
+      <edge id="9" source="DoesAnybodyElse" target="fffffffuuuuuuuuuuuu" weight="201.0"></edge>
+      <edge id="10" source="DoesAnybodyElse" target="answers" weight="7.0"></edge>
+      <edge id="11" source="DoesAnybodyElse" target="Christianity" weight="24.0"></edge>
+      <edge id="12" source="DoesAnybodyElse" target="Autos" weight="10.0"></edge>
+      <edge id="13" source="DoesAnybodyElse" target="gaming" weight="296.0"></edge>
+      <edge id="14" source="DoesAnybodyElse" target="aww" weight="8.0"></edge>
+      <edge id="15" source="DoesAnybodyElse" target="ColbertRally" weight="9.0"></edge>
+      <edge id="16" source="brisbane" target="IAmA" weight="7.0"></edge>
+      <edge id="17" source="photocritique" target="photography" weight="7.0"></edge>
+      <edge id="18" source="fffffffuuuuuuuuuuuu" target="funny" weight="295.0"></edge>
+      <edge id="19" source="fffffffuuuuuuuuuuuu" target="Dexter" weight="7.0"></edge>
+      <edge id="20" source="fffffffuuuuuuuuuuuu" target="badcompany2" weight="39.0"></edge>
+      <edge id="21" source="fffffffuuuuuuuuuuuu" target="comics" weight="72.0"></edge>
+      <edge id="22" source="fffffffuuuuuuuuuuuu" target="IAmA" weight="494.0"></edge>
+      <edge id="23" source="fffffffuuuuuuuuuuuu" target="codbo" weight="18.0"></edge>
+      <edge id="24" source="fffffffuuuuuuuuuuuu" target="drunk" weight="10.0"></edge>
+      <edge id="25" source="fffffffuuuuuuuuuuuu" target="circlejerk" weight="57.0"></edge>
+      <edge id="26" source="fffffffuuuuuuuuuuuu" target="answers" weight="6.0"></edge>
+      <edge id="27" source="fffffffuuuuuuuuuuuu" target="blog" weight="7.0"></edge>
+      <edge id="28" source="fffffffuuuuuuuuuuuu" target="Autos" weight="10.0"></edge>
+      <edge id="29" source="fffffffuuuuuuuuuuuu" target="beer" weight="21.0"></edge>
+      <edge id="30" source="fffffffuuuuuuuuuuuu" target="bestof" weight="11.0"></edge>
+      <edge id="31" source="fffffffuuuuuuuuuuuu" target="dubstep" weight="8.0"></edge>
+      <edge id="32" source="fffffffuuuuuuuuuuuu" target="ColbertRally" weight="8.0"></edge>
+      <edge id="33" source="fffffffuuuuuuuuuuuu" target="baseball" weight="12.0"></edge>
+      <edge id="34" source="fffffffuuuuuuuuuuuu" target="gaming" weight="610.0"></edge>
+      <edge id="35" source="fffffffuuuuuuuuuuuu" target="anime" weight="15.0"></edge>
+      <edge id="36" source="nsfw" target="gonewild" weight="30.0"></edge>
+      <edge id="37" source="Pets" target="videos" weight="8.0"></edge>
+      <edge id="38" source="Pets" target="todayilearned" weight="8.0"></edge>
+      <edge id="39" source="Pets" target="self" weight="6.0"></edge>
+      <edge id="40" source="Pets" target="relationship_advice" weight="8.0"></edge>
+      <edge id="41" source="Pets" target="sex" weight="8.0"></edge>
+      <edge id="42" source="Pets" target="TwoXChromosomes" weight="20.0"></edge>
+      <edge id="43" source="japan" target="todayilearned" weight="7.0"></edge>
+      <edge id="44" source="japan" target="offbeat" weight="6.0"></edge>
+      <edge id="45" source="islam" target="news" weight="6.0"></edge>
+      <edge id="46" source="islam" target="IAmA" weight="6.0"></edge>
+      <edge id="47" source="relationships" target="self" weight="9.0"></edge>
+      <edge id="48" source="relationships" target="relationship_advice" weight="36.0"></edge>
+      <edge id="49" source="relationships" target="TwoXChromosomes" weight="27.0"></edge>
+      <edge id="50" source="relationships" target="sex" weight="36.0"></edge>
+      <edge id="51" source="redditoroftheday" target="todayilearned" weight="10.0"></edge>
+      <edge id="52" source="redditoroftheday" target="self" weight="18.0"></edge>
+      <edge id="53" source="redditoroftheday" target="TwoXChromosomes" weight="25.0"></edge>
+      <edge id="54" source="redditoroftheday" target="sex" weight="13.0"></edge>
+      <edge id="55" source="badcompany2" target="funny" weight="68.0"></edge>
+      <edge id="56" source="badcompany2" target="IAmA" weight="51.0"></edge>
+      <edge id="57" source="badcompany2" target="gaming" weight="165.0"></edge>
+      <edge id="58" source="drunk" target="funny" weight="14.0"></edge>
+      <edge id="59" source="drunk" target="gaming" weight="9.0"></edge>
+      <edge id="60" source="drunk" target="food" weight="6.0"></edge>
+      <edge id="61" source="drunk" target="self" weight="8.0"></edge>
+      <edge id="62" source="drunk" target="IAmA" weight="17.0"></edge>
+      <edge id="63" source="drunk" target="sex" weight="6.0"></edge>
+      <edge id="64" source="drunk" target="offbeat" weight="6.0"></edge>
+      <edge id="65" source="drunk" target="shittyadvice" weight="8.0"></edge>
+      <edge id="66" source="startrek" target="todayilearned" weight="9.0"></edge>
+      <edge id="67" source="startrek" target="self" weight="6.0"></edge>
+      <edge id="68" source="startrek" target="scifi" weight="9.0"></edge>
+      <edge id="69" source="blog" target="funny" weight="15.0"></edge>
+      <edge id="70" source="blog" target="ideasfortheadmins" weight="6.0"></edge>
+      <edge id="71" source="blog" target="gaming" weight="12.0"></edge>
+      <edge id="72" source="blog" target="IAmA" weight="24.0"></edge>
+      <edge id="73" source="blog" target="programming" weight="8.0"></edge>
+      <edge id="74" source="blog" target="announcements" weight="8.0"></edge>
+      <edge id="75" source="blog" target="Minecraft" weight="6.0"></edge>
+      <edge id="76" source="hockey" target="IAmA" weight="40.0"></edge>
+      <edge id="77" source="hockey" target="Music" weight="20.0"></edge>
+      <edge id="78" source="hockey" target="sports" weight="26.0"></edge>
+      <edge id="79" source="Atlanta" target="funny" weight="6.0"></edge>
+      <edge id="80" source="Atlanta" target="IAmA" weight="8.0"></edge>
+      <edge id="81" source="Atlanta" target="gaming" weight="9.0"></edge>
+      <edge id="82" source="soccer" target="unitedkingdom" weight="19.0"></edge>
+      <edge id="83" source="soccer" target="videos" weight="18.0"></edge>
+      <edge id="84" source="soccer" target="todayilearned" weight="19.0"></edge>
+      <edge id="85" source="soccer" target="trees" weight="18.0"></edge>
+      <edge id="86" source="soccer" target="sports" weight="22.0"></edge>
+      <edge id="87" source="soccer" target="MLS" weight="29.0"></edge>
+      <edge id="88" source="soccer" target="Gunners" weight="13.0"></edge>
+      <edge id="89" source="leagueoflegends" target="wow" weight="13.0"></edge>
+      <edge id="90" source="leagueoflegends" target="starcraft" weight="18.0"></edge>
+      <edge id="91" source="MensRights" target="feminisms" weight="10.0"></edge>
+      <edge id="92" source="MensRights" target="Equality" weight="16.0"></edge>
+      <edge id="93" source="MensRights" target="relationship_advice" weight="31.0"></edge>
+      <edge id="94" source="MensRights" target="TwoXChromosomes" weight="51.0"></edge>
+      <edge id="95" source="MensRights" target="sex" weight="39.0"></edge>
+      <edge id="96" source="australia" target="funny" weight="46.0"></edge>
+      <edge id="97" source="australia" target="IAmA" weight="61.0"></edge>
+      <edge id="98" source="australia" target="gaming" weight="51.0"></edge>
+      <edge id="99" source="electronicmusic" target="IAmA" weight="9.0"></edge>
+      <edge id="100" source="electronicmusic" target="Music" weight="8.0"></edge>
+      <edge id="101" source="food" target="funny" weight="60.0"></edge>
+      <edge id="102" source="food" target="todayilearned" weight="56.0"></edge>
+      <edge id="103" source="food" target="Cooking" weight="94.0"></edge>
+      <edge id="104" source="food" target="IAmA" weight="133.0"></edge>
+      <edge id="105" source="food" target="beer" weight="24.0"></edge>
+      <edge id="106" source="food" target="TwoXChromosomes" weight="56.0"></edge>
+      <edge id="107" source="food" target="gaming" weight="86.0"></edge>
+      <edge id="108" source="photography" target="todayilearned" weight="23.0"></edge>
+      <edge id="109" source="photography" target="itookapicture" weight="41.0"></edge>
+      <edge id="110" source="photography" target="videos" weight="26.0"></edge>
+      <edge id="111" source="BDSMcommunity" target="IAmA" weight="6.0"></edge>
+      <edge id="112" source="BDSMcommunity" target="TwoXChromosomes" weight="7.0"></edge>
+      <edge id="113" source="BDSMcommunity" target="sex" weight="6.0"></edge>
+      <edge id="114" source="trees" target="gonewild" weight="24.0"></edge>
+      <edge id="115" source="trees" target="Seattle" weight="8.0"></edge>
+      <edge id="116" source="trees" target="videos" weight="76.0"></edge>
+      <edge id="117" source="trees" target="Drugs" weight="54.0"></edge>
+      <edge id="118" source="trees" target="Marijuana" weight="53.0"></edge>
+      <edge id="119" source="trees" target="relationship_advice" weight="37.0"></edge>
+      <edge id="120" source="trees" target="sex" weight="62.0"></edge>
+      <edge id="121" source="trees" target="Guitar" weight="13.0"></edge>
+      <edge id="122" source="trees" target="sports" weight="28.0"></edge>
+      <edge id="123" source="trees" target="dubstep" weight="14.0"></edge>
+      <edge id="124" source="trees" target="shittyadvice" weight="31.0"></edge>
+      <edge id="125" source="trees" target="PS3" weight="10.0"></edge>
+      <edge id="126" source="trees" target="Portland" weight="12.0"></edge>
+      <edge id="127" source="trees" target="starcraft" weight="41.0"></edge>
+      <edge id="128" source="trees" target="prop19" weight="6.0"></edge>
+      <edge id="129" source="geek" target="gaming" weight="68.0"></edge>
+      <edge id="130" source="geek" target="bestof" weight="9.0"></edge>
+      <edge id="131" source="geek" target="videos" weight="50.0"></edge>
+      <edge id="132" source="geek" target="todayilearned" weight="67.0"></edge>
+      <edge id="133" source="geek" target="IAmA" weight="86.0"></edge>
+      <edge id="134" source="geek" target="self" weight="36.0"></edge>
+      <edge id="135" source="geek" target="programming" weight="114.0"></edge>
+      <edge id="136" source="geek" target="offbeat" weight="76.0"></edge>
+      <edge id="137" source="geek" target="comics" weight="57.0"></edge>
+      <edge id="138" source="geek" target="gadgets" weight="23.0"></edge>
+      <edge id="139" source="geek" target="scifi" weight="67.0"></edge>
+      <edge id="140" source="geek" target="linux" weight="56.0"></edge>
+      <edge id="141" source="geek" target="cogsci" weight="8.0"></edge>
+      <edge id="142" source="geek" target="electronics" weight="6.0"></edge>
+      <edge id="143" source="DebateAnAtheist" target="DebateAChristian" weight="8.0"></edge>
+      <edge id="144" source="Stargate" target="scifi" weight="8.0"></edge>
+      <edge id="145" source="Fitness" target="gaming" weight="103.0"></edge>
+      <edge id="146" source="Fitness" target="IAmA" weight="184.0"></edge>
+      <edge id="147" source="Fitness" target="bicycling" weight="28.0"></edge>
+      <edge id="148" source="feminisms" target="funny" weight="6.0"></edge>
+      <edge id="149" source="feminisms" target="Equality" weight="9.0"></edge>
+      <edge id="150" source="feminisms" target="gaming" weight="10.0"></edge>
+      <edge id="151" source="feminisms" target="IAmA" weight="11.0"></edge>
+      <edge id="152" source="feminisms" target="programming" weight="10.0"></edge>
+      <edge id="153" source="feminisms" target="sex" weight="7.0"></edge>
+      <edge id="154" source="feminisms" target="offbeat" weight="6.0"></edge>
+      <edge id="155" source="feminisms" target="lgbt" weight="11.0"></edge>
+      <edge id="156" source="feminisms" target="scifi" weight="6.0"></edge>
+      <edge id="157" source="feminisms" target="TwoXChromosomes" weight="23.0"></edge>
+      <edge id="158" source="Military" target="worldpolitics" weight="6.0"></edge>
+      <edge id="159" source="Military" target="news" weight="8.0"></edge>
+      <edge id="160" source="Military" target="programming" weight="7.0"></edge>
+      <edge id="161" source="cogsci" target="offbeat" weight="8.0"></edge>
+      <edge id="162" source="cogsci" target="philosophy" weight="12.0"></edge>
+      <edge id="163" source="cogsci" target="psychology" weight="8.0"></edge>
+      <edge id="164" source="cogsci" target="videos" weight="7.0"></edge>
+      <edge id="165" source="cogsci" target="funny" weight="14.0"></edge>
+      <edge id="166" source="cogsci" target="todayilearned" weight="7.0"></edge>
+      <edge id="167" source="cogsci" target="IAmA" weight="15.0"></edge>
+      <edge id="168" source="cogsci" target="Economics" weight="7.0"></edge>
+      <edge id="169" source="cogsci" target="programming" weight="11.0"></edge>
+      <edge id="170" source="cogsci" target="gaming" weight="10.0"></edge>
+      <edge id="171" source="cogsci" target="gadgets" weight="6.0"></edge>
+      <edge id="172" source="cogsci" target="scifi" weight="10.0"></edge>
+      <edge id="173" source="cogsci" target="linux" weight="6.0"></edge>
+      <edge id="174" source="halo" target="IAmA" weight="6.0"></edge>
+      <edge id="175" source="Art" target="funny" weight="14.0"></edge>
+      <edge id="176" source="Art" target="IAmA" weight="7.0"></edge>
+      <edge id="177" source="Art" target="gaming" weight="8.0"></edge>
+      <edge id="178" source="lost" target="movies" weight="36.0"></edge>
+      <edge id="179" source="codbo" target="gaming" weight="51.0"></edge>
+      <edge id="180" source="codbo" target="funny" weight="23.0"></edge>
+      <edge id="181" source="codbo" target="IAmA" weight="19.0"></edge>
+      <edge id="182" source="codbo" target="PS3" weight="13.0"></edge>
+      <edge id="183" source="codbo" target="MW2" weight="55.0"></edge>
+      <edge id="184" source="nfl" target="CFB" weight="17.0"></edge>
+      <edge id="185" source="nfl" target="baseball" weight="16.0"></edge>
+      <edge id="186" source="nfl" target="fantasyfootball" weight="21.0"></edge>
+      <edge id="187" source="nfl" target="sports" weight="79.0"></edge>
+      <edge id="188" source="Marijuana" target="Drugs" weight="15.0"></edge>
+      <edge id="189" source="Marijuana" target="news" weight="15.0"></edge>
+      <edge id="190" source="Marijuana" target="videos" weight="15.0"></edge>
+      <edge id="191" source="Israel" target="worldpolitics" weight="20.0"></edge>
+      <edge id="192" source="WeAreTheMusicMakers" target="Guitar" weight="29.0"></edge>
+      <edge id="193" source="comics" target="offbeat" weight="74.0"></edge>
+      <edge id="194" source="comics" target="bestof" weight="13.0"></edge>
+      <edge id="195" source="comics" target="videos" weight="65.0"></edge>
+      <edge id="196" source="comics" target="entertainment" weight="69.0"></edge>
+      <edge id="197" source="comics" target="todayilearned" weight="74.0"></edge>
+      <edge id="198" source="comics" target="IAmA" weight="114.0"></edge>
+      <edge id="199" source="comics" target="programming" weight="80.0"></edge>
+      <edge id="200" source="comics" target="funny" weight="209.0"></edge>
+      <edge id="201" source="comics" target="gaming" weight="183.0"></edge>
+      <edge id="202" source="techsupport" target="todayilearned" weight="6.0"></edge>
+      <edge id="203" source="techsupport" target="videos" weight="7.0"></edge>
+      <edge id="204" source="Libertarian" target="Anarchism" weight="34.0"></edge>
+      <edge id="205" source="Libertarian" target="collapse" weight="6.0"></edge>
+      <edge id="206" source="Libertarian" target="Economics" weight="143.0"></edge>
+      <edge id="207" source="Libertarian" target="environment" weight="27.0"></edge>
+      <edge id="208" source="Libertarian" target="conspiracy" weight="26.0"></edge>
+      <edge id="209" source="Libertarian" target="Health" weight="10.0"></edge>
+      <edge id="210" source="Libertarian" target="guns" weight="45.0"></edge>
+      <edge id="211" source="Libertarian" target="economy" weight="15.0"></edge>
+      <edge id="212" source="Health" target="videos" weight="12.0"></edge>
+      <edge id="213" source="Health" target="todayilearned" weight="10.0"></edge>
+      <edge id="214" source="Health" target="IAmA" weight="26.0"></edge>
+      <edge id="215" source="Health" target="self" weight="9.0"></edge>
+      <edge id="216" source="Health" target="philosophy" weight="11.0"></edge>
+      <edge id="217" source="Health" target="programming" weight="12.0"></edge>
+      <edge id="218" source="Health" target="sex" weight="14.0"></edge>
+      <edge id="219" source="Health" target="offbeat" weight="15.0"></edge>
+      <edge id="220" source="Health" target="scifi" weight="9.0"></edge>
+      <edge id="221" source="Health" target="TwoXChromosomes" weight="12.0"></edge>
+      <edge id="222" source="Health" target="news" weight="10.0"></edge>
+      <edge id="223" source="Seattle" target="videos" weight="10.0"></edge>
+      <edge id="224" source="Seattle" target="TwoXChromosomes" weight="11.0"></edge>
+      <edge id="225" source="secretsanta" target="todayilearned" weight="11.0"></edge>
+      <edge id="226" source="secretsanta" target="self" weight="7.0"></edge>
+      <edge id="227" source="secretsanta" target="TwoXChromosomes" weight="14.0"></edge>
+      <edge id="228" source="secretsanta" target="videos" weight="10.0"></edge>
+      <edge id="229" source="tf2items" target="tf2" weight="17.0"></edge>
+      <edge id="230" source="unitedkingdom" target="videos" weight="14.0"></edge>
+      <edge id="231" source="unitedkingdom" target="ukpolitics" weight="35.0"></edge>
+      <edge id="232" source="energy" target="offbeat" weight="10.0"></edge>
+      <edge id="233" source="energy" target="collapse" weight="6.0"></edge>
+      <edge id="234" source="energy" target="funny" weight="19.0"></edge>
+      <edge id="235" source="energy" target="todayilearned" weight="10.0"></edge>
+      <edge id="236" source="energy" target="IAmA" weight="11.0"></edge>
+      <edge id="237" source="energy" target="Economics" weight="15.0"></edge>
+      <edge id="238" source="energy" target="programming" weight="18.0"></edge>
+      <edge id="239" source="energy" target="environment" weight="15.0"></edge>
+      <edge id="240" source="energy" target="Frugal" weight="10.0"></edge>
+      <edge id="241" source="energy" target="gadgets" weight="8.0"></edge>
+      <edge id="242" source="energy" target="scifi" weight="10.0"></edge>
+      <edge id="243" source="energy" target="news" weight="13.0"></edge>
+      <edge id="244" source="sex" target="seduction" weight="13.0"></edge>
+      <edge id="245" source="sex" target="TwoXChromosomes" weight="136.0"></edge>
+      <edge id="246" source="sex" target="todayilearned" weight="46.0"></edge>
+      <edge id="247" source="sex" target="gonewild" weight="68.0"></edge>
+      <edge id="248" source="sex" target="lgbt" weight="27.0"></edge>
+      <edge id="249" source="sex" target="Frugal" weight="34.0"></edge>
+      <edge id="250" source="sex" target="relationship_advice" weight="133.0"></edge>
+      <edge id="251" source="sex" target="OneY" weight="6.0"></edge>
+      <edge id="252" source="sex" target="needadvice" weight="7.0"></edge>
+      <edge id="253" source="sex" target="psychology" weight="7.0"></edge>
+      <edge id="254" source="dubstep" target="funny" weight="12.0"></edge>
+      <edge id="255" source="dubstep" target="gaming" weight="11.0"></edge>
+      <edge id="256" source="dubstep" target="IAmA" weight="14.0"></edge>
+      <edge id="257" source="dubstep" target="Music" weight="8.0"></edge>
+      <edge id="258" source="ColbertRally" target="funny" weight="17.0"></edge>
+      <edge id="259" source="ColbertRally" target="videos" weight="7.0"></edge>
+      <edge id="260" source="ColbertRally" target="todayilearned" weight="9.0"></edge>
+      <edge id="261" source="ColbertRally" target="IAmA" weight="13.0"></edge>
+      <edge id="262" source="ColbertRally" target="offbeat" weight="7.0"></edge>
+      <edge id="263" source="ColbertRally" target="gaming" weight="9.0"></edge>
+      <edge id="264" source="ColbertRally" target="Music" weight="7.0"></edge>
+      <edge id="265" source="ColbertRally" target="TwoXChromosomes" weight="6.0"></edge>
+      <edge id="266" source="TwoXChromosomes" target="HealthProject" weight="6.0"></edge>
+      <edge id="267" source="TwoXChromosomes" target="boston" weight="7.0"></edge>
+      <edge id="268" source="TwoXChromosomes" target="OneY" weight="12.0"></edge>
+      <edge id="269" source="TwoXChromosomes" target="needadvice" weight="9.0"></edge>
+      <edge id="270" source="TwoXChromosomes" target="seduction" weight="8.0"></edge>
+      <edge id="271" source="TwoXChromosomes" target="aww" weight="7.0"></edge>
+      <edge id="272" source="TwoXChromosomes" target="Equality" weight="14.0"></edge>
+      <edge id="273" source="TwoXChromosomes" target="SuicideWatch" weight="7.0"></edge>
+      <edge id="274" source="TwoXChromosomes" target="Frugal" weight="44.0"></edge>
+      <edge id="275" source="TwoXChromosomes" target="lgbt" weight="47.0"></edge>
+      <edge id="276" source="TwoXChromosomes" target="relationship_advice" weight="154.0"></edge>
+      <edge id="277" source="TwoXChromosomes" target="newzealand" weight="6.0"></edge>
+      <edge id="278" source="TwoXChromosomes" target="Portland" weight="9.0"></edge>
+      <edge id="279" source="PS3" target="videos" weight="16.0"></edge>
+      <edge id="280" source="PS3" target="todayilearned" weight="12.0"></edge>
+      <edge id="281" source="PS3" target="sports" weight="11.0"></edge>
+      <edge id="282" source="PS3" target="GT5" weight="6.0"></edge>
+      <edge id="283" source="PS3" target="self" weight="10.0"></edge>
+      <edge id="284" source="Android" target="funny" weight="129.0"></edge>
+      <edge id="285" source="Android" target="IAmA" weight="123.0"></edge>
+      <edge id="286" source="Android" target="programming" weight="96.0"></edge>
+      <edge id="287" source="Android" target="gaming" weight="190.0"></edge>
+      <edge id="288" source="HeroesofNewerth" target="IAmA" weight="7.0"></edge>
+      <edge id="289" source="fantasyfootball" target="funny" weight="6.0"></edge>
+      <edge id="290" source="fantasyfootball" target="gaming" weight="7.0"></edge>
+      <edge id="291" source="fantasyfootball" target="IAmA" weight="9.0"></edge>
+      <edge id="292" source="fantasyfootball" target="sports" weight="24.0"></edge>
+      <edge id="293" source="canada" target="funny" weight="121.0"></edge>
+      <edge id="294" source="canada" target="IAmA" weight="153.0"></edge>
+      <edge id="295" source="canada" target="gaming" weight="142.0"></edge>
+      <edge id="296" source="humor" target="offbeat" weight="10.0"></edge>
+      <edge id="297" source="humor" target="IAmA" weight="6.0"></edge>
+      <edge id="298" source="humor" target="programming" weight="7.0"></edge>
+      <edge id="299" source="humor" target="videos" weight="6.0"></edge>
+      <edge id="300" source="psychology" target="videos" weight="9.0"></edge>
+      <edge id="301" source="psychology" target="todayilearned" weight="9.0"></edge>
+      <edge id="302" source="psychology" target="philosophy" weight="6.0"></edge>
+      <edge id="303" source="psychology" target="scifi" weight="8.0"></edge>
+      <edge id="304" source="chicago" target="funny" weight="16.0"></edge>
+      <edge id="305" source="chicago" target="IAmA" weight="18.0"></edge>
+      <edge id="306" source="chicago" target="Music" weight="7.0"></edge>
+      <edge id="307" source="chicago" target="gaming" weight="11.0"></edge>
+      <edge id="308" source="skeptic" target="todayilearned" weight="8.0"></edge>
+      <edge id="309" source="wow" target="redditguild" weight="19.0"></edge>
+      <edge id="310" source="wow" target="starcraft" weight="54.0"></edge>
+      <edge id="311" source="wikipedia" target="history" weight="10.0"></edge>
+      <edge id="312" source="NarFFL" target="sports" weight="6.0"></edge>
+      <edge id="313" source="malefashionadvice" target="videos" weight="6.0"></edge>
+      <edge id="314" source="gamedev" target="programming" weight="7.0"></edge>
+      <edge id="315" source="GuessTheMovie" target="movies" weight="9.0"></edge>
+      <edge id="316" source="askscience" target="funny" weight="19.0"></edge>
+      <edge id="317" source="askscience" target="gaming" weight="14.0"></edge>
+      <edge id="318" source="askscience" target="todayilearned" weight="11.0"></edge>
+      <edge id="319" source="askscience" target="programming" weight="20.0"></edge>
+      <edge id="320" source="askscience" target="IAmA" weight="24.0"></edge>
+      <edge id="321" source="askscience" target="atheism" weight="12.0"></edge>
+      <edge id="322" source="askscience" target="Physics" weight="11.0"></edge>
+      <edge id="323" source="askscience" target="math" weight="10.0"></edge>
+      <edge id="324" source="electronics" target="funny" weight="9.0"></edge>
+      <edge id="325" source="electronics" target="ECE" weight="6.0"></edge>
+      <edge id="326" source="electronics" target="IAmA" weight="6.0"></edge>
+      <edge id="327" source="electronics" target="programming" weight="7.0"></edge>
+      <edge id="328" source="guns" target="Autos" weight="10.0"></edge>
+      <edge id="329" source="guns" target="IAmA" weight="110.0"></edge>
+      <edge id="330" source="guns" target="gaming" weight="41.0"></edge>
+      <edge id="331" source="math" target="cheatatmathhomework" weight="6.0"></edge>
+      <edge id="332" source="bestof" target="offbeat" weight="17.0"></edge>
+      <edge id="333" source="bestof" target="entertainment" weight="9.0"></edge>
+      <edge id="334" source="bestof" target="videos" weight="10.0"></edge>
+      <edge id="335" source="bestof" target="todayilearned" weight="15.0"></edge>
+      <edge id="336" source="bestof" target="IAmA" weight="22.0"></edge>
+      <edge id="337" source="bestof" target="self" weight="13.0"></edge>
+      <edge id="338" source="bestof" target="Economics" weight="8.0"></edge>
+      <edge id="339" source="bestof" target="programming" weight="12.0"></edge>
+      <edge id="340" source="bestof" target="gaming" weight="19.0"></edge>
+      <edge id="341" source="bestof" target="Music" weight="7.0"></edge>
+      <edge id="342" source="bestof" target="news" weight="9.0"></edge>
+      <edge id="343" source="bestof" target="funny" weight="28.0"></edge>
+      <edge id="344" source="Equality" target="funny" weight="11.0"></edge>
+      <edge id="345" source="Equality" target="gaming" weight="6.0"></edge>
+      <edge id="346" source="Equality" target="IAmA" weight="12.0"></edge>
+      <edge id="347" source="Equality" target="relationship_advice" weight="10.0"></edge>
+      <edge id="348" source="Favors" target="todayilearned" weight="14.0"></edge>
+      <edge id="349" source="Favors" target="funny" weight="22.0"></edge>
+      <edge id="350" source="Favors" target="IAmA" weight="45.0"></edge>
+      <edge id="351" source="Favors" target="gaming" weight="28.0"></edge>
+      <edge id="352" source="Economics" target="funny" weight="136.0"></edge>
+      <edge id="353" source="Economics" target="collapse" weight="9.0"></edge>
+      <edge id="354" source="Economics" target="gaming" weight="102.0"></edge>
+      <edge id="355" source="Economics" target="boston" weight="6.0"></edge>
+      <edge id="356" source="Economics" target="IAmA" weight="148.0"></edge>
+      <edge id="357" source="Economics" target="programming" weight="125.0"></edge>
+      <edge id="358" source="Economics" target="Anarchism" weight="22.0"></edge>
+      <edge id="359" source="Economics" target="environment" weight="26.0"></edge>
+      <edge id="360" source="Economics" target="conspiracy" weight="24.0"></edge>
+      <edge id="361" source="Economics" target="americanpirateparty" weight="6.0"></edge>
+      <edge id="362" source="Economics" target="economy" weight="18.0"></edge>
+      <edge id="363" source="circlejerk" target="funny" weight="88.0"></edge>
+      <edge id="364" source="circlejerk" target="todayilearned" weight="29.0"></edge>
+      <edge id="365" source="circlejerk" target="IAmA" weight="76.0"></edge>
+      <edge id="366" source="circlejerk" target="gaming" weight="64.0"></edge>
+      <edge id="367" source="circlejerk" target="shittyadvice" weight="43.0"></edge>
+      <edge id="368" source="answers" target="funny" weight="15.0"></edge>
+      <edge id="369" source="answers" target="todayilearned" weight="9.0"></edge>
+      <edge id="370" source="answers" target="IAmA" weight="21.0"></edge>
+      <edge id="371" source="answers" target="programming" weight="6.0"></edge>
+      <edge id="372" source="answers" target="offbeat" weight="6.0"></edge>
+      <edge id="373" source="answers" target="gaming" weight="13.0"></edge>
+      <edge id="374" source="Frugal" target="funny" weight="37.0"></edge>
+      <edge id="375" source="Frugal" target="videos" weight="37.0"></edge>
+      <edge id="376" source="Frugal" target="bicycling" weight="28.0"></edge>
+      <edge id="377" source="Frugal" target="todayilearned" weight="35.0"></edge>
+      <edge id="378" source="Frugal" target="IAmA" weight="128.0"></edge>
+      <edge id="379" source="Frugal" target="Cooking" weight="27.0"></edge>
+      <edge id="380" source="Frugal" target="programming" weight="42.0"></edge>
+      <edge id="381" source="Frugal" target="gaming" weight="67.0"></edge>
+      <edge id="382" source="Frugal" target="DIY" weight="13.0"></edge>
+      <edge id="383" source="Frugal" target="self" weight="47.0"></edge>
+      <edge id="384" source="Frugal" target="economy" weight="10.0"></edge>
+      <edge id="385" source="baseball" target="funny" weight="20.0"></edge>
+      <edge id="386" source="baseball" target="gaming" weight="13.0"></edge>
+      <edge id="387" source="baseball" target="IAmA" weight="23.0"></edge>
+      <edge id="388" source="baseball" target="sports" weight="33.0"></edge>
+      <edge id="389" source="news" target="Bad_Cop_No_Donut" weight="7.0"></edge>
+      <edge id="390" source="news" target="environment" weight="45.0"></edge>
+      <edge id="391" source="news" target="economy" weight="17.0"></edge>
+      <edge id="392" source="news" target="history" weight="13.0"></edge>
+      <edge id="393" source="doctorwho" target="gaming" weight="45.0"></edge>
+      <edge id="394" source="doctorwho" target="funny" weight="40.0"></edge>
+      <edge id="395" source="doctorwho" target="entertainment" weight="17.0"></edge>
+      <edge id="396" source="doctorwho" target="IAmA" weight="30.0"></edge>
+      <edge id="397" source="doctorwho" target="movies" weight="19.0"></edge>
+      <edge id="398" source="doctorwho" target="scifi" weight="28.0"></edge>
+      <edge id="399" source="PHP" target="web_design" weight="13.0"></edge>
+      <edge id="400" source="PHP" target="programming" weight="13.0"></edge>
+      <edge id="401" source="exmormon" target="funny" weight="9.0"></edge>
+      <edge id="402" source="exmormon" target="IAmA" weight="14.0"></edge>
+      <edge id="403" source="exmormon" target="gaming" weight="6.0"></edge>
+      <edge id="404" source="programming" target="apple" weight="94.0"></edge>
+      <edge id="405" source="programming" target="todayilearned" weight="117.0"></edge>
+      <edge id="406" source="programming" target="boston" weight="7.0"></edge>
+      <edge id="407" source="programming" target="Anarchism" weight="23.0"></edge>
+      <edge id="408" source="programming" target="hardware" weight="35.0"></edge>
+      <edge id="409" source="programming" target="Buddhism" weight="6.0"></edge>
+      <edge id="410" source="programming" target="haskell" weight="21.0"></edge>
+      <edge id="411" source="programming" target="DIY" weight="13.0"></edge>
+      <edge id="412" source="programming" target="environment" weight="38.0"></edge>
+      <edge id="413" source="programming" target="netsec" weight="24.0"></edge>
+      <edge id="414" source="programming" target="ideasfortheadmins" weight="10.0"></edge>
+      <edge id="415" source="programming" target="entertainment" weight="75.0"></edge>
+      <edge id="416" source="programming" target="iphone" weight="20.0"></edge>
+      <edge id="417" source="programming" target="announcements" weight="7.0"></edge>
+      <edge id="418" source="programming" target="dwarffortress" weight="18.0"></edge>
+      <edge id="419" source="programming" target="economy" weight="16.0"></edge>
+      <edge id="420" source="programming" target="Eve" weight="9.0"></edge>
+      <edge id="421" source="programming" target="Guitar" weight="14.0"></edge>
+      <edge id="422" source="programming" target="Physics" weight="7.0"></edge>
+      <edge id="423" source="programming" target="gadgets" weight="58.0"></edge>
+      <edge id="424" source="programming" target="bicycling" weight="28.0"></edge>
+      <edge id="425" source="programming" target="newzealand" weight="6.0"></edge>
+      <edge id="426" source="programming" target="offbeat" weight="82.0"></edge>
+      <edge id="427" source="programming" target="Design" weight="9.0"></edge>
+      <edge id="428" source="programming" target="anime" weight="13.0"></edge>
+      <edge id="429" source="programming" target="learnprogramming" weight="10.0"></edge>
+      <edge id="430" source="space" target="todayilearned" weight="16.0"></edge>
+      <edge id="431" source="space" target="scifi" weight="11.0"></edge>
+      <edge id="432" source="space" target="videos" weight="16.0"></edge>
+      <edge id="433" source="creepy" target="funny" weight="9.0"></edge>
+      <edge id="434" source="creepy" target="IAmA" weight="6.0"></edge>
+      <edge id="435" source="creepy" target="videos" weight="6.0"></edge>
+      <edge id="436" source="creepy" target="gaming" weight="9.0"></edge>
+      <edge id="437" source="itookapicture" target="todayilearned" weight="11.0"></edge>
+      <edge id="438" source="itookapicture" target="IAmA" weight="14.0"></edge>
+      <edge id="439" source="itookapicture" target="Music" weight="14.0"></edge>
+      <edge id="440" source="anime" target="funny" weight="23.0"></edge>
+      <edge id="441" source="anime" target="IAmA" weight="24.0"></edge>
+      <edge id="442" source="anime" target="gaming" weight="58.0"></edge>
+      <edge id="443" source="ukpolitics" target="videos" weight="10.0"></edge>
+      <edge id="444" source="americanpirateparty" target="funny" weight="11.0"></edge>
+      <edge id="445" source="americanpirateparty" target="IAmA" weight="10.0"></edge>
+      <edge id="446" source="americanpirateparty" target="gaming" weight="7.0"></edge>
+      <edge id="447" source="buildapc" target="hardware" weight="35.0"></edge>
+      <edge id="448" source="buildapc" target="funny" weight="20.0"></edge>
+      <edge id="449" source="buildapc" target="IAmA" weight="22.0"></edge>
+      <edge id="450" source="buildapc" target="gaming" weight="45.0"></edge>
+      <edge id="451" source="apple" target="funny" weight="118.0"></edge>
+      <edge id="452" source="apple" target="IAmA" weight="127.0"></edge>
+      <edge id="453" source="apple" target="iphone" weight="48.0"></edge>
+      <edge id="454" source="apple" target="gaming" weight="137.0"></edge>
+      <edge id="455" source="Dallas" target="funny" weight="8.0"></edge>
+      <edge id="456" source="Dallas" target="IAmA" weight="12.0"></edge>
+      <edge id="457" source="Dallas" target="gaming" weight="6.0"></edge>
+      <edge id="458" source="todayilearned" target="Cooking" weight="19.0"></edge>
+      <edge id="459" source="todayilearned" target="hardware" weight="22.0"></edge>
+      <edge id="460" source="todayilearned" target="netsec" weight="8.0"></edge>
+      <edge id="461" source="todayilearned" target="ideasfortheadmins" weight="7.0"></edge>
+      <edge id="462" source="todayilearned" target="entertainment" weight="70.0"></edge>
+      <edge id="463" source="todayilearned" target="sports" weight="30.0"></edge>
+      <edge id="464" source="todayilearned" target="aww" weight="7.0"></edge>
+      <edge id="465" source="todayilearned" target="scifi" weight="67.0"></edge>
+      <edge id="466" source="todayilearned" target="shittyadvice" weight="28.0"></edge>
+      <edge id="467" source="todayilearned" target="iphone" weight="11.0"></edge>
+      <edge id="468" source="todayilearned" target="gadgets" weight="27.0"></edge>
+      <edge id="469" source="todayilearned" target="DIY" weight="11.0"></edge>
+      <edge id="470" source="todayilearned" target="relationship_advice" weight="32.0"></edge>
+      <edge id="471" source="todayilearned" target="offbeat" weight="107.0"></edge>
+      <edge id="472" source="todayilearned" target="Portland" weight="8.0"></edge>
+      <edge id="473" source="todayilearned" target="history" weight="9.0"></edge>
+      <edge id="474" source="linux4noobs" target="Ubuntu" weight="7.0"></edge>
+      <edge id="475" source="linux4noobs" target="linux" weight="7.0"></edge>
+      <edge id="476" source="bjj" target="MMA" weight="7.0"></edge>
+      <edge id="477" source="Buddhism" target="IAmA" weight="7.0"></edge>
+      <edge id="478" source="Buddhism" target="gaming" weight="7.0"></edge>
+      <edge id="479" source="Music" target="Drugs" weight="17.0"></edge>
+      <edge id="480" source="Music" target="entertainment" weight="76.0"></edge>
+      <edge id="481" source="Music" target="CFB" weight="6.0"></edge>
+      <edge id="482" source="Music" target="Guitar" weight="43.0"></edge>
+      <edge id="483" source="Music" target="LosAngeles" weight="6.0"></edge>
+      <edge id="484" source="Music" target="listentothis" weight="16.0"></edge>
+      <edge id="485" source="Music" target="history" weight="10.0"></edge>
+      <edge id="486" source="rpg" target="scifi" weight="12.0"></edge>
+      <edge id="487" source="linux" target="hardware" weight="28.0"></edge>
+      <edge id="488" source="linux" target="gadgets" weight="31.0"></edge>
+      <edge id="489" source="linux" target="DIY" weight="11.0"></edge>
+      <edge id="490" source="linux" target="economy" weight="10.0"></edge>
+      <edge id="491" source="sports" target="videos" weight="43.0"></edge>
+      <edge id="492" source="sports" target="CFB" weight="29.0"></edge>
+      <edge id="493" source="sports" target="nba" weight="10.0"></edge>
+      <edge id="494" source="ffxiv" target="gaming" weight="17.0"></edge>
+      <edge id="495" source="ffxiv" target="IAmA" weight="7.0"></edge>
+      <edge id="496" source="tf2" target="videos" weight="32.0"></edge>
+      <edge id="497" source="tf2" target="starcraft" weight="50.0"></edge>
+      <edge id="498" source="mcpublic" target="Minecraft" weight="6.0"></edge>
+      <edge id="499" source="environment" target="funny" weight="57.0"></edge>
+      <edge id="500" source="environment" target="collapse" weight="9.0"></edge>
+      <edge id="501" source="environment" target="videos" weight="31.0"></edge>
+      <edge id="502" source="environment" target="gaming" weight="36.0"></edge>
+      <edge id="503" source="environment" target="IAmA" weight="42.0"></edge>
+      <edge id="504" source="environment" target="offbeat" weight="35.0"></edge>
+      <edge id="505" source="environment" target="economy" weight="10.0"></edge>
+      <edge id="506" source="ECE" target="funny" weight="8.0"></edge>
+      <edge id="507" source="ECE" target="videos" weight="6.0"></edge>
+      <edge id="508" source="Drugs" target="funny" weight="35.0"></edge>
+      <edge id="509" source="Drugs" target="gaming" weight="29.0"></edge>
+      <edge id="510" source="Drugs" target="IAmA" weight="53.0"></edge>
+      <edge id="511" source="Bad_Cop_No_Donut" target="IAmA" weight="6.0"></edge>
+      <edge id="512" source="Bad_Cop_No_Donut" target="videos" weight="6.0"></edge>
+      <edge id="513" source="Bad_Cop_No_Donut" target="funny" weight="12.0"></edge>
+      <edge id="514" source="Homebrewing" target="beer" weight="39.0"></edge>
+      <edge id="515" source="Homebrewing" target="IAmA" weight="18.0"></edge>
+      <edge id="516" source="Guitar" target="self" weight="14.0"></edge>
+      <edge id="517" source="Guitar" target="IAmA" weight="31.0"></edge>
+      <edge id="518" source="Autos" target="gaming" weight="12.0"></edge>
+      <edge id="519" source="Autos" target="funny" weight="16.0"></edge>
+      <edge id="520" source="Autos" target="IAmA" weight="27.0"></edge>
+      <edge id="521" source="beer" target="funny" weight="30.0"></edge>
+      <edge id="522" source="beer" target="gaming" weight="29.0"></edge>
+      <edge id="523" source="beer" target="IAmA" weight="33.0"></edge>
+      <edge id="524" source="GT5" target="gaming" weight="6.0"></edge>
+      <edge id="525" source="ireland" target="movies" weight="6.0"></edge>
+      <edge id="526" source="Ubuntu" target="videos" weight="9.0"></edge>
+      <edge id="527" source="web_design" target="Design" weight="14.0"></edge>
+      <edge id="528" source="iphone" target="IAmA" weight="13.0"></edge>
+      <edge id="529" source="collapse" target="IAmA" weight="7.0"></edge>
+      <edge id="530" source="collapse" target="economy" weight="6.0"></edge>
+      <edge id="531" source="Eve" target="funny" weight="14.0"></edge>
+      <edge id="532" source="Eve" target="gaming" weight="35.0"></edge>
+      <edge id="533" source="Eve" target="IAmA" weight="17.0"></edge>
+      <edge id="534" source="Eve" target="evedreddit" weight="20.0"></edge>
+      <edge id="535" source="Eve" target="starcraft" weight="10.0"></edge>
+      <edge id="536" source="depression" target="funny" weight="7.0"></edge>
+      <edge id="537" source="depression" target="IAmA" weight="6.0"></edge>
+      <edge id="538" source="depression" target="SuicideWatch" weight="6.0"></edge>
+      <edge id="539" source="Christianity" target="funny" weight="44.0"></edge>
+      <edge id="540" source="Christianity" target="gaming" weight="52.0"></edge>
+      <edge id="541" source="Christianity" target="IAmA" weight="86.0"></edge>
+      <edge id="542" source="Christianity" target="DebateAChristian" weight="47.0"></edge>
+      <edge id="543" source="Austin" target="funny" weight="12.0"></edge>
+      <edge id="544" source="Austin" target="IAmA" weight="14.0"></edge>
+      <edge id="545" source="Austin" target="gaming" weight="12.0"></edge>
+      <edge id="546" source="gameswap" target="gaming" weight="7.0"></edge>
+      <edge id="547" source="gonewild" target="IAmA" weight="72.0"></edge>
+      <edge id="548" source="dwarffortress" target="funny" weight="29.0"></edge>
+      <edge id="549" source="dwarffortress" target="IAmA" weight="31.0"></edge>
+      <edge id="550" source="dwarffortress" target="Minecraft" weight="29.0"></edge>
+      <edge id="551" source="dwarffortress" target="gaming" weight="88.0"></edge>
+      <edge id="552" source="worldpolitics" target="economy" weight="9.0"></edge>
+      <edge id="553" source="worldpolitics" target="history" weight="9.0"></edge>
+      <edge id="554" source="offbeat" target="videos" weight="120.0"></edge>
+      <edge id="555" source="offbeat" target="gadgets" weight="41.0"></edge>
+      <edge id="556" source="offbeat" target="netsec" weight="10.0"></edge>
+      <edge id="557" source="offbeat" target="entertainment" weight="97.0"></edge>
+      <edge id="558" source="offbeat" target="needadvice" weight="7.0"></edge>
+      <edge id="559" source="offbeat" target="aww" weight="10.0"></edge>
+      <edge id="560" source="offbeat" target="Design" weight="7.0"></edge>
+      <edge id="561" source="offbeat" target="history" weight="17.0"></edge>
+      <edge id="562" source="movies" target="videos" weight="92.0"></edge>
+      <edge id="563" source="movies" target="entertainment" weight="118.0"></edge>
+      <edge id="564" source="movies" target="gadgets" weight="21.0"></edge>
+      <edge id="565" source="movies" target="history" weight="13.0"></edge>
+      <edge id="566" source="civ" target="funny" weight="7.0"></edge>
+      <edge id="567" source="civ" target="IAmA" weight="7.0"></edge>
+      <edge id="568" source="civ" target="gaming" weight="17.0"></edge>
+      <edge id="569" source="MMA" target="videos" weight="17.0"></edge>
+      <edge id="570" source="history" target="videos" weight="11.0"></edge>
+      <edge id="571" source="history" target="IAmA" weight="26.0"></edge>
+      <edge id="572" source="history" target="scifi" weight="14.0"></edge>
+      <edge id="573" source="formula1" target="gaming" weight="10.0"></edge>
+      <edge id="574" source="formula1" target="IAmA" weight="13.0"></edge>
+      <edge id="575" source="metanarchism" target="Anarchism" weight="23.0"></edge>
+      <edge id="576" source="Design" target="funny" weight="22.0"></edge>
+      <edge id="577" source="Design" target="videos" weight="10.0"></edge>
+      <edge id="578" source="Design" target="gaming" weight="12.0"></edge>
+      <edge id="579" source="videos" target="gadgets" weight="36.0"></edge>
+      <edge id="580" source="videos" target="conspiracy" weight="25.0"></edge>
+      <edge id="581" source="videos" target="entertainment" weight="86.0"></edge>
+      <edge id="582" source="videos" target="scifi" weight="53.0"></edge>
+      <edge id="583" source="videos" target="listentothis" weight="6.0"></edge>
+      <edge id="584" source="videos" target="aww" weight="8.0"></edge>
+      <edge id="585" source="videos" target="netsec" weight="8.0"></edge>
+      <edge id="586" source="videos" target="starcraft" weight="47.0"></edge>
+      <edge id="587" source="videos" target="relationship_advice" weight="36.0"></edge>
+      <edge id="588" source="videos" target="bicycling" weight="31.0"></edge>
+      <edge id="589" source="videos" target="Portland" weight="7.0"></edge>
+      <edge id="590" source="boston" target="funny" weight="10.0"></edge>
+      <edge id="591" source="boston" target="gaming" weight="12.0"></edge>
+      <edge id="592" source="boston" target="IAmA" weight="16.0"></edge>
+      <edge id="593" source="Cooking" target="gaming" weight="26.0"></edge>
+      <edge id="594" source="Cooking" target="funny" weight="44.0"></edge>
+      <edge id="595" source="Cooking" target="IAmA" weight="53.0"></edge>
+      <edge id="596" source="hardware" target="IAmA" weight="38.0"></edge>
+      <edge id="597" source="engineering" target="funny" weight="6.0"></edge>
+      <edge id="598" source="conspiracy" target="funny" weight="28.0"></edge>
+      <edge id="599" source="conspiracy" target="gaming" weight="25.0"></edge>
+      <edge id="600" source="conspiracy" target="IAmA" weight="32.0"></edge>
+      <edge id="601" source="conspiracy" target="911truth" weight="11.0"></edge>
+      <edge id="602" source="relationship_advice" target="self" weight="53.0"></edge>
+      <edge id="603" source="relationship_advice" target="OneY" weight="9.0"></edge>
+      <edge id="604" source="relationship_advice" target="needadvice" weight="13.0"></edge>
+      <edge id="605" source="starcraft" target="poker" weight="6.0"></edge>
+      <edge id="606" source="starcraft" target="CFB" weight="7.0"></edge>
+      <edge id="607" source="funny" target="Anarchism" weight="24.0"></edge>
+      <edge id="608" source="funny" target="bicycling" weight="51.0"></edge>
+      <edge id="609" source="funny" target="IAmA" weight="1074.0"></edge>
+      <edge id="610" source="funny" target="aww" weight="18.0"></edge>
+      <edge id="611" source="funny" target="announcements" weight="7.0"></edge>
+      <edge id="612" source="funny" target="gaming" weight="1415.0"></edge>
+      <edge id="613" source="funny" target="Dexter" weight="11.0"></edge>
+      <edge id="614" source="funny" target="DebateAChristian" weight="8.0"></edge>
+      <edge id="615" source="funny" target="comicbooks" weight="7.0"></edge>
+      <edge id="616" source="funny" target="entertainment" weight="225.0"></edge>
+      <edge id="617" source="funny" target="CFB" weight="8.0"></edge>
+      <edge id="618" source="funny" target="atheism" weight="687.0"></edge>
+      <edge id="619" source="funny" target="economy" weight="13.0"></edge>
+      <edge id="620" source="funny" target="evedreddit" weight="15.0"></edge>
+      <edge id="621" source="funny" target="DIY" weight="31.0"></edge>
+      <edge id="622" source="netsec" target="self" weight="8.0"></edge>
+      <edge id="623" source="ideasfortheadmins" target="self" weight="6.0"></edge>
+      <edge id="624" source="ideasfortheadmins" target="IAmA" weight="6.0"></edge>
+      <edge id="625" source="ideasfortheadmins" target="announcements" weight="7.0"></edge>
+      <edge id="626" source="bicycling" target="IAmA" weight="69.0"></edge>
+      <edge id="627" source="bicycling" target="gaming" weight="30.0"></edge>
+      <edge id="628" source="self" target="needadvice" weight="10.0"></edge>
+      <edge id="629" source="IAmA" target="Dexter" weight="10.0"></edge>
+      <edge id="630" source="IAmA" target="DIY" weight="29.0"></edge>
+      <edge id="631" source="IAmA" target="announcements" weight="10.0"></edge>
+      <edge id="632" source="IAmA" target="economy" weight="14.0"></edge>
+      <edge id="633" source="IAmA" target="gaming" weight="1020.0"></edge>
+      <edge id="634" source="IAmA" target="Anarchism" weight="40.0"></edge>
+      <edge id="635" source="IAmA" target="aww" weight="16.0"></edge>
+      <edge id="636" source="IAmA" target="DebateAChristian" weight="15.0"></edge>
+      <edge id="637" source="IAmA" target="entertainment" weight="120.0"></edge>
+      <edge id="638" source="IAmA" target="CFB" weight="13.0"></edge>
+      <edge id="639" source="IAmA" target="atheism" weight="649.0"></edge>
+      <edge id="640" source="IAmA" target="gadgets" weight="46.0"></edge>
+      <edge id="641" source="IAmA" target="evedreddit" weight="20.0"></edge>
+      <edge id="642" source="scifi" target="gadgets" weight="28.0"></edge>
+      <edge id="643" source="scifi" target="entertainment" weight="82.0"></edge>
+      <edge id="644" source="scifi" target="comicbooks" weight="6.0"></edge>
+      <edge id="645" source="scifi" target="Physics" weight="9.0"></edge>
+      <edge id="646" source="announcements" target="gaming" weight="6.0"></edge>
+      <edge id="647" source="economy" target="gaming" weight="9.0"></edge>
+      <edge id="648" source="gaming" target="Anarchism" weight="20.0"></edge>
+      <edge id="649" source="gaming" target="gadgets" weight="31.0"></edge>
+      <edge id="650" source="gaming" target="aww" weight="10.0"></edge>
+      <edge id="651" source="gaming" target="Dexter" weight="8.0"></edge>
+      <edge id="652" source="gaming" target="comicbooks" weight="8.0"></edge>
+      <edge id="653" source="gaming" target="CFB" weight="7.0"></edge>
+      <edge id="654" source="gaming" target="entertainment" weight="182.0"></edge>
+      <edge id="655" source="gaming" target="atheism" weight="610.0"></edge>
+      <edge id="656" source="gaming" target="evedreddit" weight="41.0"></edge>
+      <edge id="657" source="gaming" target="DIY" weight="13.0"></edge>
+      <edge id="658" source="philosophy" target="DebateAChristian" weight="7.0"></edge>
+    </edges>
+  </graph>
+</gexf>

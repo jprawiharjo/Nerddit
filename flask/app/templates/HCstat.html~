@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+
+
+{% block highchartstat %}
+
+
+<div class="container">
+
+      <div class="starter-template">
+        <div class="row" style="height:5vh;margin-top:0vh;">
+
+   <label style="font-weight:300; font-size:36px;">
+	Reddit Statistics
+	</label>
+</div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div id="container-comments" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div class="spacer"></div>
+<div id="container-authors" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div class="spacer"></div>
+<div id="container-subreddits" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<script>
+var fs = '16px';
+
+var xAxis = {"title": {"text": 'Time', style: {"fontSize":fs}}, 'type': 'datetime', 
+		labels: { style: {"fontSize":fs} },
+			gridLineColor: '#C0C0C0', gridLineWidth: 1 };
+
+var opt = {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        radius: 1
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            }
+
+$(function () {
+   $.getJSON('../static/data/comments.json', function (data) {
+	//console.log(data);
+
+    $('#container-comments').highcharts({
+        chart: {
+            zoomType: 'x'
+        },
+        title: {"text": 'Comments'},
+        xAxis: xAxis,
+        yAxis: {"title": {"text": 'Number of comments', style: {"fontSize":fs}}, min:0 , labels: { style: {"fontSize":fs} }, gridLineColor: '#C0C0C0'},
+        plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        radius: 1
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+	legend: {
+                enabled: false
+            },
+        series: [{
+                type: 'area',
+                data: data
+            }]
+    });
+    });
+
+$.getJSON('../static/data/authors.json', function (data) {
+	//console.log(data);
+
+    $('#container-authors').highcharts({
+        chart: {
+            zoomType: 'x'
+        },
+        title: {"text": 'Unique Active Authors'},
+        xAxis: xAxis,
+        yAxis: {"title": {"text": 'Number of unique authors',style: {"fontSize":fs}}, min:0, labels: { style: {"fontSize":fs} }, gridLineColor: '#C0C0C0'},
+        plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[5]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[5]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        radius: 0
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+	legend: {
+                enabled: false
+            },
+        series: [{
+                type: 'areaspline',
+                data: data
+            }]
+    });
+    });
+
+$.getJSON('../static/data/subreddits.json', function (data) {
+	//console.log(data);
+
+    $('#container-subreddits').highcharts({
+        chart: {
+            zoomType: 'x'
+        },
+        title: {"text": 'Unique Active Subreddits'},
+        xAxis: xAxis,
+        yAxis: {"title": {"text": 'Number of unique subreddits', style: {"fontSize":fs}}, min:0 , labels: { style: {"fontSize":fs} }, gridLineColor: '#C0C0C0'},
+        plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[2]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        radius: 0
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+	legend: {
+                enabled: false
+            },
+        series: [{
+                type: 'areaspline',
+                data: data
+            }]
+    });
+    });
+});
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73417322-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</div>
+
+</div>
+</div>
+</div>
+{% endblock %}
