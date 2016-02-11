@@ -23,8 +23,8 @@ es = Elasticsearch(hosts = ["ec2-52-27-157-187.us-west-2.compute.amazonaws.com",
                             'ec2-52-10-19-240.us-west-2.compute.amazonaws.com'])
 
 keyspace = 'reddit'
-tablename1 = "NgramsTable3"
-tablename2 = "NgramsTable4"
+tablename1 = "benchmark1"
+tablename2 = "benchmark2"
 
 # cluster arrangement
 request_body = {
