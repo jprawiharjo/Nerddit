@@ -12,4 +12,20 @@ My motivations are twofolds:
 
 ## Methods
 
+The technologies used in this project are listed below:
+- Amazon S3
+- Spark
+- Cassandra
+- Flask
+
+The pipeline for the data flow are shown in the figure below:
+
 ![Pipeline](/images/pipeline.png?raw=true "Pipeline")
+
+Reddit comments data from October 2007 to December 2015 were downloaded from the internet, and stored in Amazon S3. The data was >1TB in total, in JSON format.
+
+I used Spark to perform ETL from S3 to Cassandra in 4 tables.
+
+## Graph visualization
+
+The graph from Cassandra were processed in Python-NetworkX to filter "over-subscribed" subreddits, which I defined as nodes with degree >100. This choice was taken to reveal clustering of the subreddits. Gephi was used to find the clusterings of the subreddits, and applied Force Atlas 2 layout algorithm and then visualized by Sigma.js.
